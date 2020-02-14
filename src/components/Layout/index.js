@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Profile from "../Profile"
+import Sidebar from "../Sidebar"
 
 //import styled from "styled-components" Importando o Stlyed-components - Não precisa mais, porque está chamadando do "layout/styled.js"
 
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper> {/* Para organizar css colocou no styled.css e exportou "export" a const  */}
       <GlobalStyle /> {/* importando o rest global */}
       <aside>
-        <Profile/>
+        <Sidebar/>
       </aside>
       <S.LayoutMain>{children}</S.LayoutMain>
       </S.LayoutWrapper>
