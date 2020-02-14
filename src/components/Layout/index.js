@@ -9,7 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Profile from "../Profile"
 
-//import styled from "styled-components" Importando o Stlyed-components
+//import styled from "styled-components" Importando o Stlyed-components - Não precisa mais, porque está chamadando do "layout/styled.js"
 
 import * as S from "./styled" // Organizando, jogando todos os componentes de estilo do layout para o arquivo styled.js e colocando uma alias. "S"
 import GlobalStyle from "../../styles/global" //importando o rest global
@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
         <Profile/>
       </aside>
       <S.LayoutMain>{children}</S.LayoutMain>
-    </S.LayoutWrapper>
+      </S.LayoutWrapper>
   )
 }
 
