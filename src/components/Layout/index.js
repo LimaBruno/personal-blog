@@ -9,29 +9,21 @@ import React from "react"
 import PropTypes from "prop-types"
 import Profile from "../Profile"
 
-import styled from "styled-components" //Importando o Stlyed-components
+//import styled from "styled-components" Importando o Stlyed-components
 
-//
-const LayoutWrapper = styled.section`
-  display: flex;  
-`
-//Layout Principal
-const LayoutMain = styled.main`
-  background: #16202c;
-  min-height: 100vh;
-  padding: 0 3.75rem 0 20rem;
-  width: 100%;
-`
+import * as S from "./styled" // Organizando, jogando todos os componentes de estilo do layout para o arquivo styled.js e colocando uma alias. "S"
+import GlobalStyle from "../../styles/global" //importando o rest global
 
 
 const Layout = ({ children }) => {
   return (
-    <LayoutWrapper>
+    <S.LayoutWrapper> {/* Para organizar css colocou no styled.css e exportou "export" a const  */}
+      <GlobalStyle /> {/* importando o rest global */}
       <aside>
         <Profile/>
       </aside>
-      <LayoutMain>{children}</LayoutMain>
-    </LayoutWrapper>
+      <S.LayoutMain>{children}</S.LayoutMain>
+    </S.LayoutWrapper>
   )
 }
 
