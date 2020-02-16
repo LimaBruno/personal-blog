@@ -20,7 +20,7 @@ const Avatar = () => {
         }
    `)
    {/* Retornando do styled.js*/}
-   return <S.AvatarWrapper fixed={avatarImage.childImageSharp.fixed} alt="Foto do Bruno" title="Bruno Lima" />
+   return <S.AvatarWrapper fixed={avatarImage.childImageSharp.fixed} alt="Foto do Bruno Lima" title="Bruno Lima" />
 
 }
 
