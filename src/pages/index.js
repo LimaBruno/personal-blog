@@ -3,11 +3,21 @@ import React from "react"
 
 import Layout from "../components/Layout" //depois que mudou a pasta alterar para "Layout - 'L' maisucluo DE TODOS"
 import SEO from "../components/seo"
+import PostItem from "../components/PostItem"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Home</h1>
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
+    <PostItem />
     
   </Layout>
 )

@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Sidebar from "../Sidebar"
+import MenuBar from "../MenuBar"
 
 //import styled from "styled-components" Importando o Stlyed-components - Não precisa mais, porque está chamadando do "layout/styled.js"
 
@@ -23,7 +24,8 @@ const Layout = ({ children }) => {
         <Sidebar/>
       </aside>
       <S.LayoutMain>{children}</S.LayoutMain>
-      </S.LayoutWrapper>
+      <MenuBar />
+    </S.LayoutWrapper>
   )
 }
 
