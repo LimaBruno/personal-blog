@@ -21,11 +21,15 @@ export const PostItemWrapper = styled.section`
 /*Background vai receber na variavel "props" a propriedade definida chamada "background" 
 da variavel de estilo "PostItemTag", ou seja dentro da tag <PostItem background="">. Essa tecnica chama "adereço - props"
 (Passando propriedades) - Documentação - https://styled-components.com/docs/basics#adapting-based-on-props
+
+No componetente PostItem, é usado a biblioteca "PropTypes" para validar o tipo de dado (int, bool....)
+a variavel background "não é obritário" informar. Então a variavel background de estilo é tratada ou seja
+se informar o background "coloca a cor informada" se não será a cor definida "#1fa1f2"
 */
 
 export const PostItemTag = styled.div`
   align-items: center;
-  background: ${props => props.background};
+  background: ${props => props.background ? props.background : '#1fa1f2' };
   border-radius: 50%;
   color: #fff;
   display: flex;
