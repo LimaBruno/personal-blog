@@ -55,7 +55,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   //conforme a documentação para criar paginas precisa apenas do campo "slug"
-  return (graphql`
+  return graphql(`
     {
       allMarkdownRemark {
         edges {

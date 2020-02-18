@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Bruno Lima`,
-    position: `Especialista em Tecnologia da Informação`,//criado a variavel position e seu valor em crase
-    description: `teste`,
+    position: `Tecnologia da Informação`,//criado a variavel position e seu valor em crase
+    description: `Especialista em Tecnologia da Informação`,
     author: `@brunolima`,
   },
   plugins: [
