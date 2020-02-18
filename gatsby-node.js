@@ -8,12 +8,14 @@
 
 /*Definindo o link slug de cada nó "node" de cada post (markdown), ou seja tem que criar um novo campo (com o nome do slug)
 e depois informar na query. Para isso precisa do codigo "createFilepath" componente do (gatbsy-source-filesystem) 
-e o metodo "createNodeField" esse metodo é para todas as vezes que um nó é criado (posts).
+e o metodo "createNodeField" esse metodo vai criar um campo dentro do node.
 
 Link com slug tem que ser tratado via api.
 
 createFilePath = https://www.gatsbyjs.org/packages/gatsby-source-filesystem/
 */
+//Forçando o caminho da pasta do template.
+const path = require(`path`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -32,7 +34,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     // Creates new query'able field with name of 'slug' (slug = nome do arquivo)
     createNodeField({
       node,
-      name: "slug",
+      name: "slug", //nome do campo que será criado
       value: `/${slug.slice(12)}`,//nome da const "slug" e definido o nome do slug
 
       /*
@@ -41,4 +43,40 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       */
     })
   }
+}
+
+/* Depois que criou os links do MarkDownRemak (posts), agora tem que criar as páginas do post
+com o metodo createPages
+
+createPage = https://www.gatsbyjs.org/docs/node-apis/#createPages
+*/
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  //conforme a documentação para criar paginas precisa apenas do campo "slug"
+  return (graphql`
+    {
+      allMarkdownRemark {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {  //o "then" é para quando terminar de executar a query "vai chamar o metodo createPage"
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.fields.slug, //caminho do slug na query
+        component: path.resolve("./src/templates/blog-post.js"), // caminho do templates do blog
+        context: {
+          slug: node.fields.slug
+        }
+      
+      })    
+    })  
+  })
 }
