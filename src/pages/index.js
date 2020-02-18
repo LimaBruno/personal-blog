@@ -7,10 +7,12 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 
 const IndexPage = () => {
-  //Construção da Query
+  /*1º - Construção da Query, para ordenar os post utilizar o filtro "sort",
+  filtrando pela data, com ordem decrescente */
+  
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query PostItem {
-      allMarkdownRemark {
+      allMarkdownRemark (sort: {fields: frontmatter___date, order: DESC}){
         edges {
           node {
             frontmatter {
@@ -29,13 +31,13 @@ const IndexPage = () => {
       }
     }
   `)
-  // Execução da query na variavel postList acessando "allMarkdownRemark.edges"
+  //2º - Execução da query na variavel postList acessando "allMarkdownRemark.edges"
   const postList = allMarkdownRemark.edges
 
   return (
     <Layout>
       <SEO title="Home" />
-        {/* Exporta a excução em um array, informando quais os dados que ira ser utilizado (node signfica nó, entao cada post é um nó*/}
+        {/* 3º - Exporta a excução em um array, informando quais os dados que ira ser utilizado (node signfica nó, entao cada post é um nó*/}
         {postList.map(({
           node:{
             frontmatter:{ background, category, date, description, title },
