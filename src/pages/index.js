@@ -21,27 +21,32 @@ const IndexPage = () => {
               title
             }
             timeToRead
+            fields {
+              slug
+            }
           }
         }
       }
     }
   `)
-  // Execução da query na variavel postList
+  // Execução da query na variavel postList acessando "allMarkdownRemark.edges"
   const postList = allMarkdownRemark.edges
 
   return (
     <Layout>
       <SEO title="Home" />
-        {/* Exporta a excução em um array, informando quais os dados que ira ser utilizado*/}
+        {/* Exporta a excução em um array, informando quais os dados que ira ser utilizado (node signfica nó, entao cada post é um nó*/}
         {postList.map(({
           node:{
-              frontmatter:{ background, category, date, description, title },
-              timeToRead
+            frontmatter:{ background, category, date, description, title },
+            timeToRead,
+            fields:{ slug, },
           }
         }) =>(
           //Reinderizando o valor nas variaveis
           <PostItem 
-            slug="/about/"
+            //O link slug é criado via api, usando o "gatsby-node.js"
+            slug= { slug }
             background = { background }
             category= { category }
             date= { date }
@@ -71,4 +76,3 @@ export default IndexPage
       />     
     </Layout>
   */
-
