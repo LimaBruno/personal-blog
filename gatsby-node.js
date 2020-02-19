@@ -56,10 +56,18 @@ exports.createPages = ({ graphql, actions }) => {
 
   //conforme a documentação para criar paginas precisa apenas do campo "slug"
   return graphql(`
-    {
-      allMarkdownRemark {
+    query PostItem {
+      allMarkdownRemark (sort: {fields: frontmatter___date, order: DESC}){
         edges {
           node {
+            frontmatter {
+              background
+              category
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+              description
+              title
+            }
+            timeToRead
             fields {
               slug
             }
@@ -68,7 +76,8 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {  //o "then" é para quando terminar de executar a query "vai chamar o metodo createPage"
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const posts = result.data.allMarkdownRemark.edges
+    posts.forEach(({ node }) => {
       createPage({
         path: node.fields.slug, //caminho do slug na query
         component: path.resolve("./src/templates/blog-post.js"), // caminho do templates do blog
@@ -77,6 +86,25 @@ exports.createPages = ({ graphql, actions }) => {
         }
       
       })    
-    })  
+    })
+    
+    
+    const postsPerPage = 6 //definindo a quantidade de post por pagina
+    const numPages = Math.ceil(posts.length / postsPerPage) //funão Math.ceil arredonda pra cima ex 10 /6 = 1.... arredondando "2".
+    
+    //Criando um array com o numero de paginas e pegando o index de cada pagina
+    Array.from({ length: numPages }).forEach((_, index) => {
+      //chamando o metodo cratePage e os 3 parametros
+      createPage({
+        path: index === 0 ? `/` : `/page/${index + 1}`,
+        component: path.resolve(`./src/templates/blog-list.js`),
+        context: { //Passando os dados que vai estar disponivel no graphql
+          limit: postsPerPage, //o limite por pagina
+          skip: index * postsPerPage, //definindo o pulo pra proxima pagina
+          numPages, //passando a variavel numPages
+          currentPage: index + 1, //variavel para indicar qual pagina que ele está
+        },
+      })
+    })
   })
 }
