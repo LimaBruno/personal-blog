@@ -57,6 +57,13 @@ module.exports = {
           },
           `gatsby-remark-lazy-load`, //Tambem é necessário apontar o plugin.
           //conforme a documentação pede para importar o "import 'lazysizes'" no "gatsby-browser.js"
+          /*Depois de instalar o prismjs, a documentação informar que o plugin deve ser configurado
+          dentro `gatsby-transformer-remark` porque faz parte dele e o pluguin deve ficar na ultima linha
+          `gatsby-remark-prismjs`
+          Tambem deverá incluir no arquivo "gatsby-browser.js" 
+          require("prismjs/themes/prism-tomorrow.css")
+          */
+          `gatsby-remark-prismjs`
         ],
       },
     },
