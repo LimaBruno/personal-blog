@@ -56,33 +56,51 @@ exports.createPages = ({ graphql, actions }) => {
 
   //conforme a documentação para criar paginas precisa apenas do campo "slug"
   return graphql(`
-    query PostItem {
-      allMarkdownRemark (sort: {fields: frontmatter___date, order: DESC}){
-        edges {
-          node {
-            frontmatter {
-              background
-              category
-              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-              description
-              title
-            }
-            timeToRead
-            fields {
-              slug
-            }
+  query PostItem {
+    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      edges {
+        node {
+          frontmatter {
+            background
+            category
+            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            description
+            title
+          }
+          timeToRead
+          fields {
+            slug
+          }
+        }
+        next {
+          frontmatter {
+            title
+          }
+          fields {
+            slug
+          }
+        }
+        previous {
+          fields {
+            slug
+          }
+          frontmatter {
+            title
           }
         }
       }
     }
-  `).then(result => {  //o "then" é para quando terminar de executar a query "vai chamar o metodo createPage"
+  }`).then(result => {  //o "then" é para quando terminar de executar a query "vai chamar o metodo createPage"
     const posts = result.data.allMarkdownRemark.edges
-    posts.forEach(({ node }) => {
+    posts.forEach(({ node, next, previous }) => {
       createPage({
         path: node.fields.slug, //caminho do slug na query
         component: path.resolve("./src/templates/blog-post.js"), // caminho do templates do blog
         context: {
-          slug: node.fields.slug
+          slug: node.fields.slug,
+          previousPost: next,
+          nextPost: previous,
+
         }
       
       })    
