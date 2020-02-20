@@ -99,8 +99,8 @@ exports.createPages = ({ graphql, actions }) => {
         path: index === 0 ? `/` : `/page/${index + 1}`,
         component: path.resolve(`./src/templates/blog-list.js`),
         context: { //Passando os dados que vai estar disponivel no graphql
-          limit: postsPerPage, //o limite por pagina
-          skip: index * postsPerPage, //definindo o pulo pra proxima pagina
+          limit: postsPerPage, //o limite por pagina (variavel limit é palavra resevado do graphql)
+          skip: index * postsPerPage, //definindo o pulo pra proxima pagina (variavel limit é palavra resevado do graphql)
           numPages, //passando a variavel numPages
           currentPage: index + 1, //variavel para indicar qual pagina que ele está
         },

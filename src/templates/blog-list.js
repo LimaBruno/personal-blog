@@ -4,10 +4,19 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout" //depois que mudou a pasta alterar para "Layout - 'L' maisucluo DE TODOS"
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
+import Pagination from "../components/Pagination"
 
 /*2º - metodo BlogPost recebendo o valor */
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
+    /* currentPage e numPages esta vindo dentro do metodo createPages (gatsby-node.js),
+    acessando atraves deste metodo page.Context  */
+    const { currentPage, numPages} = props.pageContext
+    const isFirst = currentPage === 1
+    const isLast = currentPage === numPages
+
+    const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`
+    const nextPage = `/page/${currentPage + 1}`
 
     //Renderizando o post
     return (
@@ -24,16 +33,23 @@ const BlogList = props => {
             //Reinderizando o valor nas variaveis
             <PostItem 
               //O link slug é criado via api, usando o "gatsby-node.js"
-              slug= { slug }
-              background = { background }
-              category= { category }
-              date= { date }
-              timeToRead= { timeToRead }
-              title= { title }
-              description= { description }
+              slug= {slug}
+              background = {background}
+              category= {category}
+              date= {date}
+              timeToRead= { timeToRead}
+              title= {title}
+              description= {description}
             />     
           ))}
-        
+          <Pagination
+            isFirst={isFirst}
+            isLast={isLast}
+            currentPage={currentPage}
+            numPages={numPages}
+            prevPage={prevPage}
+            nextPage={nextPage}
+          />
       </Layout>
     )
 }
@@ -63,6 +79,5 @@ export const query = graphql`
         }
     }
 `
-
 
 export default BlogList
