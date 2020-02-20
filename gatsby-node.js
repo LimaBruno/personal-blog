@@ -98,8 +98,8 @@ exports.createPages = ({ graphql, actions }) => {
         component: path.resolve("./src/templates/blog-post.js"), // caminho do templates do blog
         context: {
           slug: node.fields.slug,
-          previousPost: next,
-          nextPost: previous,
+          previousPost: next, //next = recebendo todos os campos (frontmatter, fields)
+          nextPost: previous, //previous = recebendo todos os campos (frontmatter, fields)
 
         }
       
