@@ -15,7 +15,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `uploads`,
-        path: `${__dirname}/static/assets/img`,
+        path: `${__dirname}/src/static/assets/img`,
       },
     },
     {
@@ -44,7 +44,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-relative-images",
             options: {
-              name:"uploads" // o mesmo nome da pasta do filesystem
+              name:"uploads", // o mesmo nome da pasta do filesystem
             }
           },
           {
@@ -52,7 +52,7 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 960, //Definido qual é o tamanho maixmo das imagens "fluídas" 960 é o tamanho maixmo que pode ter.
-              linksImagesToOriginal: false //linksImagesToOriginal é para links externos neste caso não vai ter.
+              linkImagesToOriginal: false, //linksImagesToOriginal é para links externos neste caso não vai ter.
             }
           },
           `gatsby-remark-lazy-load`, //Tambem é necessário apontar o plugin.
