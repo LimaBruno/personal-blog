@@ -8,6 +8,16 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,//componente do styled-components
     `gatsby-plugin-react-helmet`,
+    /*1º - Para funcionar corretamente o plugin "gatsby-remark-images",
+    a pasta que vai receber as imagens dos "posts markdown" deverá ser a primeria do filesystem. 
+    Depois configurar os plugins dentro "gatsby-transformer-remark" que fica abaixo */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/assets/img`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,18 +33,31 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`, //componente do transformer-remark
+      resolve: `gatsby-transformer-remark`, //componente do transformer-remark (instalado)
       options: {
-        // CommonMark mode (default: true)
-        commonmark: true,
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // Pedantic mode (default: true)
-        pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
+        /*2º - Os pulguins deverao estar instalado e com configurados 
+        gatsby-remark-images
+        gatsby-remark-relative-images
+        gatsby-remark-lazy-load (COMPLEMENTO npm install --save lazysizes)
+        */
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name:"uploads" // o mesmo nome da pasta do filesystem
+            }
+          },
+          {
+            //O plugin mais important
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960, //Definido qual é o tamanho maixmo das imagens "fluídas" 960 é o tamanho maixmo que pode ter.
+              linksImagesToOriginal: false //linksImagesToOriginal é para links externos neste caso não vai ter.
+            }
+          },
+          `gatsby-remark-lazy-load`, //Tambem é necessário apontar o plugin.
+          //conforme a documentação pede para importar o "import 'lazysizes'" no "gatsby-browser.js"
+        ],
       },
     },
     `gatsby-transformer-sharp`,
