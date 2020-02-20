@@ -5,6 +5,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
+import * as S from "../components/Post/styled"
+
 const BlogPost = ({ data }) => {
     const post = data.markdownRemark
 
@@ -12,11 +14,24 @@ const BlogPost = ({ data }) => {
     return (
         <Layout>
             <SEO title={post.frontmatter.title} />
-            <h1>{post.frontmatter.title}</h1>
-            {/*a div está recebendo o html do post.html, por ser dados HTML o Reacat informa
-            que é arriscado passar html e tem que ter o total conhecimento do html, pois podem acontecer ataques de xss. O nome "dangerousylSetInnerHTML",
-            substitui o "innerHTML". Então precisa estar garantido a etrutura do html antes de passar.  */}
-            <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
+            <S.PostHeader>
+                <S.PostDate>
+                    {post.frontmatter.date} • {post.timeToRead} min de leitura
+                </S.PostDate>
+                <S.PostTitle>
+                    {post.frontmatter.title}
+                </S.PostTitle>
+                <S.PostDescription>
+                    {post.frontmatter.description}
+                </S.PostDescription>
+            </S.PostHeader>
+            <S.MainContent>
+                {/*a div está recebendo o html do post.html, por ser dados HTML o Reacat informa
+            que é arriscado passar html e tem que ter o total conhecimento do html, pois podem acontecer ataques de xss.
+            O nome "dangerousylSetInnerHTML", substitui o "innerHTML". Então precisa estar garantido a etrutura do html antes de passar.  */}
+                <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
+            </S.MainContent>
+            
         </Layout>
     )
 }
@@ -26,8 +41,11 @@ export const query = graphql`
         markdownRemark(fields: {slug: {eq: $slug}}) {
         frontmatter {
             title
+            description
+            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")        
         }
         html
+        timeToRead
         }
     }
 `
