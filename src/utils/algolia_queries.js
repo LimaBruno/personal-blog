@@ -58,7 +58,20 @@ o Algolia só funciona apenas com a build construido.
 
 executar: "gatsby build"
 
-Depois entrar no site do Algolia, será indexado os inidices, pondendo realizar
+Depois entrar no site do Algolia, será indexado os inidices, podendo realizar
 pesquisa dentro do algolia.
 
+============== CONFIGURAÇÃO BACKEND ALGOLIA ==============
+- Após a "import" da query no index, deverá realizar a configuração, de quais
+campos que deverá ser permitido que o usuário pode fazer a pesquia. Dentro do site do algolia,
+em "index, configuration, searchable attributes" e selecionar quais os campos que permitira o
+usuario a pesquisar. Depois em "Ranking and Sorting", vai escolher como "ordernar os posts",
+selecionando a opção "+ Add sort-by attribute"  e escolher o "date_timestamp" que criou na query, 
+com a opção "Descending" (order by). Depois em "+ Add custom ranking attribute", para adiciona
+qual é o critetiro mais importante, por exemplo: procurar primeiro em "titulo"
+Configuração de linguagem em Language: Brazilian.
+*/
+
+/*
+12 - Criar a pagina "search" (reaproveitando o codigo do about) e também criar o componente (index e styled)
 */

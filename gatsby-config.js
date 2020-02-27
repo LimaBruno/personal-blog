@@ -76,14 +76,14 @@ module.exports = {
     `gatsby-plugin-sharp`,
     //Configuração do Algolia
     {
-      resolve: `gatsby-plugin-algolia-search`,
+      resolve: `gatsby-plugin-algolia-search`,//conforme a documentação
       options: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        indexName: process.env.ALGOLIA_INDEX_NAME,
-        queries,
+        appId: process.env.ALGOLIA_APP_ID,//lendo as configurações do arquivo ".env"
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,//lendo as configurações do arquivo ".env"
+        indexName: process.env.ALGOLIA_INDEX_NAME,//lendo as configurações do arquivo ".env"
+        queries,//importando a query
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true,
+        enablePartialUpdates: true, //Para atualizar
       },
     },
     {
