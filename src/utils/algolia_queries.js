@@ -72,6 +72,47 @@ qual é o critetiro mais importante, por exemplo: procurar primeiro em "titulo"
 Configuração de linguagem em Language: Brazilian.
 */
 
+//12 - Criar a pagina "search" (reaproveitando o codigo do about) e também criar o componente (index e styled)
+
+
+
 /*
-12 - Criar a pagina "search" (reaproveitando o codigo do about) e também criar o componente (index e styled)
+============== CONFIGURAÇÃO FRONTEND ALGOLIA ==============
+
+Deverá serguir a documentação:
+
+https://www.algolia.com/doc/guides/building-search-ui/installation/react/
+
+1º - Instalar os components:
+
+npm install algoliasearch react-instantsearch-dom
+
+2º - Utilizar um exemplo de configuração (tem na documentação) esse arquivo é componente Search.
+
+import algoliasearch from 'algoliasearch/lite';
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-dom';
+
+//Criou a const algolia para receber os dados do arquivo ".env" com a palavra "GATSBY_"
+const algolia = {
+    appId: process.env.GATSBY_ALGOLIA_APP_ID,
+    searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
+    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME
+}
+//Conforme a documentação esta pegando a chave do "app id" e chave publica "search only api key"
+//Para não ficar escrevendo os valores das chaves, cria a const "algolia".
+const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey);
+
+//import * as S from "./styled"
+
+const Search = () => (
+    <InstantSearch searchClient={searchClient} indexName={algolia.indexName}>
+        <SearchBox />
+        <Hits />
+    </InstantSearch>
+)
+
+export default Search
+
+
+
 */
