@@ -78,12 +78,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-algolia-search`,//conforme a documentação
       options: {
-        appId: process.env.ALGOLIA_APP_ID,//lendo as configurações do arquivo ".env"
+        appId: process.env.GATSBY_ALGOLIA_APP_ID,//lendo as configurações do arquivo ".env"
         apiKey: process.env.ALGOLIA_ADMIN_KEY,//lendo as configurações do arquivo ".env"
-        indexName: process.env.ALGOLIA_INDEX_NAME,//lendo as configurações do arquivo ".env"
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,//lendo as configurações do arquivo ".env"
         queries,//importando a query
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true, //Para atualizar
+        enablePartialUpdates: true, //Para atualizar (quando for criar algum novo registro no algolia, mudar para false e volte para true)
       },
     },
     {

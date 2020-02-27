@@ -8,6 +8,8 @@ Precisar criar um arquivo ".env" na raiz do projeto e com as informações das c
 /*Colocando a palavra "GATSBY_", pois com isso pode ser "compartilhado" dentro da aplicação.
 não deve colocar a palavra "GATSBY_" no "ALGOLIA_ADMIN_KEY", pois ele é o backend admin da aplicação.
 
+Fazer a alteração no "gatsby-config.js"
+
 GATSBY_ALGOLIA_APP_ID=XXX
 GATSBY_ALGOLIA_SEARCH_KEY=XXX //Equivale o "searchOnlyApiKey" do site do algolia
 ALGOLIA_ADMIN_KEY=XXX
