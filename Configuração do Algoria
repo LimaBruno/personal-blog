@@ -14,3 +14,15 @@ ALGOLIA_INDEX_NAME=XXX
 //ALGORIA_SEARCH_KEY= Foi criada manualmente, pois esta é uma chave publica e usada no frontend (Algolia.Search-Only API Key).
 //ALGOLIA_ADMIN_KEY= Foi renomeada a (ALGORIA_API_KEY) é uma chave privadae usada no backend.
 //ALGOLIA_INDEX_NAME= nome do index criado. Ex: Posts
+
+
+/*
+
+Instalar o "dotnev"
+
+"npm install dotenv" (Rodar como ADMINISTRADOR), depois configurar o "gatsby-config.js", adicionando
+a linha abaixo no topo
+
+require("dotenv").config()
+
+*/
