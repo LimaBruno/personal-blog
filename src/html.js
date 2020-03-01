@@ -44,37 +44,59 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="dark">
+      {/* _onThemeChange = Alteração de Tema, __onDisplayChange = Alteração do grid de post
+       document.body.className = newTheme;
+       document.body.id = newDisplay;
+
+       Não utilizar mais de um className, pode dar problemas.
+      */}
       <script
-            dangerouslySetInnerHTML={{
-              __html: `
-              (function() {
-                window.__onThemeChange = function() {};
-                function setTheme(newTheme) {
-                  window.__theme = newTheme;
-                  preferredTheme = newTheme;
-                  document.body.className = newTheme;
-                  window.__onThemeChange(newTheme);
-                }
-                var preferredTheme;
+          dangerouslySetInnerHTML={{
+            __html: `
+            (function() {
+              window.__onThemeChange = function() {};
+              function setTheme(newTheme) {
+                window.__theme = newTheme;
+                preferredTheme = newTheme;
+                document.body.className = newTheme;
+                window.__onThemeChange(newTheme);
+              }
+              var preferredTheme;
+              try {
+                preferredTheme = localStorage.getItem('theme');
+              } catch (err) { }
+              window.__setPreferredTheme = function(newTheme) {
+                setTheme(newTheme);
                 try {
-                  preferredTheme = localStorage.getItem('theme');
-                } catch (err) { }
-                window.__setPreferredTheme = function(newTheme) {
-                  setTheme(newTheme);
-                  try {
-                    localStorage.setItem('theme', newTheme);
-                  } catch (err) {}
-                }
-                var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                darkQuery.addListener(function(e) {
-                  window.__setPreferredTheme(e.matches ? 'dark' : 'light')
-                });
-                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
-              })();
-            
-`
-            }}
-          />
+                  localStorage.setItem('theme', newTheme);
+                } catch (err) {}
+              }
+              setTheme(preferredTheme || 'dark');
+
+
+              window.__onDisplayChange = function() {};
+              
+              function setDisplay(newDisplay) {
+                window.__display = newDisplay;
+                preferredDisplay = newDisplay;
+                document.body.id = newDisplay;
+                window.__onDisplayChange(newDisplay);
+              }
+              var preferredDisplay;
+              try {
+                preferredDisplay = localStorage.getItem('display');
+              } catch (err) { }
+              window.__setPreferredDisplay = function(newDisplay) {
+                setDisplay(newDisplay);
+                try {
+                  localStorage.setItem('display', newDisplay);
+                } catch (err) {}
+              }
+              setDisplay(preferredDisplay || 'list');
+            })();
+          `,
+          }}
+        />
         {props.preBodyComponents}
         {/* Adicionando MANUALMENTE <NOSCRIPT> */}
         <noscript key="noscript" id="gatsby-noscript">
