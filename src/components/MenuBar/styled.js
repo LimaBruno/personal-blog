@@ -23,7 +23,7 @@ export const MenuBarGroup = styled.div`
 export const MenuBarLink = styled(Link)`
   display: block;
 `
-
+// no MenuBarItem se for "light" vai acionar a alateração de cor
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;
@@ -32,6 +32,13 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem;
+
+  &.light {
+    color: #d4d400;
+    &:hover {
+      color: #e2e240;
+    }
+  }
   
   &:hover {
     color: var(--highlight);
