@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 //.ais são classes do "algolia" recomenda utilizar
 //4º - Efeito grid
@@ -17,9 +18,17 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox,
   .ais-Stats {
     padding: 0.5rem 3rem;
+
+    ${media.lessThan("large")`
+      padding: 0.5rem 1rem;
+    `}
   }
   .ais-SearchBox {
     padding-top: 6rem;
+
+    ${media.lessThan("large")`
+      padding-top: 1rem;
+    `}
   }
   .ais-Stats {
     color: var(--texts);

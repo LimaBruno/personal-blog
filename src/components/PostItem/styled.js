@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import media from "styled-media-query"
+
 import { Link } from "gatsby"
 
 //definido o background de cada post
@@ -31,6 +33,12 @@ export const PostItemWrapper = styled.section`
     padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
+
+    ${media.lessThan("large")`
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 2rem 1rem;
+    `}
   }
 `
 /*Background vai receber na variavel "props" a propriedade definida chamada "background" 
@@ -55,6 +63,15 @@ export const PostItemTag = styled.div`
   min-width: 90px;
   text-transform: uppercase;
 
+  ${media.lessThan("large")`
+    border-radius: 0;
+    font-size: 1rem;
+    min-height: auto;
+    min-width: auto;
+    padding: .2rem .5rem;
+    margin-bottom: .7rem;
+  `}
+
   body#grid & {
     margin-bottom: 1.5rem;
   }
@@ -64,6 +81,10 @@ export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 1.5rem;
+
+  ${media.lessThan("large")`
+    margin: 0;
+  `}
 `
 
 export const PostItemDate = styled.time`
