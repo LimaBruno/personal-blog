@@ -1,9 +1,14 @@
 import styled from "styled-components" //Importando o Stlyed-components
-
+import media from "styled-media-query"
 
 // Layot total
+//breakpoint quando for menor que "large", vai transformar o layout em coluna
 export const LayoutWrapper = styled.section`
-  display: flex;  
+  display: flex;
+
+  ${media.lessThan("large")`
+    flex-direction: column;
+  `}
 `
 
 
