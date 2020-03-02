@@ -46,6 +46,7 @@ export const MenuBarLink = styled(Link)`
   }
 `
 // no MenuBarItem se for "light" vai acionar a alateração de cor
+//&.display ocultando o icone para celulares e smarthphone
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;
@@ -65,7 +66,7 @@ export const MenuBarItem = styled.span`
   &:hover {
     color: var(--highlight);
   }
-
+  
   &.display {
     ${media.lessThan("large")`
       display: none;

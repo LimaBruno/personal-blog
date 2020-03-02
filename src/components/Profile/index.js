@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+
 import Avatar from "../Avatar" //Importando o componente da pasta avatar
 import * as S from "./styled"
 

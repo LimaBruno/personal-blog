@@ -62,7 +62,7 @@ const MenuBar = () => {
             onClick={() => {
               window.__setPreferredDisplay(isListMode ? "grid" : "list") //1º se o isDarkMode for verdadeiro ou seja "onClick= tema dark" mude para "light" se não muda para "dark"
             }}
-            className={display}              
+            className="display"              
           >
             { isListMode ? <Grid /> : <List /> }
           </S.MenuBarItem>

@@ -33,13 +33,13 @@ export const PostItemWrapper = styled.section`
     padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
-
-    ${media.lessThan("large")`
-      align-items: flex-start;
-      flex-direction: column;
-      padding: 2rem 1rem;
-    `}
   }
+
+  ${media.lessThan("large")`
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+  `}
 `
 /*Background vai receber na variavel "props" a propriedade definida chamada "background" 
 da variavel de estilo "PostItemTag", ou seja dentro da tag <PostItem background="">. Essa tecnica chama "adereço - props"
