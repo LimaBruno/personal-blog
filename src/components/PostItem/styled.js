@@ -1,22 +1,37 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+//definido o background de cada post
 export const PostItemLink = styled(Link)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
   
+  body#grid & {
+    background-color: var(--background);
+  }
+
   &:hover {
     color: var(--highlight);
   }
 `
-
+/*
+3 - Efeito Grid
+flex-direction: column; = Vai ficar em coluna e não lado a lado.
+*/
 export const PostItemWrapper = styled.section`
   align-items: center;
   border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+
+  body#grid & {
+    border: none;
+    padding: 2rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+  }
 `
 /*Background vai receber na variavel "props" a propriedade definida chamada "background" 
 da variavel de estilo "PostItemTag", ou seja dentro da tag <PostItem background="">. Essa tecnica chama "adereço - props"
@@ -39,6 +54,10 @@ export const PostItemTag = styled.div`
   min-height: 90px;
   min-width: 90px;
   text-transform: uppercase;
+
+  body#grid & {
+    margin-bottom: 1.5rem;
+  }
 `
 
 export const PostItemInfo = styled.div`
@@ -50,11 +69,16 @@ export const PostItemInfo = styled.div`
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
 `
-
+//Removendo os espaços do titulo da grid
 export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
+
+  body#grid & {
+    line-height: 1.1;
+    margin: 0.8rem 0;
+  }
 `
 
 export const PostItemDescription = styled.p`

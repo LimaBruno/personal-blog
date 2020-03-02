@@ -100,7 +100,7 @@ export default function HTML(props) {
         {props.preBodyComponents}
         {/* Adicionando MANUALMENTE <NOSCRIPT> */}
         <noscript key="noscript" id="gatsby-noscript">
-          This app works best with JavaScript enabled.
+          This app works best with JavaScript enabled =)
         </noscript>
         <div
           key={`body`}

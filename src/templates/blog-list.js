@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
+import * as S from "../components/ListWrapper/styled" //componentente de estilos do grid
+
 /*2º - metodo BlogPost recebendo o valor */
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
@@ -22,26 +24,28 @@ const BlogList = props => {
     return (
         <Layout>
         <SEO title="Home" />
-          {/* 3º - Exporta a excução em um array, informando quais os dados que ira ser utilizado (node signfica nó, entao cada post é um nó*/}
-          {postList.map(({
-            node:{
-              frontmatter:{ background, category, date, description, title },
-              timeToRead,
-              fields:{ slug, },
-            }
-          }) =>(
-            //Reinderizando o valor nas variaveis
-            <PostItem 
-              //O link slug é criado via api, usando o "gatsby-node.js"
-              slug= {slug}
-              background = {background}
-              category= {category}
-              date= {date}
-              timeToRead= { timeToRead}
-              title= {title}
-              description= {description}
-            />     
-          ))}
+          <S.ListWrapper>
+            {/* 3º - Exporta a excução em um array, informando quais os dados que ira ser utilizado (node signfica nó, entao cada post é um nó*/}
+            {postList.map(({
+              node:{
+                frontmatter:{ background, category, date, description, title },
+                timeToRead,
+                fields:{ slug, },
+              }
+            }) =>(
+              //Reinderizando o valor nas variaveis
+              <PostItem 
+                //O link slug é criado via api, usando o "gatsby-node.js"
+                slug= {slug}
+                background = {background}
+                category= {category}
+                date= {date}
+                timeToRead= { timeToRead}
+                title= {title}
+                description= {description}
+              />     
+            ))}
+          </S.ListWrapper>
           <Pagination
             isFirst={isFirst}
             isLast={isLast}
@@ -49,7 +53,7 @@ const BlogList = props => {
             numPages={numPages}
             prevPage={prevPage}
             nextPage={nextPage}
-          />
+          />          
       </Layout>
     )
 }
@@ -62,19 +66,19 @@ export const query = graphql`
             skip: $skip 
             ){
             edges {
-            node {
-                frontmatter {
-                background
-                category
-                date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-                description
-                title
-                }
-                timeToRead
-                fields {
-                slug
-                }
-            }
+              node {
+                  frontmatter {
+                    background
+                    category
+                    date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+                    description
+                    title
+                  }
+                  timeToRead
+                  fields {
+                    slug
+                  }
+              }
             }
         }
     }
