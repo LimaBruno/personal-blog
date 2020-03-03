@@ -11,6 +11,7 @@ module.exports = {
     author: `@brunolima`,
   },
   plugins: [
+    `gatsby-plugin-transition-link`, 
     `gatsby-plugin-styled-components`,//componente do styled-components
     `gatsby-plugin-react-helmet`,
     /*1º - Para funcionar corretamente o plugin "gatsby-remark-images",
