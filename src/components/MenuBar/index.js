@@ -21,9 +21,13 @@ const MenuBar = () => {
    //fazendo testes logico se o theme é identico a 'dark' joga na variavel isDarkMode
    const isListMode = display === 'list'
   
+  /* ============= EFEITOS PARA MUDANÇA DE TEMPLATE =============
+
   // window.__setPreferredTheme,  window.__onThemeChange,  setTheme(window.__theme), setTheme(window.__theme) = Vem do html.js
   // window.__setPreferredDisplay,  window.__onDisplayChange,  setDisplay(window.__display), setDisplay(window.__display) = Vem do html.js
-  //Quando carregar o modulo vai executar
+  //Quando carregar o modulo vai executar userEffect()
+  
+  */
   useEffect(() => {
     
     setTheme(window.__theme)
@@ -36,12 +40,12 @@ const MenuBar = () => {
   return (
       <S.MenuBarWrapper>
         <S.MenuBarGroup>
-          <S.MenuBarLink to="/" title="Home">
+          <S.MenuBarLink to="/" cover direction="right" bg="#16202c" duration={0.6} title="Home">
             <S.MenuBarItem>
               <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
-          <S.MenuBarLink to="/search/" title="Pesquisar">
+          <S.MenuBarLink to="/search/" cover direction="right" bg="#16202c" duration={0.6} title="Pesquisar">
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>

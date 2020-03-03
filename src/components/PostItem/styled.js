@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import media from "styled-media-query"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
 
 //definido o background de cada post
-export const PostItemLink = styled(Link)`
+export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;

@@ -24,7 +24,7 @@ const Profile = () => {
         `)
     return(
         <S.ProfileWrapper> {/* Dentro styled foi definido o "styled.section" que equivale ao "<div>"  */}
-            <S.ProfileLink>
+            <S.ProfileLink to="/" cover direction="left" bg="#16202c" duration={0.6}>
                 <Avatar />
                 <S.ProfileAuthor>
                     {title}
