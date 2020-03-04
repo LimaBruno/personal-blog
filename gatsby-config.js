@@ -9,7 +9,7 @@ module.exports = {
     position: `Tecnologia da Informação`,//criado a variavel position e seu valor em crase
     description: `Especialista em Tecnologia da Informação`,
     author: `@brunolima`,
-    siteUrl: `https://brunolima.com`, //siteUrl criado manualmente e configurado no componente de SEO.js (configuração de SEO de "image")
+    siteUrl: `https://brunolima.com`, //(usar esse nome por causa do pluguin "sitemap") siteUrl criado manualmente e configurado no componente de SEO.js (configuração de SEO de "image")
   },
   plugins: [
     `gatsby-plugin-transition-link`, //configurando manualmente - https://transitionlink.tylerbarnes.ca/docs/transitionlink/
@@ -100,6 +100,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`, //plugin só funciona em produção para testar executar "gatsby build && gatsby serve" 
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
