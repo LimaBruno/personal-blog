@@ -1,6 +1,6 @@
 import React from "react"
 
-import Icons from "./Icons" //Componente de icones
+import Icons from "./icons" //Componente de icones
 import links from "./content" // Componente de links
 
 import * as S from "./styled" // Importando todos os estilos definidos
