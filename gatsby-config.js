@@ -88,16 +88,17 @@ module.exports = {
         enablePartialUpdates: true, //Para atualizar (quando for criar algum novo registro no algolia, mudar para false e volte para true)
       },
     },
+    //Configuração do PWA
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        name: `Bruno Lima`,
+        short_name: `Bruno Lima`,
+        start_url: `/`, //URL que vai inicar o PWA
+        background_color: `#16202c`, //Backgrond mobile
+        theme_color: `#16202c`, // Definindo cor do browser mobile
+        display: `minimal-ui`, //Iniciando com a barra 
+        icon: `src/images/bruno_fav.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`, //plugin só funciona em produção para testar executar "gatsby build && gatsby serve" 
