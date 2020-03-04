@@ -88,12 +88,12 @@ module.exports = {
         enablePartialUpdates: true, //Para atualizar (quando for criar algum novo registro no algolia, mudar para false e volte para true)
       },
     },
-    //Configuração do PWA
+    //Configuração do PWA 1
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bruno Lima`,
-        short_name: `Bruno Lima`,
+        name: `Bruno Lima`,//Vai aparece no browser
+        short_name: `Bruno Lima`,//Vai aparece no browser
         start_url: `/`, //URL que vai inicar o PWA
         background_color: `#16202c`, //Backgrond mobile
         theme_color: `#16202c`, // Definindo cor do browser mobile
@@ -105,6 +105,8 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    
+    //Configuração do PWA 2 
+    `gatsby-plugin-offline`, //depois de habilidado executar "gatsby build" e "gatsby serve"
   ],
 }
