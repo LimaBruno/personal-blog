@@ -55,6 +55,7 @@ export default function HTML(props) {
             __html: `
             (function() {
               window.__onThemeChange = function() {};
+              
               function setTheme(newTheme) {
                 window.__theme = newTheme;
                 preferredTheme = newTheme;
@@ -74,6 +75,7 @@ export default function HTML(props) {
               setTheme(preferredTheme || 'dark');
 
 
+              
               window.__onDisplayChange = function() {};
               
               function setDisplay(newDisplay) {
@@ -97,6 +99,7 @@ export default function HTML(props) {
           `,
           }}
         />
+        {/* Depois configurar onde vai receber o efeito, no caso em "MenuBar" */}
         {props.preBodyComponents}
         {/* Adicionando MANUALMENTE <NOSCRIPT> */}
         <noscript key="noscript" id="gatsby-noscript">

@@ -12,6 +12,8 @@ import * as S from "./styled"
 //antes estava com parentes, e adiciando o return
 const MenuBar = () => {
 
+  //Depois que configurou o arquivo html.js configurar a variavel do array
+
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
 
@@ -40,12 +42,12 @@ const MenuBar = () => {
   return (
       <S.MenuBarWrapper>
         <S.MenuBarGroup>
-          <S.MenuBarLink to="/" cover direction="right" bg="#16202c" duration={0.6} title="Home">
+          <S.MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} title="Home">
             <S.MenuBarItem>
               <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
-          <S.MenuBarLink to="/search/" cover direction="right" bg="#16202c" duration={0.6} title="Pesquisar">
+          <S.MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} title="Pesquisar">
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>

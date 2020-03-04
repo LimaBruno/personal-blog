@@ -6,7 +6,7 @@ import * as S from "./styled"
 O PostItem vai receber valores nas variaveis definido na "função" e depois "alimentar os dados"
 */
 const PostItem = ({slug, background, category, date, timeToRead, title, description}) => (
-    <S.PostItemLink cover direction="right" bg="#16202c" duration={0.6} to={ slug }>
+    <S.PostItemLink cover direction="right" bg="var(--background)" duration={0.6} to={ slug }>
         <S.PostItemWrapper>
             <S.PostItemTag background={ background }>
                 {category}

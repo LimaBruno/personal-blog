@@ -1,16 +1,17 @@
 import React from "react"
 import propTypes from "prop-types"
+
 import * as S from "./styled"
 
 const RecommendedPosts = ({ next, previous }) => (
   <S.RecommendedWrapper>
     {previous && (
-      <S.RecommendedLink to={previous.fields.slug} cover direction="left" bg="#16202c" className="previous" title={previous.frontmatter.title}>
+      <S.RecommendedLink to={previous.fields.slug} cover direction="left" bg="var(--background)" className="previous" title={previous.frontmatter.title}>
         {previous.frontmatter.title}
       </S.RecommendedLink>
     )}
     {next && (
-      <S.RecommendedLink to={next.fields.slug} cover direction="right" bg="#16202c" className="next" title={next.frontmatter.title}>
+      <S.RecommendedLink to={next.fields.slug} cover direction="right" bg="var(--background)" className="next" title={next.frontmatter.title}>
         {next.frontmatter.title}
       </S.RecommendedLink>
     )}

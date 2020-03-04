@@ -14,7 +14,7 @@ const MenuLinks = () => (
                 //Eslilo do "<li>" e passou o indice 
                 <S.MenuLinksItem key={i}>
                     {/* Estilo do link "a href", quando ativo vai chamar a classe .active */}
-                    <S.MenuLinksLink cover direction="left" bg="#16202c" duration={0.6} to={link.url} title={link.label} activeClassName="active">
+                    <S.MenuLinksLink cover direction="left" bg="var(--background)" duration={0.6} to={link.url} title={link.label} activeClassName="active">
                         {link.label}
                     </S.MenuLinksLink>
                 </S.MenuLinksItem>
