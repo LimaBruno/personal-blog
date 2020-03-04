@@ -18,7 +18,14 @@ const BlogPost = ({ data, pageContext }) => {
     //Renderizando o post
     return (
         <Layout>
-            <SEO title={post.frontmatter.title} />
+            {/* 
+                description={post.frontmatter.description} e image={post.frontmatter.image}
+                estão definidas na query abaixo (manualmente, pois antes não tinha o "image").
+           */}
+            <SEO title={post.frontmatter.title} 
+                description={post.frontmatter.description}
+                image={post.frontmatter.image}
+            />
             <S.PostHeader>
                 <S.PostDate>
                     {post.frontmatter.date} • {post.timeToRead} min de leitura
@@ -43,6 +50,7 @@ const BlogPost = ({ data, pageContext }) => {
     )
 }
 //1º - Executando a query e exportando 
+// image deverá ter na query do arquivo "gatsby-node.js"
 export const query = graphql`
     query Post($slug: String!) {
         markdownRemark(fields: {slug: {eq: $slug}}) {
@@ -52,7 +60,8 @@ export const query = graphql`
         frontmatter {
             title
             description
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")        
+            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+            image       
         }
         html
         timeToRead

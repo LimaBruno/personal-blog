@@ -9,6 +9,7 @@ module.exports = {
     position: `Tecnologia da Informação`,//criado a variavel position e seu valor em crase
     description: `Especialista em Tecnologia da Informação`,
     author: `@brunolima`,
+    siteUrl: `https://brunolima.com`, //siteUrl criado manualmente e configurado no componente de SEO.js (configuração de SEO de "image")
   },
   plugins: [
     `gatsby-plugin-transition-link`, //configurando manualmente - https://transitionlink.tylerbarnes.ca/docs/transitionlink/
