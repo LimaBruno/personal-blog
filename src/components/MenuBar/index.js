@@ -9,6 +9,7 @@ import { ThList as List } from "styled-icons/typicons/ThList"
 
 import * as S from "./styled"
 
+
 //antes estava com parentes, e adiciando o return
 const MenuBar = () => {
 
@@ -72,7 +73,12 @@ const MenuBar = () => {
           >
             { isListMode ? <Grid /> : <List /> }
           </S.MenuBarItem>
-          <S.MenuBarItem title="Ir para o Topo">
+          <S.MenuBarItem
+            title="Ir para o Topo"
+            onClick={() => {
+              window.scroll({ top: 0, behavior: 'smooth' })
+            }}
+          >
             <Arrow />
           </S.MenuBarItem>
         </S.MenuBarGroup>
