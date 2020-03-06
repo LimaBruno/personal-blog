@@ -76,7 +76,7 @@ const MenuBar = () => {
           <S.MenuBarItem
             title="Ir para o Topo"
             onClick={() => {
-              window.scroll({ top: 0, behavior: 'smooth' })
+              window.scroll({ top: 0, behavior: 'smooth' }) //efeito
             }}
           >
             <Arrow />

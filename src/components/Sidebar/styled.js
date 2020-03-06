@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
+import transitions from '../../styles/transitions'
+
 export const SidebarWrapper = styled.aside`
   align-items: center;
   border-right: 1px solid var(--borders);
@@ -12,6 +14,7 @@ export const SidebarWrapper = styled.aside`
   padding: 2rem;
   text-align: center;
   width: 20rem;
+  transition: ${transitions.ALL};
 
   ${media.lessThan("large")`
     align-items: flex-start;
