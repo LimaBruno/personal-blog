@@ -7,11 +7,11 @@ import * as S from "./styled"
 
 const Pagination = ({ isFirst, isLast, currentPage, numPages, prevPage, nextPage}) => (
     <S.PaginationWrapper>
-        { !isFirst && <AniLink to={ prevPage } cover direction="left" bg="#16202c" duration={0.6} title="Página anterior">← Página anterior</AniLink> }
+        { !isFirst && <AniLink to={ prevPage } cover direction="left" bg="var(--background)" duration={0.6} title="Página anterior">← Página anterior</AniLink> }
 
         <p>{ currentPage } de { numPages }</p>
 
-        { !isLast && <AniLink to={ nextPage } cover direction="right" bg="#16202c" duration={0.6} title="Próxima página">Próxima página →</AniLink> }
+        { !isLast && <AniLink to={ nextPage } cover direction="right" bg="var(--background)" duration={0.6} title="Próxima página">Próxima página →</AniLink> }
     </S.PaginationWrapper>
 )
 //validando que tipo é a variavel
