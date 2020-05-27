@@ -1,8 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 
-/*Quando declarar css variables, deve ser dentro de um escopo mais alto, para outros
-componentes conseguir localizar */
-
 const GlobalStyle = createGlobalStyle`
     /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126

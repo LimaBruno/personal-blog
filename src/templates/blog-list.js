@@ -1,18 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout" //depois que mudou a pasta alterar para "Layout - 'L' maisucluo DE TODOS"
+import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
 import * as S from "../components/ListWrapper/styled" //componentente de estilos do grid
 
-/*2º - metodo BlogPost recebendo o valor */
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
-    /* currentPage e numPages esta vindo dentro do metodo createPages (gatsby-node.js),
-    acessando atraves deste metodo page.Context  */
     const { currentPage, numPages} = props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
@@ -20,12 +17,10 @@ const BlogList = props => {
     const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`
     const nextPage = `/page/${currentPage + 1}`
 
-    //Renderizando o post
     return (
         <Layout>
         <SEO title="Home" />
           <S.ListWrapper>
-            {/* 3º - Exporta a excução em um array, informando quais os dados que ira ser utilizado (node signfica nó, entao cada post é um nó*/}
             {postList.map(({
               node:{
                 frontmatter:{ background, category, date, description, title },
@@ -33,9 +28,7 @@ const BlogList = props => {
                 fields:{ slug, },
               }
             }) =>(
-              //Reinderizando o valor nas variaveis
               <PostItem 
-                //O link slug é criado via api, usando o "gatsby-node.js"
                 slug= {slug}
                 background = {background}
                 category= {category}
@@ -57,7 +50,7 @@ const BlogList = props => {
       </Layout>
     )
 }
-//1º - Executando a query e exportando 
+
 export const query = graphql`
     query PostItem ($skip: Int!, $limit: Int!){
         allMarkdownRemark (
@@ -83,5 +76,4 @@ export const query = graphql`
         }
     }
 `
-
 export default BlogList

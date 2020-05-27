@@ -17,7 +17,7 @@ export const PostItemLink = styled(AniLink)`
 `
 export const PostItemWrapper = styled.section`
   align-items: center;
-  border-bottom: 1px solid var(--borders);
+  border-bottom: 2px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
@@ -39,14 +39,15 @@ export const PostItemWrapper = styled.section`
 export const PostItemTag = styled.div`
   align-items: center;
   background: ${props => props.background ? props.background : 'var(--highlight)' };
-  border-radius: 50%;
+  border-radius: 10%;
+  border: 2px solid #1fa1f2;
   color: var(--postColor);
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;
   justify-content: center;
-  min-height: 90px;
-  min-width: 90px;
+  min-height: 60px;
+  min-width: 70px;
   text-transform: uppercase;
 
   ${media.lessThan("large")`

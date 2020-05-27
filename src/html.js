@@ -1,33 +1,3 @@
-/**
-O arquvio "html.js" é o arquivo "pai" que inicia todo os componentes do gatbsy
-e também customizar. Para criar o arquivo executar o comando:
-
-
-cp .cache/default-html.js src/html.js
-
-https://www.gatsbyjs.org/docs/custom-html/
-
-
-=========Efeito Dark===========
-
-Utilizar o script do "Dan Abramov’s"
-
-Site: https://markoskon.com/dark-mode-in-react/
-
-
-O CODIGO TEM NO SITE
-ATENÇÃO O CODIGO "darkQuery" FUNCIONA APENAS NO MAC OS (NAO COLOCAR!)
-
- var darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                darkQuery.addListener(function(e) {
-                  window.__setPreferredTheme(e.matches ? 'dark' : 'light')
-                });
-                setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'));
-              })();
-
-Alterando as informações devera compilar novamente
-*/
-
 import React from "react"
 import PropTypes from "prop-types"
 
@@ -44,12 +14,6 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="dark">
-      {/* _onThemeChange = Alteração de Tema, __onDisplayChange = Alteração do grid de post
-       document.body.className = newTheme;
-       document.body.id = newDisplay;
-
-       Não utilizar mais de um className, pode dar problemas.
-      */}
       <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -73,8 +37,6 @@ export default function HTML(props) {
                 } catch (err) {}
               }
               setTheme(preferredTheme || 'dark');
-
-
               
               window.__onDisplayChange = function() {};
               
@@ -99,9 +61,7 @@ export default function HTML(props) {
           `,
           }}
         />
-        {/* Depois configurar onde vai receber o efeito, no caso em "MenuBar" */}
         {props.preBodyComponents}
-        {/* Adicionando MANUALMENTE <NOSCRIPT> */}
         <noscript key="noscript" id="gatsby-noscript">
           This app works best with JavaScript enabled =)
         </noscript>
