@@ -3,8 +3,8 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const RecommendedWrapper = styled.section`
-  border-bottom: 1px solid var(--borders);
-  border-top: 1px solid var(--borders);
+  border-bottom: 2px solid var(--borders);
+  border-top: 2px solid var(--borders);
   background: var(--mediumBackground);
   display: flex;
 `
@@ -29,7 +29,7 @@ export const RecommendedLink = styled(AniLink)`
     background: var(--borders);
   }
   &.previous {
-    border-right: 1px solid var(--borders);
+    border-right: 2px solid var(--borders);
   }
   &.next {
     justify-content: flex-end;

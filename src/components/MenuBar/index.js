@@ -40,8 +40,7 @@ const MenuBar = () => {
               <Search />
             </S.MenuBarItem>
           </S.MenuBarLink>
-        </S.MenuBarGroup>
-        <S.MenuBarGroup>
+        
           <S.MenuBarItem
             title="Mudar o tema"
             onClick={() => {

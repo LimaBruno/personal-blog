@@ -5,25 +5,26 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 import transitions from '../../styles/transitions'
 
 export const MenuBarWrapper = styled.aside`
-  align-items: center;
-  background: var(--mediumBackground);
-  border-left: 2px solid var(--borders);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-  padding: 0.8rem 0;
-  position: fixed;
-  right: 0;
-  width: 3.75rem;
+align-items: center;
+background: var(--mediumBackground);
+border-top: 2px solid var(--borders);
+display: flex;
+flex-direction: row;
+width: 100vw;
+justify-content: space-between;
+padding: 0 1.6rem;
+position: fixed;
+left: 20rem;
+bottom: 0;
   transition: ${transitions.ALL};
 
   ${media.lessThan("large")`
     border-top: 1px solid var(--borders);
     bottom: 0;
+    left:0;
     flex-direction: row;
     height: auto;
-    padding: 0;
+    padding: 0.1rem 1.4rem;
     position: fixed;
     width: 100%;
   `}
@@ -31,7 +32,7 @@ export const MenuBarWrapper = styled.aside`
 
 export const MenuBarGroup = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 
   ${media.lessThan("large")`
     flex-direction: row;
