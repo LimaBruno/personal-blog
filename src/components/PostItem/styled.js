@@ -44,7 +44,7 @@ export const PostItemTag = styled.div`
   text-transform: uppercase;
 
   ${media.lessThan("large")`
-    border-radius: 0;
+    border-radius: 12%;
     font-size: 1rem;
     min-height: auto;
     min-width: auto;
