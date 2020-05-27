@@ -22,13 +22,6 @@ export const PostItemWrapper = styled.section`
   padding: 2rem 3rem;
   width: 100%;
 
-  body#grid & {
-    border: none;
-    padding: 2rem 1rem;
-    flex-direction: column;
-    justify-content: center;
-  }
-
   ${media.lessThan("large")`
     align-items: flex-start;
     flex-direction: column;
@@ -59,9 +52,6 @@ export const PostItemTag = styled.div`
     margin-bottom: .7rem;
   `}
 
-  body#grid & {
-    margin-bottom: 1.5rem;
-  }
 `
 
 export const PostItemInfo = styled.div`
@@ -83,10 +73,6 @@ export const PostItemTitle = styled.h1`
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
 
-  body#grid & {
-    line-height: 1.1;
-    margin: 0.8rem 0;
-  }
 `
 
 export const PostItemDescription = styled.p`

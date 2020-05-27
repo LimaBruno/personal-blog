@@ -6,7 +6,11 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
-import * as S from "../components/ListWrapper/styled" //componentente de estilos do grid
+import styled from "styled-components"
+
+export const MarginDiv = styled.div`
+  margin-bottom: 3.4rem;
+`
 
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
@@ -20,7 +24,6 @@ const BlogList = props => {
     return (
         <Layout>
         <SEO title="Home" />
-          <S.ListWrapper>
             {postList.map(({
               node:{
                 frontmatter:{ background, category, date, description, title },
@@ -38,7 +41,6 @@ const BlogList = props => {
                 description= {description}
               />     
             ))}
-          </S.ListWrapper>
           <Pagination
             isFirst={isFirst}
             isLast={isLast}
@@ -46,7 +48,8 @@ const BlogList = props => {
             numPages={numPages}
             prevPage={prevPage}
             nextPage={nextPage}
-          />          
+          />
+          <MarginDiv/>          
       </Layout>
     )
 }

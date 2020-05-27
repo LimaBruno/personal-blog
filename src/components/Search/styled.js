@@ -31,17 +31,6 @@ export const SearchWrapper = styled.section`
   .ais-Stats {
     color: var(--texts);
   }
-  body#grid & {
-    .ais-Hits-list {
-      background-color: var(--borders);
-      border-bottom: 1px solid var(--borders);
-      border-top: 1px solid var(--borders);
-      display: grid;
-      grid-area: card;
-      grid-gap: 1px;
-      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-      margin-top: 2rem;
-    }
     .ais-Hits-item {
       background-color: var(--background);
     }
@@ -49,7 +38,7 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox-input {
     background: none;
     border: none;
-    border-bottom: 1px solid var(--borders);
+    border: 2px solid var(--borders);
     color: var(--texts);
     display: flex;
     font-size: 1.6rem;
@@ -63,4 +52,7 @@ export const SearchWrapper = styled.section`
   .ais-SearchBox-reset {
     display: none;
   }
+`
+export const MarginDiv = styled.div`
+    margin-bottom: 2rem;
 `

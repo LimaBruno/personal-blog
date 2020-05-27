@@ -35,7 +35,7 @@ const BlogPost = ({ data, pageContext }) => {
             </S.MainContent>
             <RecommendedPosts next={next} previous={previous} />
             <Comments url={post.fields.slug} title={post.frontmatter.title} />
-            
+            <S.MarginDiv/>
         </Layout>
     )
 }

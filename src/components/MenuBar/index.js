@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react"
 
 import { Home } from "styled-icons/boxicons-solid/Home"
-import { SearchAlt2 as Search } from "styled-icons/boxicons-regular/SearchAlt2"
+import { SearchAlt as Search } from "@styled-icons/boxicons-regular/SearchAlt"
 import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular/UpArrowAlt"
-import { Bulb as Light } from "styled-icons/boxicons-regular/Bulb"
-import { Grid } from "styled-icons/boxicons-solid/Grid"
-import { ThList as List } from "styled-icons/typicons/ThList"
+import { Sun as Light } from "@styled-icons/fa-solid/Sun"
+import { Moon } from "@styled-icons/boxicons-solid/Moon"
+
 
 import * as S from "./styled"
 
@@ -17,8 +17,7 @@ const MenuBar = () => {
 
   
   const isDarkMode = theme === 'dark'
-  const isListMode = display === 'list'
-  
+    
   useEffect(() => {    
     setTheme(window.__theme)
     setDisplay(window.__display)
@@ -48,16 +47,7 @@ const MenuBar = () => {
             }}
             className={theme}        
           >
-            <Light />
-          </S.MenuBarItem>
-          <S.MenuBarItem 
-            title="Mudar visualização"
-            onClick={() => {
-              window.__setPreferredDisplay(isListMode ? "grid" : "list")
-            }}
-            className="display"              
-          >
-            { isListMode ? <Grid /> : <List /> }
+            {isDarkMode ? <Light/> : <Moon/> }
           </S.MenuBarItem>
           <S.MenuBarItem
             title="Ir para o Topo"

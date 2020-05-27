@@ -23,6 +23,7 @@ const Search = () => (
             }}}/> 
             <Hits hitComponent={Hit}/>      
         </InstantSearch>
+        <S.MarginDiv/>
     </S.SearchWrapper>
 )
 

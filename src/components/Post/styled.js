@@ -213,3 +213,6 @@ export const MainContent = styled.section`
     }
   }
 `
+export const MarginDiv = styled.div`
+    margin-bottom: 2rem;
+`
