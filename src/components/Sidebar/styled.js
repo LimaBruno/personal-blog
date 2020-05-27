@@ -5,7 +5,7 @@ import transitions from '../../styles/transitions'
 
 export const SidebarWrapper = styled.aside`
   align-items: center;
-  border-right: 1px solid var(--borders);
+  border-right: 2px solid var(--borders);
   background: var(--mediumBackground);
   display: flex;
   flex-direction: column;

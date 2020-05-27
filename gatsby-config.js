@@ -5,7 +5,7 @@ const queries = require("./src/utils/algolia_queries")
 module.exports = {
   siteMetadata: {
     title: `Bruno Lima`,
-    position: `Tecnologia da Informação`,//criado a variavel position e seu valor em crase
+    position: `Tecnologia da Informação`,
     description: `Especialista em Tecnologia da Informação`,
     author: `@brunolima`,
     siteUrl: `https://brunolima.com`,
@@ -29,14 +29,14 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`, //apontamento da pasta de posts
+      resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
         path: `${__dirname}/posts`,
       },
     },
     {
-      resolve: `gatsby-transformer-remark`, //componente do transformer-remark (instalado)
+      resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
@@ -75,12 +75,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Bruno Lima`,//Vai aparece no browser
-        short_name: `Bruno Lima`,//Vai aparece no browser
-        start_url: `/`, //URL que vai inicar o PWA
-        background_color: `#16202c`, //Backgrond mobile
-        theme_color: `#16202c`, // Definition color browser mobile
-        display: `minimal-ui`, //Iniciando com a barra 
+        name: `Bruno Lima`,//View name in the browser
+        short_name: `Bruno Lima`,
+        start_url: `/`, //Definition start URL
+        background_color: `#16202c`, //Backgrond in the mobile
+        theme_color: `#16202c`, // Color browser mobile
+        display: `minimal-ui`, //Style display
         icon: `src/images/bruno_fav.png`, // This path is relative to the root of the site.
       },
     },
