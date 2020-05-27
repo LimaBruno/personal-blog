@@ -10,11 +10,8 @@ const Sidebar = () => (
     <S.SidebarWrapper>
         <Profile />
         <SocialLinks />
-        <MenuLinks />
-     
-    </S.SidebarWrapper>
-    
-
+        <MenuLinks />     
+    </S.SidebarWrapper>   
 )
 
 export default Sidebar

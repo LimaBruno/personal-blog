@@ -1,8 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-//.ais são classes do "algolia" recomenda utilizar
-//4º - Efeito grid
 export const SearchWrapper = styled.section`
   background: var(--background)
   display: flex;

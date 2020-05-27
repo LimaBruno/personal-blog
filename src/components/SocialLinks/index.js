@@ -1,15 +1,12 @@
 import React from "react"
 
-import Icons from "./icons" //Componente de icones
-import links from "./content" // Componente de links
+import Icons from "./icons"
+import links from "./content"
 
-import * as S from "./styled" // Importando todos os estilos definidos
-//SocialLinks esta sendo importada para o sidebar
+import * as S from "./styled"
 const SocialLinks = () => (
   <S.SocialLinksWrapper>
     <S.SocialLinksList>
-      {/* Percorrendo o array definido no content "links" com a função map
-       e jogando os valores na variavel "link". A função "map" ela retorna*/}
       {
         links.map((link, i) => {
         const Icon = Icons[link.label]

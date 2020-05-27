@@ -10,10 +10,6 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-/*
-siteUrl, configuração do "gatsby-config.js"
-dentro da função SEO foi adicionada a variavel "image"
-*/
 function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
@@ -31,38 +27,9 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  //pegando o valor definido no "siteUrl" do arquivo "gatsby-config.js"
   const url = site.siteMetadata.siteUrl
-  //concatenando o siteUrl do siteMetadata e a imagem (caso tenha imagem vai pegar o nome da imagem se não vai pegar o padrão ""/assets/img/cover.jpg"")
   const ogImage = `${url}${image || "/assets/img/cover.jpg"}`
 
-  /*
-  Depois da configuração abaixo deverá acresentar o SEO do aruivo de posts "blog-post.js"
-  1º
-  <SEO title={post.frontmatter.title} 
-                description={post.frontmatter.description}
-                image={post.frontmatter.image} \>
-  
-  E acresentar na query abaixo do posts o item "image"
-  frontmatter {
-            title
-            description
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-            image       
-  }
-  2º
-  Informar também na query do arquivo "gatsby-node.js" o "image"
-  frontmatter {
-            background
-            category
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-            description
-            title
-            image
-          }
-  3º
-  Passar a tag "image" dentro de cada pots criado markdown
-  */
   return (
     <Helmet
       htmlAttributes={{
@@ -83,7 +50,6 @@ function SEO({ description, lang, meta, title, image }) {
           property: `og:description`,
           content: metaDescription,
         },
-        //Chamando a const ogImage (seo de imagem do facebook)
         {
           property: `og:image`,
           content: ogImage,
@@ -93,12 +59,10 @@ function SEO({ description, lang, meta, title, image }) {
           property: `og:type`,
           content: `website`,
         },
-        //valor padrão: content: `summary`,
         {
           name: `twitter:card`,
           content: `summary_large_image`,
         },
-        //com esta propriedade vai ter a imagem no card do twitter.
         {
           property: `twitter:image:src`,
           content: ogImage,

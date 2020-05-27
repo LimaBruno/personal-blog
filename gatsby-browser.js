@@ -6,5 +6,8 @@
 
 // You can delete this file if you're not using it
 
+//Import Plugin Lazysizes
 import "lazysizes"
-require("prismjs/themes/prism-tomorrow.css") //importando o pluguin prismjs
+
+//Import Plugin PrimsJs
+require("prismjs/themes/prism-tomorrow.css")

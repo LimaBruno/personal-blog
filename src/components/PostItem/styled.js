@@ -2,9 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-//import { Link } from "gatsby"
-
-//definido o background de cada post
 export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
@@ -18,10 +15,6 @@ export const PostItemLink = styled(AniLink)`
     color: var(--highlight);
   }
 `
-/*
-3 - Efeito Grid
-flex-direction: column; = Vai ficar em coluna e não lado a lado.
-*/
 export const PostItemWrapper = styled.section`
   align-items: center;
   border-bottom: 1px solid var(--borders);
@@ -42,14 +35,6 @@ export const PostItemWrapper = styled.section`
     padding: 2rem 1rem;
   `}
 `
-/*Background vai receber na variavel "props" a propriedade definida chamada "background" 
-da variavel de estilo "PostItemTag", ou seja dentro da tag <PostItem background="">. Essa tecnica chama "adereço - props"
-(Passando propriedades) - Documentação - https://styled-components.com/docs/basics#adapting-based-on-props
-
-No componetente PostItem, é usado a biblioteca "PropTypes" para validar o tipo de dado (int, bool....)
-a variavel background "não é obritário" informar. Então a variavel background de estilo é tratada ou seja
-se informar o background "coloca a cor informada" se não será a cor definida "var(--highlight)"
-*/
 
 export const PostItemTag = styled.div`
   align-items: center;
@@ -91,7 +76,7 @@ export const PostItemInfo = styled.div`
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
 `
-//Removendo os espaços do titulo da grid
+
 export const PostItemTitle = styled.h1`
   font-size: 1.6rem;
   font-weight: 700;

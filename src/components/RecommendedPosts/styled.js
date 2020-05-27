@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-//import { Link } from "gatsby"
 
 export const RecommendedWrapper = styled.section`
   border-bottom: 1px solid var(--borders);

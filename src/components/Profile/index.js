@@ -2,7 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 
-import Avatar from "../Avatar" //Importando o componente da pasta avatar
+import Avatar from "../Avatar"
 import * as S from "./styled"
 
 const Profile = () => {
@@ -23,7 +23,7 @@ const Profile = () => {
     
         `)
     return(
-        <S.ProfileWrapper> {/* Dentro styled foi definido o "styled.section" que equivale ao "<div>"  */}
+        <S.ProfileWrapper>
             <S.ProfileLink to="/" cover direction="left" bg="var(--background)" duration={0.6}>
                 <Avatar />
                 <S.ProfileAuthor>
@@ -37,42 +37,3 @@ const Profile = () => {
 }
 
 export default Profile
-
-
-
-
-
-
-
-/* USANDO StaticQuery
-
-import { StaticQuery, graphql } from "gatsby" 
-
-const Profile = () => (
-    <StaticQuery 
-        query={graphql`
-            query MyQuery {
-                site {
-                siteMetadata {
-                    title
-                    position
-                    description      
-                }
-                }
-            }       
-        
-        `}
-    render={({site: {siteMetadata: {title, position, description}} }) => (
-        <div className="Profile-wrapper">
-            <h1>{title}</h1>
-            <h2>{position}</h2>
-            <p>{description}</p>
-        </div>
-    )}
-    />    
-   
-)
-
-export default Profile
-
-*/

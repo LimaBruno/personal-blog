@@ -6,55 +6,36 @@
 
 // You can delete this file if you're not using it
 
-/*Definindo o link slug de cada nó "node" de cada post (markdown), ou seja tem que criar um novo campo (com o nome do slug)
-e depois informar na query. Para isso precisa do codigo "createFilepath" componente do (gatbsy-source-filesystem) 
-e o metodo "createNodeField" esse metodo vai criar um campo dentro do node.
-
-Link com slug tem que ser tratado via api.
-
-createFilePath = https://www.gatsbyjs.org/packages/gatsby-source-filesystem/
-*/
-//Forçando o caminho da pasta do template.
 const path = require(`path`)
 
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
-//Metodo é para adicionar um "slug" para cada post.
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
-  // Ensures we are processing only markdown files - SE O ARQUIVO FOR MARKDOWNREMARK ele vai executar
+  
   if (node.internal.type === "MarkdownRemark") {
     // Use `createFilePath` to turn markdown files in our `data/faqs` directory into `/faqs/slug`
     const slug = createFilePath({
       node,
       getNode,
-      basePath: "pages", //mudou para pages
+      basePath: "pages",
     })
 
     // Creates new query'able field with name of 'slug' (slug = nome do arquivo)
     createNodeField({
       node,
-      name: "slug", //nome do campo que será criado
-      value: `/${slug.slice(12)}`,//nome da const "slug" e definido o nome do slug
-
-      /*
-      a função slice vai começar a partir do 12º caractere
-      Exmplo: "2015-01-03-two-things-are-infinite" vai ficar a partir do 12 "two-things-are-infinite"
-      */
+      name: "slug",
+      value: `/${slug.slice(12)}`,
+     
     })
   }
 }
 
-/* Depois que criou os links do MarkDownRemak (posts), agora tem que criar as páginas do post
-com o metodo createPages
-
-createPage = https://www.gatsbyjs.org/docs/node-apis/#createPages
-*/
+//createPage = https://www.gatsbyjs.org/docs/node-apis/#createPages
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  //conforme a documentação para criar paginas precisa apenas do campo "slug"
   return graphql(`
   query PostItem {
     allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
@@ -91,16 +72,16 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
     }
-  }`).then(result => {  //o "then" é para quando terminar de executar a query "vai chamar o metodo createPage"
+  }`).then(result => {
     const posts = result.data.allMarkdownRemark.edges
     posts.forEach(({ node, next, previous }) => {
       createPage({
-        path: node.fields.slug, //caminho do slug na query
-        component: path.resolve("./src/templates/blog-post.js"), // caminho do templates do blog
+        path: node.fields.slug,
+        component: path.resolve("./src/templates/blog-post.js"),
         context: {
           slug: node.fields.slug,
-          previousPost: next, //next = recebendo todos os campos (frontmatter, fields)
-          nextPost: previous, //previous = recebendo todos os campos (frontmatter, fields)
+          previousPost: next,
+          nextPost: previous,
 
         }
       
@@ -108,20 +89,19 @@ exports.createPages = ({ graphql, actions }) => {
     })
     
     
-    const postsPerPage = 6 //definindo a quantidade de post por pagina
-    const numPages = Math.ceil(posts.length / postsPerPage) //funão Math.ceil arredonda pra cima ex 10 /6 = 1.... arredondando "2".
+    const postsPerPage = 6
+    const numPages = Math.ceil(posts.length / postsPerPage)
     
-    //Criando um array com o numero de paginas e pegando o index de cada pagina
     Array.from({ length: numPages }).forEach((_, index) => {
-      //chamando o metodo cratePage e os 3 parametros
+      
       createPage({
         path: index === 0 ? `/` : `/page/${index + 1}`,
         component: path.resolve(`./src/templates/blog-list.js`),
-        context: { //Passando os dados que vai estar disponivel no graphql
-          limit: postsPerPage, //o limite por pagina (variavel limit é palavra resevado do graphql)
-          skip: index * postsPerPage, //definindo o pulo pra proxima pagina (variavel limit é palavra resevado do graphql)
-          numPages, //passando a variavel numPages
-          currentPage: index + 1, //variavel para indicar qual pagina que ele está
+        context: {
+          limit: postsPerPage,
+          skip: index * postsPerPage,
+          numPages,
+          currentPage: index + 1,
         },
       })
     })

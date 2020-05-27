@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-//import { Link } from "gatsby"
+
 import transitions from '../../styles/transitions'
 
 export const MenuBarWrapper = styled.aside`
@@ -47,8 +47,7 @@ export const MenuBarLink = styled(AniLink)`
     }
   }
 `
-// no MenuBarItem se for "light" vai acionar a alateração de cor
-//&.display ocultando o icone para celulares e smarthphone
+
 export const MenuBarItem = styled.span`
   color: var(--texts);
   cursor: pointer;

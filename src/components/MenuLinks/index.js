@@ -1,19 +1,14 @@
-import React from "react"   //1º - Parent
+import React from "react"
 
-import links from "./content" // 2º - Componente
+import links from "./content"
 
-import * as S from "./styled" //3º - Estilo
+import * as S from "./styled"
 
 const MenuLinks = () => (
     <S.MenuLinksWrapper> 
         <S.MenuLinksList>
-            {/* Percorrendo dentro do array "links, em content" com a função Map
-            e jogando os dados na variavel "link" e o indicie "i", nesse caso não vai
-            retornar outros dados os icones do sociailinks */}
             {links.map((link, i) => (
-                //Eslilo do "<li>" e passou o indice 
                 <S.MenuLinksItem key={i}>
-                    {/* Estilo do link "a href", quando ativo vai chamar a classe .active */}
                     <S.MenuLinksLink cover direction="left" bg="var(--background)" duration={0.6} to={link.url} title={link.label} activeClassName="active">
                         {link.label}
                     </S.MenuLinksLink>

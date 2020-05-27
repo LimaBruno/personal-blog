@@ -1,7 +1,6 @@
 import React from "react"
 import PostItem from "../PostItem"
 
-//hit = está recebendo os pots da query
 const Hit = ({ hit }) => (
     <PostItem 
         slug={hit.fields.slug}

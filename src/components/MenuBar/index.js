@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react" //importandos os Hooks do react
+import React, { useState, useEffect } from "react"
 
 import { Home } from "styled-icons/boxicons-solid/Home"
 import { SearchAlt2 as Search } from "styled-icons/boxicons-regular/SearchAlt2"
@@ -10,29 +10,16 @@ import { ThList as List } from "styled-icons/typicons/ThList"
 import * as S from "./styled"
 
 
-//antes estava com parentes, e adiciando o return
 const MenuBar = () => {
-
-  //Depois que configurou o arquivo html.js configurar a variavel do array
 
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
 
-  //fazendo testes logico se o theme é identico a 'dark' joga na variavel isDarkMode
+  
   const isDarkMode = theme === 'dark'
-
-   //fazendo testes logico se o theme é identico a 'dark' joga na variavel isDarkMode
-   const isListMode = display === 'list'
+  const isListMode = display === 'list'
   
-  /* ============= EFEITOS PARA MUDANÇA DE TEMPLATE =============
-
-  // window.__setPreferredTheme,  window.__onThemeChange,  setTheme(window.__theme), setTheme(window.__theme) = Vem do html.js
-  // window.__setPreferredDisplay,  window.__onDisplayChange,  setDisplay(window.__display), setDisplay(window.__display) = Vem do html.js
-  //Quando carregar o modulo vai executar userEffect()
-  
-  */
-  useEffect(() => {
-    
+  useEffect(() => {    
     setTheme(window.__theme)
     setDisplay(window.__display)
     
@@ -58,7 +45,7 @@ const MenuBar = () => {
           <S.MenuBarItem
             title="Mudar o tema"
             onClick={() => {
-              window.__setPreferredTheme(isDarkMode ? "light" : "dark") //1º se o isDarkMode for verdadeiro ou seja "onClick= tema dark" mude para "light" se não muda para "dark"
+              window.__setPreferredTheme(isDarkMode ? "light" : "dark")
             }}
             className={theme}        
           >
@@ -67,7 +54,7 @@ const MenuBar = () => {
           <S.MenuBarItem 
             title="Mudar visualização"
             onClick={() => {
-              window.__setPreferredDisplay(isListMode ? "grid" : "list") //1º se o isDarkMode for verdadeiro ou seja "onClick= tema dark" mude para "light" se não muda para "dark"
+              window.__setPreferredDisplay(isListMode ? "grid" : "list")
             }}
             className="display"              
           >

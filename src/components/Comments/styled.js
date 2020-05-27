@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-//iframe escondendo as propagandas do disqus, #disqus_thread (configuração da cor da fonte).
+
 export const CommentsWrapper = styled.section`
   margin: auto;
   max-width: 70rem;

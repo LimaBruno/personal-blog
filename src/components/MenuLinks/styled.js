@@ -2,8 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
-//import { Link } from "gatsby" - O AniLink vai substituir o Link, para ter os efeitos "transition"
-
 export const MenuLinksWrapper = styled.nav`
     ${media.lessThan("large")`
         display: none;
@@ -22,7 +20,7 @@ export const MenuLinksItem = styled.li`
         color: var(--highlight);
     }
 `
-// Antes(styled(Link) = Por causa do import "Link" do gatsby)
+
 export const MenuLinksLink = styled(AniLink)`
     color: var(--texts);
     text-decoration: none;
