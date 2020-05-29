@@ -17,6 +17,7 @@ export const SidebarWrapper = styled.aside`
   transition: ${transitions.ALL};
 
   ${media.lessThan("large")`
+    border: none;
     align-items: flex-start;
     height: auto;
     padding: 1rem 1rem;
