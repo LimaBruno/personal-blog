@@ -7,9 +7,15 @@ import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const MarginDiv = styled.div`
   margin-bottom: 3.4rem;
+  
+  ${media.lessThan("large")`
+    margin-bottom: 0;
+  `}
+  
 `
 
 const BlogList = props => {

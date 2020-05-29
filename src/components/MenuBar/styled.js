@@ -19,7 +19,8 @@ bottom: 0;
   transition: ${transitions.ALL};
 
   ${media.lessThan("large")`
-    border-top: 1px solid var(--borders);
+    justify-content: center;
+    border-top: 2px solid var(--borders);
     bottom: 0;
     left:0;
     flex-direction: row;
