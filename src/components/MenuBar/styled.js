@@ -20,14 +20,14 @@ bottom: 0;
 
   ${media.lessThan("large")`
     justify-content: center;
+    align-items:center;
     border-top: 2px solid var(--borders);
     bottom: 0;
     left:0;
     flex-direction: row;
-    height: auto;
-    padding: 0.1rem 1.4rem;
+    height: auto;    
     position: fixed;
-    width: 100%;
+    width: 100vw;
   `}
 `
 
