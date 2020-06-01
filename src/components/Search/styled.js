@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
-import { Algolia } from '@styled-icons/fa-brands/Algolia'
+import { Algolia } from "@styled-icons/fa-brands/Algolia"
 
 export const SearchWrapper = styled.section`
   background: var(--background)
