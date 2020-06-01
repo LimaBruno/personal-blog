@@ -19,10 +19,16 @@ const Search = () => (
         <InstantSearch searchClient={searchClient} indexName={algolia.indexName}>
             <SearchBox autoFocus translations={{ placeholder: 'Pesquisar...'}}/>
             <Stats translations={{stats(nbHits, timeSpentMS){
-                return `${nbHits} resultados encontrados em ${timeSpentMS}ms`
+                return nbHits === 1
+                ? `${nbHits} resultado encontrado em ${timeSpentMS}ms`
+                : `${nbHits} resultados encontrados em ${timeSpentMS}ms`
             }}}/> 
             <Hits hitComponent={Hit}/>      
         </InstantSearch>
+        <S.SearchTitle>
+            Powered by Algolia
+            <S.AlgoliaIcon />
+        </S.SearchTitle>
         <S.MarginDiv/>
     </S.SearchWrapper>
 )
