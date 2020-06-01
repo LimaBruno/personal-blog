@@ -53,7 +53,8 @@ const MenuBar = () => {
                 }, 300)
               }
             }}
-            className={theme}        
+            className={theme}
+            isDarkMode={isDarkMode}       
           >
             {isDarkMode ? <Light/> : <Moon/> }
           </S.MenuBarItem>
