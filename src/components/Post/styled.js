@@ -1,6 +1,9 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
+import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
+import { Time } from "@styled-icons/boxicons-regular/Time"
+
 export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
@@ -215,4 +218,16 @@ export const MainContent = styled.section`
 `
 export const MarginDiv = styled.div`
     margin-bottom: 2rem;
+`
+
+export const CalendarIcon = styled(Calendar)`
+  width: 15px;
+  margin: -5px 0 0 0;
+  color: var(--highLight);
+`
+
+export const TimeIcon = styled(Time)`
+  width: 15px;
+  margin: -5px 0 0 0;
+  color: var(--highLight);
 `
