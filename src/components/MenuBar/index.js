@@ -6,7 +6,6 @@ import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular/UpArrowAlt"
 import { Sun as Light } from "@styled-icons/boxicons-solid/Sun"
 import { Moon } from "@styled-icons/boxicons-solid/Moon"
 
-
 import * as S from "./styled"
 
 
@@ -29,12 +28,12 @@ const MenuBar = () => {
   return (
       <S.MenuBarWrapper>
         <S.MenuBarGroup>
-          <S.MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} title="Home">
+          <S.MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} title="Home" activeClassName="active">
             <S.MenuBarItem>
               <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
-          <S.MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} title="Pesquisar">
+          <S.MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} title="Pesquisar" activeClassName="active">
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>
