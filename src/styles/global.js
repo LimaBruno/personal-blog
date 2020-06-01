@@ -71,16 +71,18 @@ const GlobalStyle = createGlobalStyle`
         --background: #16202c;
         --white: #fff;
         --black: #222;
+        --progress-bar: #1fa1f2;
       }
       body.light {
         --borders: #dedede;
-        --postColor: #111;
         --texts: #555555;
+        --postColor: #111;
         --highlight: #1fa1f2;
         --mediumBackground: #f0f0f3;
         --background: #fff;
         --white: #fff;
         --black: #222;
+        --progress-bar: #111;
       }
     
 `
