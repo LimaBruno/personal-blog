@@ -57,6 +57,9 @@ export const SearchWrapper = styled.section`
 `
 export const MarginDiv = styled.div`
   margin-bottom: 2rem;
+  ${media.lessThan('large')`
+    margin-bottom: 1rem;
+  `}
 `
 
 export const SearchTitle = styled.h1`
@@ -66,7 +69,7 @@ export const SearchTitle = styled.h1`
   padding: 2.4rem 2rem;
   text-align: right;
   ${media.lessThan('large')`
-    padding: 1rem;
+    padding: 0.8rem;
     line-height: 1.1;
   `}
 `
