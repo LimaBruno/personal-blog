@@ -4,8 +4,8 @@ import links from "./content"
 
 import * as S from "./styled"
 
-const MenuLinks = () => (
-    <S.MenuLinksWrapper> 
+const MenuLinks = ({nav}) => (
+    <S.MenuLinksWrapper nav={nav}> 
         <S.MenuLinksList>
             {links.map((link, i) => (
                 <S.MenuLinksItem key={i}>
