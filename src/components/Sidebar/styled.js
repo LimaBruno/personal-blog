@@ -44,7 +44,7 @@ export const MenuIcon = styled.button`
     div {
       width: 1.5rem;
       height: 0.2rem;
-      background: black;
+      background: var(--texts);
       border-radius: 5px;
       transform-origin: 1px;
       position: relative;

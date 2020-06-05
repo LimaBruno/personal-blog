@@ -4,45 +4,31 @@ import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const MenuLinksWrapper = styled.nav`
     ${media.lessThan("large")`
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         text-align: center;
+        padding: 3.4rem;
         height: 100vh;
         width: 100%;
-        background: #d7d7d7;
+        background: var(--background);
         position: absolute;
-        top: 4.2rem;
+        top: 4.3rem;
         right: 0;
         transition: transform 300ms;
         transform: ${({nav}) => (nav ? "translateX(0)" : "translateX(100%)")};
-    
-        ul {
-        list-style-type: none;
-        }
-    
-        li {
-        margin-top: 1rem;
-        }
-    
-        a {
-        text-decoration: none;
-        color: #000;
-        font-size: 1.5rem;
-    
-        :hover {
-            color: #6ab4ff;
-            transition: color 300ms;
-        }
-        }
+        
     `}
 `
 
 export const MenuLinksList = styled.ul`
     font-size: 1.2rem;
     font-weight: 300;
+
+    ${media.lessThan("large")`
+        font-size: 1.8rem;
+        left: 0;      
+    `}
 `
 
 export const MenuLinksItem = styled.li`
@@ -52,6 +38,11 @@ export const MenuLinksItem = styled.li`
       color: var(--highlight);
       text-decoration: underline;
     }
+
+    ${media.lessThan("large")`
+        padding: 1rem 0;
+        left: 0;
+    `}
 `
 
 export const MenuLinksLink = styled(AniLink)`
