@@ -10,7 +10,9 @@ const PostItem = ({slug, background, category, date, timeToRead, title, descript
                 {category}
             </S.PostItemTag>
             <S.PostItemInfo>
-                <S.PostItemDate>{ date } - { timeToRead } mim de leitura</S.PostItemDate>
+                <S.PostItemDate>
+                    <S.CalendarIcon /> { date }{timeToRead && ` - ${timeToRead} min de leitura`}
+                </S.PostItemDate>
                 <S.PostItemTitle>{ title }</S.PostItemTitle>
                 <S.PostItemDescription>
                    { description }

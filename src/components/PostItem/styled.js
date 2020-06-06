@@ -2,6 +2,8 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
+import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
+
 export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
@@ -75,4 +77,10 @@ export const PostItemDescription = styled.p`
   font-size: 1.2rem;
   font-weight: 300;
   line-height: 1.2;
+`
+
+export const CalendarIcon = styled(Calendar)`
+  width: 15px;
+  margin: -5px 0 0 0;
+  color: var(--highLight);
 `

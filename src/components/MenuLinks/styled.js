@@ -12,8 +12,9 @@ export const MenuLinksWrapper = styled.nav`
         height: 100vh;
         width: 100%;
         background: var(--background);
+        border-top: 2px solid var(--borders);
         position: absolute;
-        top: 4.3rem;
+        top: 4.1rem;
         right: 0;
         transition: transform 300ms;
         transform: ${({nav}) => (nav ? "translateX(0)" : "translateX(100%)")};
