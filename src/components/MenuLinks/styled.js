@@ -26,22 +26,21 @@ export const MenuLinksList = styled.ul`
     font-weight: 300;
 
     ${media.lessThan("large")`
-        font-size: 1.8rem;
-        left: 0;      
+        font-size: 1.8rem;            
     `}
 `
 
 export const MenuLinksItem = styled.li`
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
   
     .active {
-      color: var(--highlight);
-      text-decoration: underline;
+      color: var(--menuLinkColor);
+      padding: 0.2rem;
+      border-bottom: 2px dashed var(--menuLinkColor);     
     }
 
     ${media.lessThan("large")`
-        padding: 1rem 0;
-        left: 0;
+        padding: 1rem 0;        
     `}
 `
 
