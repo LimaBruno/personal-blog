@@ -12,7 +12,7 @@ const Sidebar = () => {
         <S.SidebarWrapper>
             <Profile />
             <SocialLinks />
-            <S.MenuIcon nav={nav} onClick={() => showNav(!nav)} alt="Menu">
+            <S.MenuIcon nav={nav} onClick={() => showNav(!nav)} aria-label="Menu">
                 <div/>
                 <div/>
                 <div/>
