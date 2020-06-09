@@ -73,7 +73,8 @@ const GlobalStyle = createGlobalStyle`
         --black: #222;
         --progress-bar: #1fa1f2;
         --menuLinkColor: #1fa1f2;
-        --backgroundMoblie: #16202c;  
+        --backgroundMoblie: #16202c;
+        --formColor: #b2bec3;
       }
       body.light {
         --borders: #dedede;
@@ -86,7 +87,8 @@ const GlobalStyle = createGlobalStyle`
         --black: #222;
         --progress-bar: #111;
         --menuLinkColor: #1fa1f2;
-        --backgroundMoblie: #d7d7d7; 
+        --backgroundMoblie: #d7d7d7;
+        --formColor: #d7d7d7;
       }
     
 `

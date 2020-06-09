@@ -7,7 +7,7 @@ import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
 import ReadingProgress from "../components/ReadingProgress"
 
-import * as S from "../components/Post/styled"
+import * as S from "../styles/base"
 
 const BlogPost = ({ data, pageContext }) => {
     const post = data.markdownRemark
