@@ -9,7 +9,7 @@ import { CancelCircle as Cancel } from "@styled-icons/icomoon/CancelCircle"
 export const ContactWrapper = styled.section`
     align-items: center; 
     max-height: 70rem;
-    padding: 2rem 3rem;
+    padding: 0 auto;
     width: 100%;
     transition: ${transitions.ALL};
     ${media.lessThan("large")`
@@ -20,27 +20,28 @@ export const ContactWrapper = styled.section`
         margin-bottom: .7rem;
     `} 
 `
+
 export const ContactTitle = styled.h1`
     font-size: 2rem;
     font-weight: 700;
-    margin: 2rem 0;
+    margin-left: -0.8rem !important;
     color: var(--texts);
     ${media.lessThan("large")`    
-        margin-left: 0.5rem;
+        margin-left: 0.6rem;
     `}
 `
 
 export const ContactDescription = styled.p`
     font-size: 2rem;
     font-weight: 200;
-    padding: 0;
+    margin-left: -10px !important;
     color: var(--texts);
 
-${media.lessThan("large")`
-    font-size: 1.6rem;
-    line-height: 1.3;
-    padding: 0 1rem;
-`}
+    ${media.lessThan("large")`
+        font-size: 1.6rem;
+        line-height: 1.3;
+        padding: 0 1rem;
+    `}
 `
 
 export const LabelMain = styled.label`
@@ -53,18 +54,16 @@ export const LabelMain = styled.label`
 export const LabelName = styled.p`
     display: flex;
     flex-direction: column;    
-    color: var(--texts);
-    padding: 10px 0 10px 0;
+    color: var(--texts);    
     font-weight: bold;
+    margin: -5px !important;
     ${media.lessThan("large")`
-        margin-left: 0.5rem;
-        
-    `}
-          
+        margin-left: 0.5rem;        
+    `}          
 `
 
 export const ContactForm = styled.form`
-    width: 80%;
+        width: auto;
     ${media.lessThan("large")`
         width: 100%;
     `}
@@ -75,6 +74,7 @@ export const ContactInput = styled.input`
     border: 1px solid var(--texts);
     border-radius: 4px;
     border-left: 5px solid var(--progress-bar);
+    margin-left: 0.7rem;
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -90,6 +90,7 @@ export const ContactArea = styled.textarea`
     border: 1px solid var(--texts);
     border-radius: 4px;
     border-left: 5px solid var(--progress-bar);
+    margin-left: 0.7rem;
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -102,23 +103,30 @@ export const ContactArea = styled.textarea`
 
 export const ContactButtonSend = styled.button`
     padding: 0.5rem;
-    margin-top: 1.5rem;
-    margin-right: 1rem;
+    padding-right: 2rem;
+    margin: 1.5rem;
+    margin-left: 0.7rem;
+    margin-right: 2rem;
     border: 1px solid var(--texts);
     border-left: 5px solid #1fa1f2;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
     ${media.lessThan("large")`
         margin-left: 0.5rem;        
     `}
 `
+
 export const ContactButtonRest = styled.button`
     padding: 0.5rem;
+    padding-right: 2rem;
     border: 1px solid var(--texts);
     border-left: 5px solid #d63031;
     border-radius: 4px;
     font-weight: bold;
+    cursor: pointer;
 `
+
 export const IconSend = styled(Mail)`
     width: 15px;
     margin: -2px 10px 0 0;
@@ -132,10 +140,9 @@ export const IconRest = styled(Cancel)`
 `
 
 export const MarginDiv = styled.div`
-  margin-bottom: 3.4rem;
+  margin-bottom: 4rem;
   
   ${media.lessThan("large")`
     margin-bottom: 0;
-  `}
-  
+  `}  
 `
