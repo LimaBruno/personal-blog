@@ -4,7 +4,13 @@ import * as S from "./styled"
 
 const ContactForm = () => (
     <S.ContactWrapper>
-        
+        <S.ContactTitle>Vamos Conversar?</S.ContactTitle>
+        <S.ContactDescription>
+            Mussum Ipsum, cacilds vidis litro abertis. Não sou faixa preta cumpadi, 
+            sou preto inteiris, inteiris. Paisis, filhis, espiritis santis. 
+            Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. 
+            Copo furadis é disculpa de bebadis, arcu quam euismod magna.
+        </S.ContactDescription>
         <S.ContactForm method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />        
@@ -26,6 +32,7 @@ const ContactForm = () => (
                 <S.ContactButtonRest type="reset"><S.IconRest/>Apagar</S.ContactButtonRest>
             </p>          
       </S.ContactForm>
+      <S.MarginDiv/>
     </S.ContactWrapper>
     
 )
