@@ -27,8 +27,7 @@ const ContactForm = () => (
             <S.ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><S.IconRest/>Apagar</S.ContactButtonRest>                    
         </S.ContactForm>
         <S.MarginDiv/>
-    </S.ContactWrapper>
-    
+    </S.ContactWrapper>    
 )
 
 export default ContactForm
