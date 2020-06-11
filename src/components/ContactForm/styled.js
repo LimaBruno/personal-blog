@@ -27,10 +27,7 @@ export const LabelName = styled.p`
     display: flex;
     flex-direction: column;    
     color: var(--texts);    
-    margin: 0px !important;
-    ${media.lessThan("large")`
-        margin-left: 0.5rem;        
-    `}          
+    margin: 0px !important;            
 `
 
 export const ContactForm = styled.form`       
@@ -48,8 +45,7 @@ export const ContactInput = styled.input`
         transition: 0.5s;
     }
     ${media.lessThan("large")`
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin: 0 1rem;       
     `}
 `
 
@@ -64,8 +60,7 @@ export const ContactArea = styled.textarea`
         transition: 0.5s;
     }
     ${media.lessThan("large")`
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+        margin: 0 1rem; 
     `}
 `
 
@@ -80,7 +75,7 @@ export const ContactButtonSend = styled.button`
     color: var(--btnColor);
     cursor: pointer;
     ${media.lessThan("large")`
-        margin-left: 0.5rem;        
+        margin-left: 1rem;        
     `}
 `
 
