@@ -78,8 +78,8 @@ module.exports = {
         name: `Bruno Lima`,//View name in the browser
         short_name: `Bruno Lima`,
         start_url: `/`, //Definition start URL
-        background_color: `#16202c`, //Backgrond in the mobile
-        theme_color: `#16202c`, // Color browser mobile
+        background_color: `#282a36`, //Backgrond in the mobile
+        theme_color: `#282a36`, // Color browser mobile
         display: `minimal-ui`, //Style display
         icon: `src/images/bruno_fav.png`, // This path is relative to the root of the site.
       },
