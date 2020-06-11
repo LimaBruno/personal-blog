@@ -24,7 +24,7 @@ export const ContactWrapper = styled.section`
 export const ContactTitle = styled.h1`
     font-size: 2rem;
     font-weight: 700;
-    margin-left: -0.8rem !important;
+    margin-left: -0.7rem !important;
     color: var(--texts);
     ${media.lessThan("large")`    
         margin-left: 0.6rem;
@@ -108,9 +108,10 @@ export const ContactButtonSend = styled.button`
     margin-left: 0.7rem;
     margin-right: 2rem;
     border: 1px solid var(--texts);
-    border-left: 5px solid #1fa1f2;
+    border-left: 5px solid var(--btnSendColor);
     border-radius: 4px;
     font-weight: bold;
+    color: var(--btnColor);
     cursor: pointer;
     ${media.lessThan("large")`
         margin-left: 0.5rem;        
@@ -121,9 +122,10 @@ export const ContactButtonRest = styled.button`
     padding: 0.5rem;
     padding-right: 2rem;
     border: 1px solid var(--texts);
-    border-left: 5px solid #d63031;
+    border-left: 5px solid var(--btnResetColor);
     border-radius: 4px;
     font-weight: bold;
+    color: var(--btnColor);
     cursor: pointer;
 `
 

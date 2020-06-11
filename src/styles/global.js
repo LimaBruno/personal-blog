@@ -63,32 +63,37 @@ const GlobalStyle = createGlobalStyle`
         height: auto;
     }
     body.dark {
-        --borders: #38444d;
-        --texts: #8899a6;
+        --borders: #1fa1f2;
+        --texts: #c8d6e5;
         --postColor: #fff;
         --highlight: #1fa1f2;
-        --mediumBackground: #192734;
-        --background: #16202c;
+        --mediumBackground: #282a36;
+        --background: #191921;
         --white: #fff;
         --black: #222;
         --progress-bar: #1fa1f2;
         --menuLinkColor: #1fa1f2;
-        --backgroundMoblie: #16202c;
+        --backgroundMoblie: #282a36;
         --formColor: #b2bec3;
+        --btnSendColor: #1fa1f2;
+        --btnResetColor: #d63031; 
       }
       body.light {
-        --borders: #dedede;
-        --texts: #555555;
-        --postColor: #111;
+        --borders: #b2bec3;
+        --texts: #222f3e;
+        --postColor: #222f3e;
         --highlight: #1fa1f2;
-        --mediumBackground: #f0f0f3;
+        --mediumBackground: #dfe4ea;
         --background: #fff;
         --white: #fff;
         --black: #222;
-        --progress-bar: #111;
+        --progress-bar: #222f3e;
         --menuLinkColor: #1fa1f2;
-        --backgroundMoblie: #d7d7d7;
+        --backgroundMoblie: #dfe4ea;
         --formColor: #d7d7d7;
+        --btnColor: #1e272e;
+        --btnSendColor: #1e272e;
+        --btnResetColor: #1e272e;  
       }
     
 `

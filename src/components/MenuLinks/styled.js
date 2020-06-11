@@ -36,6 +36,7 @@ export const MenuLinksItem = styled.li`
   
     .active {
       color: var(--menuLinkColor);
+      font-weight: 700;
       padding: 0.2rem;
       border-bottom: 2px dashed var(--menuLinkColor);     
     }

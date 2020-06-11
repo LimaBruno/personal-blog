@@ -11,6 +11,7 @@ export const PostItemLink = styled(AniLink)`
   
   &:hover {
     color: var(--highlight);
+    transition: 0.5s;
   }
 `
 export const PostItemWrapper = styled.section`
@@ -31,8 +32,7 @@ export const PostItemTag = styled.div`
   align-items: center;
   background: ${props => props.background ? props.background : 'var(--highlight)' };
   border-radius: 10%;
-  border: 2px solid #1fa1f2;
-  color: var(--postColor);
+  border: 2px solid #1fa1f2;  
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;
@@ -81,6 +81,5 @@ export const PostItemDescription = styled.p`
 
 export const CalendarIcon = styled(Calendar)`
   width: 15px;
-  margin: -5px 0 0 0;
-  color: var(--highLight);
+  margin: -5px 0 0 0;  
 `
