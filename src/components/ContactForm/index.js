@@ -12,8 +12,8 @@ const ContactForm = () => (
             Copo furadis é disculpa de bebadis, arcu quam euismod magna.
         </S.ContactDescription>
         <S.ContactForm method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />            
+            <S.ContactInput type="hidden" name="bot-field" />
+            <S.ContactInput type="hidden" name="form-name" value="contact" />            
             <S.LabelMain for="name"><S.LabelName>Nome:</S.LabelName>
                 <S.ContactInput type="text" name="name" id="name" alt="Campo Nome" placeholder="Seu nome"/>
             </S.LabelMain>               
