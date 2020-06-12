@@ -76,7 +76,8 @@ const GlobalStyle = createGlobalStyle`
         --backgroundMoblie: #282a36;
         --formColor: #b2bec3;
         --btnSendColor: #1fa1f2;
-        --btnResetColor: #d63031; 
+        --btnResetColor: #d63031;
+        --profileColor: #1fa1f2;  
       }
       body.light {
         --borders: #b2bec3;
@@ -93,7 +94,8 @@ const GlobalStyle = createGlobalStyle`
         --formColor: #d7d7d7;
         --btnColor: #1e272e;
         --btnSendColor: #1e272e;
-        --btnResetColor: #1e272e;  
+        --btnResetColor: #1e272e;
+        --profileColor: #222f3e;  
       }
     
 `
