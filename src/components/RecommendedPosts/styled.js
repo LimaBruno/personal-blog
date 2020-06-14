@@ -3,6 +3,7 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 export const RecommendedWrapper = styled.section`
+  font-weight: bold;
   border-bottom: 2px solid var(--borders);
   border-top: 2px solid var(--borders);
   background: var(--mediumBackground);

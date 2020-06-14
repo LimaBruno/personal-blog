@@ -71,6 +71,7 @@ export const MenuBarItem = styled.span`
   
   &:hover {
     color: var(--highlight);
+    transition: 0.5s;
   }
   
   &.display {

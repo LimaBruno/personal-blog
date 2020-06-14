@@ -8,7 +8,7 @@ export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
+  padding: 2.5rem 5rem 0;
 
   ${media.lessThan("large")`
     padding: 3rem 0 0;
@@ -222,12 +222,10 @@ export const MarginDiv = styled.div`
 
 export const CalendarIcon = styled(Calendar)`
   width: 15px;
-  margin: -5px 0 0 0;
-  color: var(--highLight);
+  margin: -5px 0 0 0;  
 `
 
 export const TimeIcon = styled(Time)`
   width: 15px;
-  margin: -5px 0 0 0;
-  color: var(--highLight);
+  margin: -5px 0 0 0;  
 `

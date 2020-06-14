@@ -3,6 +3,7 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 
 import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
+import { Time } from "@styled-icons/boxicons-regular/Time"
 
 export const PostItemLink = styled(AniLink)`
   color: var(--texts);
@@ -81,5 +82,9 @@ export const PostItemDescription = styled.p`
 
 export const CalendarIcon = styled(Calendar)`
   width: 15px;
-  margin: -5px 0 0 0;  
+  margin: -3px 0 0 0;  
+`
+export const TimeIcon = styled(Time)`
+  width: 15px;
+  margin: -3px 0 0 0;  
 `
