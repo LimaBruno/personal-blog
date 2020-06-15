@@ -14,7 +14,6 @@ const MenuBar = () => {
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
 
-  
   const isDarkMode = theme === 'dark'
     
   useEffect(() => {    
@@ -28,18 +27,19 @@ const MenuBar = () => {
   return (
       <S.MenuBarWrapper>
         <S.MenuBarGroup>
-          <S.MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} title="Home" activeClassName="active">
+          <S.MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} alt="Home" title="Home" activeClassName="active">
             <S.MenuBarItem>
               <Home />
             </S.MenuBarItem>
           </S.MenuBarLink>
-          <S.MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} title="Pesquisar" activeClassName="active">
+          <S.MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar Posts" title="Pesquisar" activeClassName="active">
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>
           </S.MenuBarLink>
         
           <S.MenuBarItem
+            alt="Mudar o tema"
             title="Mudar o tema"
             onClick={() => {
               window.__setPreferredTheme(isDarkMode ? "light" : "dark")
@@ -58,17 +58,17 @@ const MenuBar = () => {
             {isDarkMode ? <Light/> : <Moon/> }
           </S.MenuBarItem>
           <S.MenuBarItem
-            title="Ir para o Topo"
+            alt="Ir para o topo"
+            title="Ir para o topo"
             onClick={() => {
-              window.scroll({ top: 0, behavior: 'smooth' }) //efeito
+              window.scroll({ top: 0, behavior: 'smooth' }) //effect
             }}
           >
             <Arrow />
           </S.MenuBarItem>
         </S.MenuBarGroup>
       </S.MenuBarWrapper>
-  )
-  
+  )  
 }
 
 export default MenuBar

@@ -54,7 +54,7 @@ function SEO({ description, lang, meta, title, image }) {
           property: `og:image`,
           content: ogImage,
         },
-        //Define o tipo de conteudo que esta compartilhando (https://rockcontent.com/blog/meta-tags-para-redes-sociais/)
+        //Social Tags (https://rockcontent.com/blog/meta-tags-para-redes-sociais/)
         {
           property: `og:type`,
           content: `website`,
