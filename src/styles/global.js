@@ -77,7 +77,8 @@ const GlobalStyle = createGlobalStyle`
         --formColor: #b2bec3;
         --btnSendColor: #1fa1f2;
         --btnResetColor: #d63031;
-        --profileColor: #1fa1f2;  
+        --profileColor: #1fa1f2;
+        --recommendPost: #006266;  
       }
       body.light {
         --borders: #b2bec3;
@@ -95,7 +96,8 @@ const GlobalStyle = createGlobalStyle`
         --btnColor: #1e272e;
         --btnSendColor: #1e272e;
         --btnResetColor: #1e272e;
-        --profileColor: #222f3e;  
+        --profileColor: #222f3e;
+        --recommendPost: #b2bec3;    
       }
     
 `
