@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Bruno Lima`,
     position: `Tecnologia da Informação`,
-    description: `Especialista em Tecnologia da Informação`,
+    description: `Profissional em Tecnologia da Informação`,
     author: `@brunolima`,
     siteUrl: `https://brunolima.com`,
   },

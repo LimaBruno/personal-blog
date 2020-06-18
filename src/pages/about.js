@@ -14,95 +14,49 @@ const AboutPage = () => (
     <MainContent>
       <h1>Sobre mim</h1>
       <p>
-        Meu nome é Willian Justen de Vasconcellos, nasci em Petrópolis/RJ e
-        sou instrutor na {' '}
-        <a href="https://www.udemy.com/user/willian-justen-de-vasconcellos/" target="_blank" rel="noopener noreferrer">
-          Udemy
-        </a>
-        , além de ser um nômade digital e tirar{' '}
-        <a
-          href="https://unsplash.com/@willianjusten"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          algumas fotos
-        </a>{' '}
-        por onde vou.
+        Prazer, eu sou o Bruno Lima natural de Catalão-GO. Sou um apaixonado por tecnologia da informação e acredito que
+        uma das composições do meu sangue seja feito por digitos binários!
       </p>
-
       <p>
-        Já passei por empresas como{' '}
-         <a
-          href="http://www.toptal.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Toptal
-        </a>
-        ,{' '}
-        <a
-          href="http://www.hugeinc.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Huge
-        </a>
-        ,{' '}
-        <a
-          href="http://www.globo.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Globo.com
-        </a>
-        ,{' '}
-        <a
-          href="https://queremos.com.br"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Queremos
-        </a>{' '}
-        e outras mais. Cursei Tecnologia da Informação na Faeterj-Petrópolis no
-        ano de 2014, mas curiosamente, essa não foi minha primeira faculdade, eu
-        também fiz <strong>Química Industrial</strong> na Uff. Sim, você leu
-        certo, eu realmente fiz Química… E por que eu trabalho com web agora?
-        Ah… porque web é incrível e a facilidade em aprender cada dia mais, me
-        deixa mais feliz com a escolha que fiz.
+        Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
+        em <strong>Segurança da Informação</strong> pela universidade federal de Goiás - UFG em 2012. Cursei algumas matérias do mestrado
+        <strong> Gestão Organizacional</strong> com enfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF á trabalho.
       </p>
-
       <p>
-        Eu amo trabalhar em equipe e sou bem comunicativo. No meu tempo livre,
-        gosto de ensinar meus amigos sobre alguma coisa que aprendi, acho que
-        por isso nasceu esse blog.
+        Atualmente atuo com consultorias e como freelancer em plataformas digitais como Workana, 99Freelas e entre outras, atendendo diversos projetos.
+        Também trabalhos na área de marketing digital como gestão de campanhas, analise e desenvolvimento de plano estratégico (Data-Driven).
+      </p>
+      <p>
+        Estou sempre em busca de adquirir conhecimentos, novidades e também sou muito grato em compartilhar.
+        Fico orgulhoso, quando alguma contribuição minha (por mais que seja pequena ou simples) consiga impactar ou gerar resultados positivos na vida de alguém.
+        E por isso nasceu esse blog, espero que você possa usufruir de alguma maneira, sua volta será sempre bem-vinda!
       </p>
 
-      <h2>Habilidades</h2>
+      <h2>Hard Skills</h2>
+      <dl>
+        <dt><strong>Metodologias:</strong></dt>
+        <dd><li>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, BPM (Bizagi), PMBOK, ITIL, COBIT.</li></dd>
+        <dt><strong>Gestão:</strong></dt>
+        <dd><li>Governança T.I, Equipe Multidisciplinar, SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</li></dd>
+        <dt><strong>Desenvolvimento:</strong></dt>
+        <dd><li>PHP 5 e 7, Git, HTML5, CSS, Materialize, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop (intermediário), Google Analytics, CMS (Wordpress, Joomla).</li></dd>
+        <dt><strong>Infraestrutura:</strong></dt>
+        <dd><li>Equipamento CISCO e HP, Linux (Debian, CentOs), Webserver Https (Apache, IIS), Docker, Amazon AWS.</li></dd>
+        <dt><strong>Segurança da Informação:</strong></dt>
+        <dd><li>Gestão da Segurança, Auditoria WEB e ISO, LGPD, Pentests (Kali Linux), pfSense, Squid.</li></dd>      
+      </dl>
 
+      <h2>Soft Skills</h2>
       <ul>
-        <li>HTML e Template Languages</li>
-        <li>Design Responsivo (Mobile First)</li>
-        <li>CSS (Stylus, Sass, Less, PostCSS)</li>
-        <li>Css Frameworks (Bootstrap, Foundation, Bulma)</li>
-        <li>Javascript (Design Patterns, Testes, ES6/7)</li>
-        <li>ReactJS / Redux / Flux</li>
-        <li>NodeJS</li>
-        <li>Automatizadores (Grunt, Gulp, Webpack, Parcel)</li>
-        <li>Git</li>
-        <li>Python</li>
-        <li>Ruby / Rails</li>
-        <li>MySQL - MongoDB</li>
-        <li>Scrum and Kanban</li>
-        <li>TDD e Continuous Integration</li>
-        <li>O que eu não sei, aprendo rápido =)</li>
+        <li>Observador;</li>
+        <li>Líder;</li>
+        <li>Trabalho em Equipe;</li>
+        <li>Empatíco;</li>
+        <li>Persuasivo</li>
+        <li>Capacidade analítica;</li>
+        <li>Criativo, inovador;</li>
+        <li>Ético, integro;</li>
       </ul>
-
-      <h2>Contato</h2>
-
-      <p>
-        Você pode entrar em contato comigo através de qualquer uma das minhas
-        redes sociais.
-      </p>
       </MainContent>
   </Layout>
     
