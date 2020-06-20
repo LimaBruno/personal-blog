@@ -39,7 +39,7 @@ export const ContactInput = styled.input`
     border: 1px solid var(--texts);
     border-left: 5px solid var(--progress-bar);
     border-radius: 4px;    
-    margin: 0.5rem 0 0 2rem;    
+    margin: 0.5rem 20rem 0 1.5rem;    
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -54,7 +54,7 @@ export const ContactArea = styled.textarea`
     border: 1px solid var(--texts);
     border-left: 5px solid var(--progress-bar);
     border-radius: 4px;    
-    margin: 0.5rem 0 0 2rem;    
+    margin: 0.5rem 20rem 0 1.5rem;   
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -67,7 +67,7 @@ export const ContactArea = styled.textarea`
 export const ContactButtonSend = styled.button`
     padding: 0.5rem;
     padding-right: 2rem;
-    margin: 1.5rem 2rem 0 2rem;    
+    margin: 1.5rem 2rem 0 1.5rem;    
     border: 1px solid var(--texts);
     border-left: 5px solid var(--btnSendColor);
     border-radius: 4px;

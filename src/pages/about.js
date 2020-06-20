@@ -21,7 +21,7 @@ const AboutPage = () => (
       <h1>Sobre mim</h1>
       <p>
         Prazer, eu sou o Bruno Lima natural de Catalão-GO. Sou um apaixonado por tecnologia da informação e acredito que
-        uma das composições do meu sangue seja feito por dígitos binários!
+        uma das composições do meu sangue seja feito por dígitos binários! <span role="img" aria-label="rosto com coração">😍</span>
       </p>
       <p>
         Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
@@ -29,8 +29,8 @@ const AboutPage = () => (
         <strong> Gestão Organizacional</strong> com ênfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF á trabalho.
       </p>
       <p>
-        Já atuei em diversas empresas como Mitsubishi Motors, Datacom Consultoria em Sistemas (Truston), Instituto Tecnológico de Goiás, ... entre outras, atuando
-        como analista, professor substituto, gestor (confira minhas skills mais abaixo).
+        Já atuei em diversas empresas como Mitsubishi Motors, Datacom Consultoria em Sistemas (Truston), Instituto Tecnológico de Goiás, ... entre outras,
+        como analista (suporte/infra, desenvolvimento), professor substituto, gestor (confira minhas skills mais abaixo).
       </p>      
       <p>
         Atualmente atuo com consultorias e como freelancer em plataformas digitais como Workana, 99Freelas e entre outras, atendendo diversos projetos.
@@ -42,9 +42,9 @@ const AboutPage = () => (
         E por isso nasceu esse blog, espero que você possa usufruir de alguma maneira e sua volta será sempre bem-vinda!
       </p>
       <p>
-        O blog foi feito com as tecnologias atuais do mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons e outros.
+        O blog foi desenvolvido com as tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons e outros.
         Também está consumindo back-end como Github, Netlify, Algolia, Disqus, Netlify CMS. O blog foi desenvolvido através de cursos e ajuda das
-        comunidades Front-end, Gatsby, StackOverflow e Youtube, sem eles a missão seria difícil, meus sinceros agradecimentos!
+        comunidades Front-end, Gatsby, StackOverflow e Youtube, sem eles a missão seria difícil, meus sinceros agradecimentos! <span role="img" aria-label="aplausos">👏🏽👏🏽</span>
       </p>
       
       <h2>Hard Skills</h2>
@@ -58,7 +58,7 @@ const AboutPage = () => (
         <dt><strong>Infraestrutura:</strong></dt>
         <dd>Equipamento CISCO, Linux (Debian, CentOs), Windows Server 03 e 08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
-        <dd>Gestão da Segurança, Auditoria WEB e ISO 27000, LGPD, Pentests (Kali Linux), pfSense, Squid.</dd>
+        <dd>Gestão da Segurança, Auditorias WEB e ISO 27000, LGPD, Pentests (Kali Linux), pfSense, Squid.</dd>
         <dt><strong>Marketing Digital:</strong></dt>
         <dd>Matriz SWOT, Copywriting, teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console, Google Trends/Optimize, SEMrush (básico).</dd>      
       </dl>

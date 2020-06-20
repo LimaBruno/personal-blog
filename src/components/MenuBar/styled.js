@@ -12,7 +12,7 @@ display: flex;
 flex-direction: row;
 width: 100vw;
 justify-content: space-between;
-padding: 0 1.6rem;
+padding: 0 0.6rem;
 position: fixed;
 left: 20rem;
 bottom: 0;

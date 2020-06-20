@@ -19,7 +19,7 @@ export const PostItemWrapper = styled.section`
   align-items: center;
   border-bottom: 2px solid var(--borders);
   display: flex;
-  padding: 2rem 3rem;
+  padding: 2rem 1.5rem;
   width: 100%;
 
   ${media.lessThan("large")`
@@ -33,7 +33,7 @@ export const PostItemTag = styled.div`
   align-items: center;
   background: ${props => props.background ? props.background : 'var(--highlight)' };
   border-radius: 10%;
-  border: 2px solid #1fa1f2;  
+  border: 2px solid var(--profileColor);  
   display: flex;
   font-size: 1.3rem;
   font-weight: 700;
@@ -47,7 +47,7 @@ export const PostItemTag = styled.div`
     font-size: 1rem;
     min-height: auto;
     min-width: auto;
-    padding: .2rem .5rem;
+    padding: .3rem .5rem;
     margin-bottom: .7rem;
   `}
 
