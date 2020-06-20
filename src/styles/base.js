@@ -69,6 +69,7 @@ export const MainContent = styled.section`
   ul,
   dl,
   ol,
+  blockquote,
   .tags,
   iframe,
   .button-post {
