@@ -63,7 +63,7 @@ const AboutPage = () => (
         <dt><strong>Segurança da Informação:</strong></dt>
         <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux), pfSense, Squid.</dd>
         <dt><strong>Marketing Digital:</strong></dt>
-        <dd>Matriz SWOT, Copywriting, teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console, Google Trends/Optimize, SEMrush (básico).</dd>      
+        <dd>Matriz SWOT, Copywriting, Inbound, Teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console, Google Trends/Optimize, SEMrush (básico).</dd>      
       </dl>
 
       <blockquote>
