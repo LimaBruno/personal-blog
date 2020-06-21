@@ -6,9 +6,9 @@ const ContactForm = () => (
     <S.ContactWrapper>
         <S.ContactTitle>Vamos Conversar?</S.ContactTitle>
         <S.ContactDescription>
-            Deseja falar comigo? Como posso ajudá-lo? Simples! Basta me procurar nas redes sociais,
-            ou se você preferir, poderá preencher o formulário abaixo com seus dados. Estarei respondendo
-            o mais breve possível. Desde já, agradeço pelo seu contato!
+            Deseja falar comigo? Como posso ajudá-lo? Simples! Basta me procurar nas redes sociais
+            ou se você preferir, poderá preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
+            mais breve possível. Desde já, agradeço pelo seu contato!
         </S.ContactDescription>
         <S.ContactForm method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
             <S.ContactInput type="hidden" name="bot-field" />
