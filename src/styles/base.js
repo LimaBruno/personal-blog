@@ -217,6 +217,7 @@ export const MainContent = styled.section`
     &:hover {
       transition: 0.5s;      
       color: var(--highlight);
+      opacity: 0.8;
     }
   }
 `
