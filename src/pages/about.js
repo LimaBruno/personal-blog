@@ -26,7 +26,7 @@ const AboutPage = () => (
       <p>
         Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
         em <strong>Segurança da Informação</strong> pela universidade federal de Goiás - UFG em 2012. Cursei algumas matérias do mestrado
-        <strong> Gestão Organizacional</strong> com ênfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF á trabalho.
+        <strong> Gestão Organizacional</strong> com ênfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF a trabalho.
       </p>
       <p>
         Já atuei em diversas empresas como {' '} <a href="https://www.mitsubishimotors.com.br/" alt="Mitsubishi Motors" target="_blank" rel="noopener noreferrer">Mitsubishi Motors</a>, 
@@ -37,7 +37,7 @@ const AboutPage = () => (
       <p>
         Atualmente atuo com consultorias e como freelancer em plataformas digitais como {' '}<a href="https://www.workana.com/" alt="Workana" target="_blank" rel="noopener noreferrer">Workana</a>, 
         {' '} <a href="https://www.99freelas.com.br/" alt="99freelas" target="_blank" rel="noopener noreferrer">99Freelas</a> e entre outras, atendendo diversos projetos.
-        Também trabalhos na área de marketing digital como gestão de campanhas, analise e desenvolvimento de plano estratégico (Data-Driven).
+        Também trabalhos nas áreas de processos de negócios (bpm) e marketing digital como gestão de campanhas, analise e desenvolvimento de plano estratégico (Data-Driven).
       </p>
       <p>
         Estou sempre em busca de adquirir conhecimentos, novidades e também sou muito grato em compartilhar.
@@ -45,8 +45,8 @@ const AboutPage = () => (
         E por isso nasceu esse blog, espero que você possa usufruir de alguma maneira e sua volta será sempre bem-vinda!
       </p>
       <p>
-        O blog foi desenvolvido com as tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons e outros.
-        Também está consumindo back-end como Github, Netlify, Algolia, Disqus, Netlify CMS. O blog foi desenvolvido através de cursos e ajuda das
+        O blog foi desenvolvido com tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons, e 
+        consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. O blog foi desenvolvido através de cursos e ajuda das
         comunidades Front-end, Gatsby, StackOverflow e Youtube, sem eles a missão seria difícil, meus sinceros agradecimentos! <span role="img" aria-label="aplausos">👏🏽👏🏽</span>
       </p>
       
@@ -61,13 +61,13 @@ const AboutPage = () => (
         <dt><strong>Infraestrutura:</strong></dt>
         <dd>Equipamento CISCO, Linux (Debian, CentOs), Windows Server 03 e 08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
-        <dd>Gestão da Segurança, Auditorias WEB e ISO 27000, LGPD, Pentests (Kali Linux), pfSense, Squid.</dd>
+        <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux), pfSense, Squid.</dd>
         <dt><strong>Marketing Digital:</strong></dt>
         <dd>Matriz SWOT, Copywriting, teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console, Google Trends/Optimize, SEMrush (básico).</dd>      
       </dl>
 
       <blockquote>
-        <strong>"20% dos conhecimentos que possuo em T.I, são responsáveis por 80% dos resultados positivos" - Princípio de Pareto</strong>
+        <strong>"20% dos conhecimentos em T.I, geram 80% dos resultados positivos" - Princípio de Pareto</strong>
       </blockquote>
 
       <h2>Soft Skills</h2>
