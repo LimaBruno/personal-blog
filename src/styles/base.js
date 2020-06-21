@@ -206,20 +206,22 @@ export const MainContent = styled.section`
     margin: 1rem auto !important;
   }
   a {
-    border-bottom: 1px dashed var(--highlight);
-    color: var(--highlight);
+    border-bottom: 2px dashed var(--linksGeneral);
+    color: var(--linksGeneral);
     text-decoration: none;
+    font-weight: bold;
     transition: opacity 0.5s;
     svg {
       color: var(--postColor);
     }
     &:hover {
-      opacity: 0.8;
+      transition: 0.5s;      
+      color: var(--highlight);
     }
   }
 `
 export const MarginDiv = styled.div`
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 `
 
 export const CalendarIcon = styled(Calendar)`

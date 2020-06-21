@@ -35,10 +35,10 @@ export const MenuLinksItem = styled.li`
     padding: 0.8rem 0;
   
     .active {
-      color: var(--menuLinkColor);
+      color: var(--linksGeneral);
       font-weight: 700;
       padding: 0.2rem;
-      border-bottom: 2px dashed var(--menuLinkColor);     
+      border-bottom: 2px dashed var(--linksGeneral);     
     }
 
     ${media.lessThan("large")`

@@ -11,7 +11,7 @@ export const SidebarWrapper = styled.aside`
   flex-direction: column;
   height: 100vh;
   position: fixed;
-  padding: 2rem;
+  padding: 3rem 2rem 0 2rem;
   text-align: center;
   width: 20rem;
   transition: ${transitions.ALL};
