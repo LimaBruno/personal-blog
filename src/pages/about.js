@@ -40,7 +40,7 @@ const AboutPage = () => (
         Também trabalhos nas áreas de processos de negócios (bpm) e marketing digital como gestão de campanhas, analise e desenvolvimento de plano estratégico (Data-Driven).
       </p>
       <p>
-        Estou sempre em busca de adquirir conhecimentos, novidades e também sou muito grato em compartilhar.
+        Estou sempre em busca de conhecimentos, novidades e sou muito grato em compartilhar.
         Sinto-me orgulhoso, quando alguma contribuição minha consiga impactar ou gerar resultados positivos.
         E por isso nasceu esse blog, espero que você possa usufruir de alguma maneira e sua volta será sempre bem-vinda!
       </p>
