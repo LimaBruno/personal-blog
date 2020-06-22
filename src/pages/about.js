@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import ReadingProgress from "../components/ReadingProgress"
 
-import { MainContent } from '../styles/base'
+import { MainContent, MarginDiv } from '../styles/base'
 
 const target = createRef()
 
@@ -66,10 +66,6 @@ const AboutPage = () => (
         <dd>Matriz SWOT, Copywriting, Inbound, Teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console, Google Trends/Optimize, SEMrush (básico).</dd>      
       </dl>
 
-      <blockquote>
-        <strong>"20% dos conhecimentos em T.I, geram 80% dos resultados positivos" - Princípio de Pareto</strong>
-      </blockquote>
-
       <h2>Soft Skills</h2>
       <ul>
         <li>Observador;</li>
@@ -82,6 +78,7 @@ const AboutPage = () => (
         <li>Ético, integro;</li>
       </ul>
       </MainContent>
+      <MarginDiv />
   </Layout>
   </div> 
 )

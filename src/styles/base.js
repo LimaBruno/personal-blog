@@ -222,7 +222,10 @@ export const MainContent = styled.section`
   }
 `
 export const MarginDiv = styled.div`
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    ${media.lessThan("large")`
+      margin-bottom: 0rem;
+    `}
 `
 
 export const CalendarIcon = styled(Calendar)`

@@ -19,7 +19,7 @@ export const PostItemWrapper = styled.section`
   align-items: center;
   border-bottom: 2px solid var(--borders);
   display: flex;
-  padding: 3rem;
+  padding: 1.5rem;
   width: 100%;
 
   ${media.lessThan("large")`
