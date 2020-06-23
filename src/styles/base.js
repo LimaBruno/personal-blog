@@ -98,7 +98,7 @@ export const MainContent = styled.section`
   ul,
   ol {
     list-style: disc;
-    padding-left: 2.5rem;
+    padding-left: 3.3rem;
     margin: 0 auto 1.6rem;
   },
   li {

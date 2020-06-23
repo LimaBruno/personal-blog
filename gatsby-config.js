@@ -4,9 +4,9 @@ const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
-    title: `Bruno Lima`,
+    title: `Bruno César Lima`,
     position: `Tecnologia da Informação`,
-    description: `Profissional em Tecnologia da Informação`,
+    description: `Escrevo sobre o incrível mundo da TECNOLOGIA`,
     author: `@brunolima`,
     siteUrl: `https://brunolima.com`,
   },

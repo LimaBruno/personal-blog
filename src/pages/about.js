@@ -20,7 +20,7 @@ const AboutPage = () => (
     
       <h1>Sobre mim</h1>
       <p>
-        Prazer, eu sou o <strong>Bruno Lima</strong> natural de Catalão-GO. Sou apaixonado pela tecnologia e acredito que
+        Prazer, eu sou o <strong>Bruno César Lima</strong> natural de Catalão-GO. Sou apaixonado pela tecnologia e acredito que
         uma das composições do meu sangue seja feito por dígitos binários! <span role="img" aria-label="rosto com coração">😍</span>
       </p>
       <p>
@@ -46,14 +46,14 @@ const AboutPage = () => (
       </p>
       <p>
         O blog foi desenvolvido com tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons, e 
-        consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. O blog foi desenvolvido através de cursos e ajuda das
+        consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. Desenvolvido através de cursos e contribuições das
         comunidades Front-end, Gatsby, StackOverflow e Youtube, sem eles a missão seria difícil, meus sinceros agradecimentos! <span role="img" aria-label="aplausos">👏🏽👏🏽</span>
       </p>
       
       <h2>Hard Skills</h2>
       <dl>
         <dt><strong>Metodologias:</strong></dt>
-        <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, BPM (Bizagi, Helfo), PMBOK, ITIL, COBIT.</dd>
+        <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, BPM (Bizagi, Heflo), PMBOK, ITIL, COBIT.</dd>
         <dt><strong>Gestão:</strong></dt>
         <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
@@ -73,9 +73,9 @@ const AboutPage = () => (
         <li>Trabalho em Equipe;</li>
         <li>Empatíco;</li>
         <li>Persuasivo;</li>
-        <li>Capacidade analítica, organizado;</li>
-        <li>Criativo, inovador;</li>
-        <li>Ético, integro;</li>
+        <li>Capacidade Analítica, Organizado;</li>
+        <li>Criativo, Inovador;</li>
+        <li>Ético, Integro;</li>
       </ul>
       </MainContent>
       <MarginDiv />
