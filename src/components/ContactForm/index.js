@@ -14,13 +14,13 @@ const ContactForm = () => (
             <S.ContactInput type="hidden" name="bot-field" />
             <S.ContactInput type="hidden" name="form-name" value="contact" />            
             <S.LabelMain for="name"><S.LabelName>Nome:</S.LabelName>
-                <S.ContactInput type="text" name="name" id="name" alt="Campo Nome" placeholder="Seu nome" required/>
+                <S.ContactInput type="text" id="name" alt="Campo Nome" placeholder="Seu nome" maxLength="35" required/>
             </S.LabelMain>               
             <S.LabelMain for="email"><S.LabelName>Email:</S.LabelName>
-                <S.ContactInput type="email" name="email" id="email" minlength="10" alt="Campo Email" placeholder="Seu email" required/>
+                <S.ContactInput type="email" name="email" id="email"  alt="Campo Email" placeholder="Seu email" maxLength="35" required/>
             </S.LabelMain>            
             <S.LabelMain for="message"><S.LabelName>Mensagem:</S.LabelName>
-                <S.ContactArea name="message" id="message" rows="5" cols="33" minlength="10" alt="Campo Mensagem" placeholder="Sua mensagem ..." required/>
+                <S.ContactArea name="message" id="message" rows="5" cols="33" minlength="10" alt="Campo Mensagem" placeholder="Sua mensagem ..." maxLength="250" required/>
             </S.LabelMain>
             <div data-netlify-recaptcha="true"></div>
             <S.ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><S.IconSend/>Enviar</S.ContactButtonSend>

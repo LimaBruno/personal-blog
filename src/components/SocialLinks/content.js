@@ -1,17 +1,11 @@
-const handle = "bruno"
-
 const links = [
   {
-    label: "Github",
-    url: `https://github.com/${handle}`,
-  },
-  {
-    label: "Twitter",
-    url: `https://twitter.com/${handle}`,
+    label: "Facebook",
+    url: `https://github.com/LimaBruno`,
   },
   {
     label: "Instagram",
-    url: `https://www.instagram.com/${handle}`,
+    url: `https://www.instagram.com/bruno.cesar.lima`,
   },
 ]
 

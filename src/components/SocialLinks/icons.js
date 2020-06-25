@@ -1,8 +1,7 @@
-import { Github, Twitter, Instagram } from "styled-icons/boxicons-logos/"
+import { FacebookCircle as Facebook, Instagram } from "@styled-icons/boxicons-logos/"
 
 const Icons = {
-  Github,
-  Twitter,
+  Facebook,
   Instagram,
 }
 
