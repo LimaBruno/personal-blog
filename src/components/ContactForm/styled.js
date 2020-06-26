@@ -5,33 +5,28 @@ import { MailSend as Mail } from "@styled-icons/remix-line/MailSend"
 import { CancelCircle as Cancel } from "@styled-icons/icomoon/CancelCircle"
 
 export const ContactWrapper = styled.section`
-    
 `
 
 export const ContactTitle = styled.h1`
-   
 `
 
 export const ContactDescription = styled.p` 
- 
 `
 
 export const LabelMain = styled.label`
     display: flex;
     flex-direction: column;    
-    color: var(--texts);
-    padding: 10px 0 10px 0;          
+    padding: 10px 0 10px 0;              
 `
 
 export const LabelName = styled.p`
     display: flex;
-    flex-direction: column;    
-    color: var(--texts);    
-    margin: 0px !important;            
+    flex-direction: column;       
+    margin: 0px !important;
+    font-weight: bold;            
 `
 
 export const ContactForm = styled.form`       
-    
 `
 
 export const ContactInput = styled.input`
@@ -47,6 +42,15 @@ export const ContactInput = styled.input`
     ${media.lessThan("large")`
         margin: 0 1rem;       
     `}
+`
+
+export const Error = styled.span`
+    color: #bf1650;
+    margin: 0.5rem 1.5rem;
+    :before {
+        display: inline;
+        content: "⚠ ";
+      }
 `
 
 export const ContactArea = styled.textarea`
