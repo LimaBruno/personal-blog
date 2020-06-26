@@ -13,7 +13,7 @@ const AboutPage = () => (
     <Layout>
     <SEO
       title="Sobre mim"
-      description="Saiba um pouco mais sobre o desenvolvedor por trás deste blog."
+      description="Quem é o Bruno César Lima?"
     />
     <ReadingProgress target={target} />
     <MainContent>
