@@ -31,16 +31,12 @@ const AboutPage = () => (
       <p>
         Já atuei em diversas empresas como {' '} <a href="https://www.mitsubishimotors.com.br/" alt="Mitsubishi Motors" target="_blank" rel="noopener noreferrer">Mitsubishi Motors</a>, 
         {' '}<a href="https://www.truston.com.br/" alt="Datacom Consultoria em Sistemas" target="_blank" rel="noopener noreferrer">Datacom Consultoria em Sistemas (Truston)</a>, 
-        {' '}<a href="http://www.itego.com.br/" alt="Instituto Tecnológico de Goiás" target="_blank" rel="noopener noreferrer">Instituto Tecnológico de Goiás</a>, ... entre outras,
-        como analista (suporte/infra, desenvolvimento), professor substituto, supervisor (confira minhas skills mais abaixo).
-      </p>      
-      <p>
+        {' '}<a href="http://www.itego.com.br/" alt="Instituto Tecnológico de Goiás" target="_blank" rel="noopener noreferrer">Instituto Tecnológico de Goiás</a>, ... entre outras.
         Atualmente atuo com consultorias e como freelancer em plataformas digitais como {' '}<a href="https://www.workana.com/" alt="Workana" target="_blank" rel="noopener noreferrer">Workana</a>, 
-        {' '} <a href="https://www.99freelas.com.br/" alt="99freelas" target="_blank" rel="noopener noreferrer">99Freelas</a> e entre outras, atendendo diversos projetos.
-        Também trabalhos nas áreas de processos de negócios (bpm) e marketing digital como gestão de campanhas, analise e desenvolvimento de plano estratégico (Data-Driven).
+        {' '} <a href="https://www.99freelas.com.br/" alt="99freelas" target="_blank" rel="noopener noreferrer">99Freelas</a> e outras, atendendo diversos projetos (confira minhas skills abaixo).
       </p>
       <p>
-        Estou sempre em busca de conhecimentos, novidades e sou muito grato em compartilhar.
+        Estou constantemente em busca de conhecimentos, novidades e sou muito grato em compartilhar.
         Sinto-me orgulhoso, quando alguma contribuição minha consiga impactar ou gerar resultados positivos.
         E por isso nasceu esse blog, espero que você possa usufruir de alguma maneira e sua volta será sempre bem-vinda!
       </p>
@@ -53,23 +49,22 @@ const AboutPage = () => (
       <h2>Hard Skills</h2>
       <dl>
         <dt><strong>Metodologias:</strong></dt>
-        <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, BPM (Bizagi, Heflo), PMBOK, ITIL, COBIT.</dd>
+        <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT.</dd>
         <dt><strong>Gestão:</strong></dt>
         <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla).</dd>
+        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla), BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
         <dd>Equipamento CISCO, Linux (Debian, CentOs), Windows Server 03 e 08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
-        <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux), pfSense, Squid.</dd>
+        <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
         <dt><strong>Marketing Digital:</strong></dt>
-        <dd>Matriz SWOT, Copywriting, Inbound, Teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console, Google Trends/Optimize, SEMrush (básico).</dd>      
+        <dd>Matriz SWOT, Copywriting, Inbound, Teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console.</dd>      
       </dl>
 
       <h2>Soft Skills</h2>
       <ul>
         <li>Observador;</li>
-        <li>Líder;</li>
         <li>Trabalho em Equipe;</li>
         <li>Empatíco;</li>
         <li>Persuasivo;</li>

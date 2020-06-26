@@ -4,15 +4,16 @@ import { useForm } from "react-hook-form";
 import * as S from "./styled"
 
 const ContactForm = () => {
-    const { register, errors, handleSubmit } = useForm({
-        mode: "onChange"
-    });
-    const onSubmit = (data, e) => { 
-		console.log(JSON.stringify(data)) 
-		e.target.submit()
-	}
+  
+  const { register, errors, handleSubmit } = useForm({
+      mode: "onChange"
+  });
+  const onSubmit = (data, e) => { 
+    console.log(JSON.stringify(data)) 
+    e.target.submit()
+  }
    
-    return(
+  return(
     <S.ContactWrapper>
         <S.ContactTitle>Vamos Conversar?</S.ContactTitle>
         <S.ContactDescription>
@@ -36,7 +37,7 @@ const ContactForm = () => {
                         value: 30,
                         message: "No máximo 30 caracteres"
                     }
-                    })}
+                  })}
                 />
                 {errors.name && <S.Error>{errors.name.message}</S.Error>}
             </S.LabelMain>               
@@ -51,11 +52,7 @@ const ContactForm = () => {
                    required: "Campo obrigatório",
                    pattern: {
                      value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-                     message: "E-mail inválido",
-                      maxLength: {
-                        value: 30,
-                        message: "No máximo 30 caracteres"
-                      }
+                     message: "E-mail inválido"
                     }
                   })}
                 />
@@ -83,6 +80,7 @@ const ContactForm = () => {
             <S.ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><S.IconRest/>Apagar</S.ContactButtonRest>                    
         </S.ContactForm>
         <S.MarginDiv/>
-    </S.ContactWrapper>)
+    </S.ContactWrapper>
+  )
 }
 export default ContactForm

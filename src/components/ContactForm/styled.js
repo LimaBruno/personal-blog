@@ -23,7 +23,7 @@ export const LabelName = styled.p`
     display: flex;
     flex-direction: column;       
     margin: 0px !important;
-    font-weight: bold;            
+    font-weight: bold !important;             
 `
 
 export const ContactForm = styled.form`       
@@ -50,7 +50,7 @@ export const Error = styled.span`
     :before {
         display: inline;
         content: "⚠ ";
-      }
+    }
 `
 
 export const ContactArea = styled.textarea`
