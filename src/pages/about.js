@@ -58,8 +58,6 @@ const AboutPage = () => (
         <dd>Equipamento CISCO, Linux (Debian, CentOs), Windows Server 03 e 08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
         <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
-        <dt><strong>Marketing Digital:</strong></dt>
-        <dd>Matriz SWOT, Copywriting, Inbound, Teste a/b, Gestão ADS (Google, Facebook, Instagram), Data-Driven, Google Search Console.</dd>      
       </dl>
 
       <h2>Soft Skills</h2>
