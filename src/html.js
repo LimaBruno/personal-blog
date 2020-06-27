@@ -1,6 +1,25 @@
 import React from "react"
 import PropTypes from "prop-types"
 
+const noscriptStyle = `
+  .gatsby-noscript {    
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    background: #ff3838;
+    color: #f7f1e3;
+    z-index: 10000;
+  }
+`
+
 export default function HTML(props) {
   return (
     <html {...props.htmlAttributes}>
@@ -41,8 +60,9 @@ export default function HTML(props) {
           }}
         />
         {props.preBodyComponents}
-        <noscript key="noscript" id="gatsby-noscript">
-          This app works best with JavaScript enabled =)
+        <noscript key="noscript" id="gatsby-noscript" className="gatsby-noscript">
+          <style>{noscriptStyle}</style>
+          Esse site não funciona sem JavaScript, habilite 😎
         </noscript>
         <div
           key={`body`}
