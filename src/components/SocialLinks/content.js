@@ -1,7 +1,7 @@
 const links = [
   {
     label: "Facebook",
-    url: `https://github.com/LimaBruno`,
+    url: `https://www.facebook.com/networkbruno`,
   },
   {
     label: "Instagram",

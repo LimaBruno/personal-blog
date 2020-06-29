@@ -1,4 +1,4 @@
-import { FacebookCircle as Facebook, Instagram } from "@styled-icons/boxicons-logos/"
+import { FacebookSquare as Facebook, Instagram } from "@styled-icons/boxicons-logos/"
 
 const Icons = {
   Facebook,
