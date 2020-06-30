@@ -30,7 +30,7 @@ export const MenuIcon = styled.button`
   display: none;
   ${media.lessThan("large")`  
     position: fixed;
-    top: 1.4rem;
+    top: 1.5rem;
     right: 0.8rem;
     display: flex;
     flex-direction: column;

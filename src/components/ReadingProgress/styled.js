@@ -14,7 +14,7 @@ export const ReadingProgressBar = styled.div`
   width: ${props => props.width};
   z-index: 9999;
   ${media.lessThan("large")`
-    top: 68px;
+    top: 72px;
     bottom: 0;
   `}
 `

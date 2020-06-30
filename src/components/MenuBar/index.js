@@ -8,20 +8,14 @@ import { Moon } from "@styled-icons/boxicons-solid/Moon"
 
 import * as S from "./styled"
 
-
 const MenuBar = () => {
 
-  const [theme, setTheme] = useState(null)
-  const [display, setDisplay] = useState(null)
-
+  const [theme, setTheme] = useState(null)  
   const isDarkMode = theme === 'dark'
     
   useEffect(() => {    
-    setTheme(window.__theme)
-    setDisplay(window.__display)
-    
-    window.__onThemeChange = () => setTheme(window.__theme)
-    window.__onDisplayChange = () => setDisplay(window.__display)
+    setTheme(window.__theme)        
+    window.__onThemeChange = () => setTheme(window.__theme)    
   }, [])
 
   return (
@@ -36,8 +30,7 @@ const MenuBar = () => {
             <S.MenuBarItem>
               <Search />
             </S.MenuBarItem>
-          </S.MenuBarLink>
-        
+          </S.MenuBarLink>        
           <S.MenuBarItem
             alt="Mudar o tema"
             title="Mudar o tema"

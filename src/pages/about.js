@@ -43,7 +43,7 @@ const AboutPage = () => (
       <p>
         O blog foi desenvolvido com tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons, e 
         consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. Desenvolvido através de cursos e contribuições das
-        comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria difícil, meus sinceros agradecimentos! <span role="img" aria-label="aplausos">👏🏽👏🏽</span>
+        comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria mais difícil, meus sinceros agradecimentos! <span role="img" aria-label="aplausos">👏🏽👏🏽</span>
       </p>
       
       <h2>Hard Skills</h2>

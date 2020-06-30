@@ -5,12 +5,12 @@ import media from "styled-media-query"
 export const AvatarWrapper = styled(Img)`
     border: 2px solid var(--profileColor);
     border-radius: 10%;
-    height: 3.75rem;
+    height: 5.5rem;    
+    width: 5.5rem;
     margin: auto;
-    width: 3.75rem;
 
     ${media.lessThan("large")`
-        height: 1.875rem;
-        width: 1.875rem;
+        height: 2.5rem;
+        width: 2.5rem;
     `}
 `

@@ -9,10 +9,10 @@ export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
+  transition: color 0.5s;
   
   &:hover {
-    color: var(--highlight);
-    transition: 0.5s;
+    color: var(--highlight);    
   }
 `
 export const PostItemWrapper = styled.section`
