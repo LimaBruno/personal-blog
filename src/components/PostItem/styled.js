@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import { Calendar } from "@styled-icons/boxicons-solid/Calendar"
 import { Time } from "@styled-icons/boxicons-regular/Time"
