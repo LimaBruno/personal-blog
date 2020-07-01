@@ -63,7 +63,7 @@ const AboutPage = () => (
       <h2>Soft Skills</h2>
       <ul>
         <li>Observador;</li>
-        <li>Líder</li>
+        <li>Líder;</li>
         <li>Trabalho em Equipe;</li>
         <li>Empatíco;</li>
         <li>Persuasivo;</li>

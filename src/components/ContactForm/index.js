@@ -1,5 +1,5 @@
 import React from "react"
-import { useForm } from "react-hook-form";
+import { useForm } from "react-hook-form"
 
 import * as S from "./styled"
 
@@ -75,7 +75,8 @@ const ContactForm = () => {
                   })}
                 />
                 {errors.message && <S.Error>{errors.message.message}</S.Error>}
-            </S.LabelMain>            
+            </S.LabelMain>
+            <div data-netlify-recaptcha="true" />           
             <S.ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><S.IconSend/>Enviar</S.ContactButtonSend>
             <S.ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><S.IconRest/>Apagar</S.ContactButtonRest>                    
         </S.ContactForm>
