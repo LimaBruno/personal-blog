@@ -59,7 +59,7 @@ export default function HTML(props) {
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript" className="gatsby-noscript">
           <style>{noscriptStyle}</style>
-          Esse site não funciona sem JavaScript, habilite em seu navegador! 😎
+          Esse site não funciona sem Javascript, habilite em seu navegador! 😎
         </noscript>
         <div
           key={`body`}
