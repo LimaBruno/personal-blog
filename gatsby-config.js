@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Bruno César Lima`,
     position: `Analista de Sistemas`,
-    description: `Escrevo sobre o incrível mundo da TECNOLOGIA`,
+    description: `Escrevo sobre o incrível mundo da TECNOLOGIA e outras coisas legais!`,
     author: `@brunolima`,
     siteUrl: `https://brunocesarlima.com`,
   },
