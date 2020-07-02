@@ -21,7 +21,7 @@ const AboutPage = () => (
       <h1>Sobre mim</h1>
       <p>
         Prazer, eu sou o <strong>Bruno César Lima</strong> natural de Catalão-GO. Sou apaixonado pela tecnologia e acredito que
-        uma das composições do meu sangue seja feito por dígitos binários! <span role="img" aria-label="rosto com coração">😍</span>
+        uma das composições do meu sangue seja feito por dígitos binários! {/* <span role="img" aria-label="rosto com coração">😍</span> */}
       </p>
       <p>
         Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
@@ -43,7 +43,7 @@ const AboutPage = () => (
       <p>
         O blog foi desenvolvido com tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons, e 
         consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. Desenvolvido através de cursos e contribuições das
-        comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria mais difícil, meus sinceros agradecimentos! <span role="img" aria-label="aplausos">👏🏽👏🏽</span>
+        comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria mais difícil, meus sinceros agradecimentos! {/* <span role="img" aria-label="aplausos">👏🏽👏🏽</span> */}
       </p>
       
       <h2>Hard Skills</h2>
