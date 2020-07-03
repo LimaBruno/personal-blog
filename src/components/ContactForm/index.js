@@ -21,7 +21,7 @@ const ContactForm = () => {
             poderá preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
             mais breve possível. Desde já, agradeço pelo seu contato!
         </S.ContactDescription>
-        <S.ContactForm onSubmit={handleSubmit(onSubmit)} name="contact" method="post" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+        <S.ContactForm onSubmit={handleSubmit(onSubmit)} name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
             <S.ContactInput type="hidden" name="bot-field" />
             <S.ContactInput type="hidden" name="form-name" value="contact" />            
             <S.LabelMain for="name"><S.LabelName>Nome:</S.LabelName>
@@ -75,8 +75,7 @@ const ContactForm = () => {
                   })}
                 />
                 {errors.message && <S.Error>{errors.message.message}</S.Error>}
-            </S.LabelMain>
-            <div data-netlify-recaptcha="true" />           
+            </S.LabelMain>                   
             <S.ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><S.IconSend/>Enviar</S.ContactButtonSend>
             <S.ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><S.IconRest/>Apagar</S.ContactButtonRest>                    
         </S.ContactForm>
