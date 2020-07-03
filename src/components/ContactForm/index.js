@@ -21,7 +21,7 @@ const ContactForm = () => {
             poderá preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
             mais breve possível. Desde já, agradeço pelo seu contato!
         </S.ContactDescription>
-        <S.ContactForm  onSubmit={handleSubmit(onSubmit)} method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+        <S.ContactForm onSubmit={handleSubmit(onSubmit)} name="contact" method="post" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
             <S.ContactInput type="hidden" name="bot-field" />
             <S.ContactInput type="hidden" name="form-name" value="contact" />            
             <S.LabelMain for="name"><S.LabelName>Nome:</S.LabelName>
