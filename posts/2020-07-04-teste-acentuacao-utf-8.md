@@ -5,7 +5,7 @@ description: Teste de acentuação
 date: 2020-07-03 11:34:22
 thumbnail: assets/img/cover.png
 category: jekyll
-background: "#2DA0C3"
+background: "#B31917"
 ---
 testando o site.
 
