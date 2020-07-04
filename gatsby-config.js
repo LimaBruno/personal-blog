@@ -91,5 +91,6 @@ module.exports = {
     
     //PWA Configuration 2 
     `gatsby-plugin-offline`, //Execute "gatsby build" and "gatsby serve"
+    `gatsby-plugin-netlify-cms`
   ],
 }
