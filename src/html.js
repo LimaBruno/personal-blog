@@ -2,19 +2,30 @@ import React from "react"
 import PropTypes from "prop-types"
 
 const noscriptStyle = `
-  .gatsby-noscript {    
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    position: fixed;
-    padding: 1rem;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block;
-    background: #ff3838;
-    color: #f7f1e3;    
-  }
+.gatsby-noscript {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  height: 100vh;
+  position: fixed;  
+  left: 0;
+  right: 0;
+  color: #2e3c42;
+  background: #fff;
+  line-height: 2rem;
+  z-index: 10000;
+}
+a {
+  color: #2980b9;
+  text-decoration: none;
+  border-bottom: 2px dashed #2e3c42;
+  padding-bottom: 0.2rem;
+  transition: 0.5s all;
+}
+a:hover {    
+  color: #1fa1f2;
+}
 `
 
 export default function HTML(props) {
@@ -28,6 +39,8 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
         <script dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var
           f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -72,7 +85,8 @@ export default function HTML(props) {
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript" className="gatsby-noscript">
           <style>{noscriptStyle}</style>
-          Esse site não funciona sem Javascript, habilite em seu navegador! 😎
+          😥 Esse site não funciona sem Javascript.
+          <p>Você poderá <a href="https://enable-javascript.com/pt/" alt="Habilitar Javascript" target="_blank">habilitar o Javascript nas configurações do seu navegador</a></p>
         </noscript>
         <div
           key={`body`}

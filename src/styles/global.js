@@ -96,7 +96,7 @@ const GlobalStyle = createGlobalStyle`
         --backgroundMoblie: #dfe4ea;
         --formColor: #d7d7d7;
         --btnColor: #1e272e;
-        --btnSendColor: #1e272e;
+        --btnSendColor: #1fa1f2;
         --btnResetColor: #bf1650;
         --profileColor: #222f3e;
         --recommendPost: #b2bec3;    
