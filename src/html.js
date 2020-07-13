@@ -85,8 +85,9 @@ export default function HTML(props) {
         {props.preBodyComponents}
         <noscript key="noscript" id="gatsby-noscript" className="gatsby-noscript">
           <style>{noscriptStyle}</style>
-          😥 Esse site não funciona sem Javascript.
-          <p>Você poderá <a href="https://enable-javascript.com/pt/" alt="Habilitar Javascript" target="_blank">habilitar o Javascript nas configurações do seu navegador</a></p>
+          😥 Esse site não funciona sem JavaScript.
+          <p>Você poderá <a href="https://enable-javascript.com/pt/" alt="Habilitar JavaScript" target="_blank" rel="noopener noreferrer">
+            habilitar o JavaScript no seu navegador</a></p>
         </noscript>
         <div
           key={`body`}
