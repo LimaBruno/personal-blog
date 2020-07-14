@@ -51,11 +51,11 @@ const AboutPage = () => (
         <dt><strong>Metodologias:</strong></dt>
         <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT.</dd>
         <dt><strong>Gestão:</strong></dt>
-        <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</dd>
+        <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, Análise SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla), BPMN (Bizagi, Heflo).</dd>
+        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla), BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
-        <dd>Equipamento CISCO, Linux (Debian, CentOs), Windows Server 03/08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
+        <dd>Equipamentos CISCO, Linux (Debian, CentOs), Windows Server 03/08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
         <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
       </dl>
