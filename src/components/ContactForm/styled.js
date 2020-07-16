@@ -58,7 +58,7 @@ export const ContactArea = styled.textarea`
     border: 1px solid var(--texts);
     border-left: 5px solid var(--progress-bar);
     border-radius: 4px;    
-    margin: 0.5rem 20rem 0 1.5rem;   
+    margin: 0.5rem 20rem 1rem 1.5rem;   
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -104,6 +104,9 @@ export const IconRest = styled(Cancel)`
     width: 15px;
     margin: -2px 10px 0 0;
     color: #d63031;
+`
+
+export const Recaptcha = styled.p`  
 `
 
 export const MarginDiv = styled.div`

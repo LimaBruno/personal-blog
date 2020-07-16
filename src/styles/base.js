@@ -71,7 +71,7 @@ export const MainContent = styled.section`
   ol,
   blockquote,
   .tags,
-  iframe,
+  
   .button-post {
     color: var(--postColor);
     font-size: 1.25rem;
@@ -118,14 +118,7 @@ export const MainContent = styled.section`
     max-width: 100%;
     margin: 1.875rem auto;
   }
-  iframe {
-    padding: 0 1.6rem 1.6rem;
-    width: 100%;
-
-    ${media.lessThan("large")`
-      padding: 0 1rem;
-    `}
-  }
+ 
   blockquote {
     color: var(--postColor);
     border-left: 0.3rem solid var(--texts);
