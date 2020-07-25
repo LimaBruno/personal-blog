@@ -16,8 +16,7 @@ const AboutPage = () => (
       description="Quem é o Bruno César Lima?"
     />
     <ReadingProgress target={target} />
-    <MainContent>
-    
+    <MainContent>    
       <h1>Sobre mim</h1>
       <p>
         Prazer, eu sou o <strong>Bruno César Lima</strong> natural de Catalão-GO. Sou apaixonado pela tecnologia e acredito que
@@ -25,7 +24,7 @@ const AboutPage = () => (
       </p>
       <p>
         Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
-        em <strong>Segurança da Informação</strong> pela universidade federal de Goiás - UFG em 2012. Cursei algumas matérias do mestrado
+        em <strong>Segurança da Informação</strong> pela universidade federal de Goiás - UFG em 2012. Cursei algumas matérias no mestrado
         <strong> Gestão Organizacional</strong> com ênfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF a trabalho.
       </p>
       <p>
@@ -66,8 +65,7 @@ const AboutPage = () => (
         <li>Líder;</li>
         <li>Trabalho em Equipe;</li>
         <li>Empatíco;</li>
-        <li>Persuasivo;</li>
-        <li>Capacidade Analítica, Organizado;</li>
+        <li>Capacidade Analítica</li>
         <li>Criativo, Inovador;</li>
         <li>Ético, Integro;</li>
       </ul>

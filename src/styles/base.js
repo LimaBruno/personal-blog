@@ -59,7 +59,6 @@ export const MainContent = styled.section`
     padding: 2rem 0;
     max-width: 100%;
   `}
-
   p,
   h1,
   h2,
@@ -70,8 +69,7 @@ export const MainContent = styled.section`
   dd,
   ol,
   blockquote,
-  .tags,
-  
+  .tags,  
   .button-post {
     color: var(--postColor);
     font-size: 1.25rem;
@@ -200,15 +198,15 @@ export const MainContent = styled.section`
   }
   a {
     border-bottom: 2px dashed var(--linksGeneral);
+    padding-bottom: 0.3rem;
     color: var(--linksGeneral);
     text-decoration: none;
     font-weight: bold;
-    transition: opacity 0.5s;
+    transition: 0.5s all;  
     svg {
       color: var(--postColor);
     }
-    &:hover {
-      transition: 0.5s;      
+    &:hover {           
       color: var(--highlight);
       opacity: 0.8;
     }
