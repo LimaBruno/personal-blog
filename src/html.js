@@ -38,6 +38,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link rel="canonical" href="https://brunocesarlima.com.br"/>
         {props.headComponents}
         <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
