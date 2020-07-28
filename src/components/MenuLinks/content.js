@@ -5,11 +5,11 @@ const links = [
     },
     {
         label: "Sobre Mim",
-        url: "/about/",
+        url: "/about",
     },
     {
         label: "Contato",
-        url: "/contact/",
+        url: "/contact",
     },
 
 ]

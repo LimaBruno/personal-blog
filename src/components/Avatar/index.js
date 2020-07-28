@@ -7,9 +7,9 @@ import * as S from "./styled"
 const Avatar = () => {
    const { avatarImage } = useStaticQuery(graphql`
         query {
-            avatarImage: file(relativePath: { eq: "bruno-cesar-lima.png" }){
+            avatarImage: file(relativePath: { eq: "bruno-cesar-lima.jpg" }){
                 childImageSharp {
-                    fluid(maxWidth: 200, quality: 100) {
+                    fluid(maxWidth: 100, quality: 100) {
                         ...GatsbyImageSharpFluid_tracedSVG
 
                     }

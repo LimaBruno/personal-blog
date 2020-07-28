@@ -82,10 +82,7 @@ module.exports = {
         theme_color: `#282a36`, // Color browser mobile
         display: `minimal-ui`, //Style display
         icon: `src/images/bruno-cesar-lima-icon.png`, // This path is relative to the root of the site.
-        icon_options: {
-          purpose: `maskable`,
-        },
-      },
+     },
     },
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',

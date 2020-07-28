@@ -32,7 +32,7 @@ const MenuBar = () => {
               <Home />
             </MenuBarItem>
           </MenuBarLink>
-          <MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar Posts" title="Pesquisar" activeClassName="active">
+          <MenuBarLink to="/search" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar Posts" title="Pesquisar" activeClassName="active">
             <MenuBarItem>
               <Search />
             </MenuBarItem>
