@@ -3,32 +3,39 @@ import React from "react"
 import Icons from "./icons"
 import links from "./content"
 
-import * as S from "./styled"
+import {
+  SocialLinksWrapper,
+  SocialLinksList,
+  SocialLinksItem,
+  SocialLinksLink,
+  IconWrapper,
+} from "./styled"
+
 const SocialLinks = () => (
-  <S.SocialLinksWrapper>
-    <S.SocialLinksList>
+  <SocialLinksWrapper>
+    <SocialLinksList>
       {
         links.map((link, i) => {
         const Icon = Icons[link.label]
 
         return (
-          <S.SocialLinksItem key={i}>
-            <S.SocialLinksLink
+          <SocialLinksItem key={i}>
+            <SocialLinksLink
               href={link.url}
               alt={"Icone do " + link.label}
               title={link.label}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <S.IconWrapper>
+              <IconWrapper>
                 <Icon />
-              </S.IconWrapper>
-            </S.SocialLinksLink>
-          </S.SocialLinksItem>
+              </IconWrapper>
+            </SocialLinksLink>
+          </SocialLinksItem>
         )
       })}
-    </S.SocialLinksList>
-  </S.SocialLinksWrapper>
+    </SocialLinksList>
+  </SocialLinksWrapper>
 )
 
 export default SocialLinks

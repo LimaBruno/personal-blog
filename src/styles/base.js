@@ -115,13 +115,15 @@ export const MainContent = styled.section`
     display: block;
     max-width: 100%;
     margin: 1.875rem auto;
-  }
- 
+  } 
   blockquote {
     color: var(--postColor);
     border-left: 0.3rem solid var(--texts);
-    padding: 0 1.875rem;
-    margin: 3.125rem auto;
+    padding: 0 1.1rem;
+    margin: 0 3.125rem 0 1.5rem;
+    ${media.lessThan("large")`
+      margin: 0 1rem 0 1.1rem;
+    `}    
   }
   hr {
     border: 1px solid var(--borders);

@@ -1,21 +1,24 @@
 import React from "react"
 import propTypes from "prop-types"
 
-import * as S from "./styled"
+import {
+  RecommendedWrapper,
+  RecommendedLink,  
+} from "./styled"
 
 const RecommendedPosts = ({ next, previous }) => (
-  <S.RecommendedWrapper>
+  <RecommendedWrapper>
     {previous && (
-      <S.RecommendedLink to={previous.fields.slug} cover direction="left" bg="var(--background)" className="previous" alt={previous.frontmatter.title}>
+      <RecommendedLink to={previous.fields.slug} cover direction="left" bg="var(--background)" className="previous" alt={previous.frontmatter.title}>
         {previous.frontmatter.title}
-      </S.RecommendedLink>
+      </RecommendedLink>
     )}
     {next && (
-      <S.RecommendedLink to={next.fields.slug} cover direction="right" bg="var(--background)" className="next" alt={next.frontmatter.title}>
+      <RecommendedLink to={next.fields.slug} cover direction="right" bg="var(--background)" className="next" alt={next.frontmatter.title}>
         {next.frontmatter.title}
-      </S.RecommendedLink>
+      </RecommendedLink>
     )}
-  </S.RecommendedWrapper>
+  </RecommendedWrapper>
 )
 
 RecommendedPosts.propTypes = {

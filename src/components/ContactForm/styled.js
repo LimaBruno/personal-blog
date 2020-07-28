@@ -26,12 +26,12 @@ export const LabelName = styled.p`
     font-weight: bold !important;             
 `
 
-export const ContactForm = styled.form`       
+export const ContactFormMain = styled.form`       
 `
 
 export const ContactInput = styled.input`
     padding: 1rem;
-    border: 1px solid var(--texts);
+    border: 1px solid var(--formBorder);
     border-left: 5px solid var(--progress-bar);
     border-radius: 4px;    
     margin: 0.5rem 20rem 0 1.5rem;    
@@ -55,7 +55,7 @@ export const Error = styled.span`
 
 export const ContactArea = styled.textarea`
     padding: 1rem;
-    border: 1px solid var(--texts);
+    border: 1px solid var(--formBorder);
     border-left: 5px solid var(--progress-bar);
     border-radius: 4px;    
     margin: 0.5rem 20rem 1rem 1.5rem;   

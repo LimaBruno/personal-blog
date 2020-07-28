@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react"
-import * as S from "./styled"
+import {
+  ReadingProgressBar,
+} from "./styled"
 
 const ReadingProgress = ({ target }) => {
   const [readingProgress, setReadingProgress] = useState(0)
@@ -41,7 +43,7 @@ const ReadingProgress = ({ target }) => {
     return () => window.removeEventListener("scroll", scrollListener)
   })
 
-  return <S.ReadingProgressBar width={scrolled ? `${readingProgress}%` : `0%`} />
+  return <ReadingProgressBar width={scrolled ? `${readingProgress}%` : `0%`} />
 }
 
 export default ReadingProgress

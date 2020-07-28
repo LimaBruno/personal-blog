@@ -7,7 +7,16 @@ import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
 import ReadingProgress from "../components/ReadingProgress"
 
-import * as S from "../styles/base"
+import {
+    PostHeader,
+    PostDate,
+    CalendarIcon,
+    TimeIcon,
+    PostTitle,
+    PostDescription,
+    MainContent,
+    MarginDiv
+} from "../styles/base"
 
 const BlogPost = ({ data, pageContext }) => {
     const post = data.markdownRemark
@@ -23,23 +32,23 @@ const BlogPost = ({ data, pageContext }) => {
                     description={post.frontmatter.description}
                     image={post.frontmatter.image}
                 />
-                <S.PostHeader>
-                    <S.PostDate>
-                        <S.CalendarIcon/> {post.frontmatter.date} - <S.TimeIcon/> {post.timeToRead} min de leitura
-                    </S.PostDate>
-                    <S.PostTitle>
+                <PostHeader>
+                    <PostDate>
+                        <CalendarIcon/> {post.frontmatter.date} - <TimeIcon/> {post.timeToRead} min de leitura
+                    </PostDate>
+                    <PostTitle>
                         {post.frontmatter.title}
-                    </S.PostTitle>
-                    <S.PostDescription>
+                    </PostTitle>
+                    <PostDescription>
                         {post.frontmatter.description}
-                    </S.PostDescription>
-                </S.PostHeader>
-                <S.MainContent>
+                    </PostDescription>
+                </PostHeader>
+                <MainContent>
                     <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
-                </S.MainContent>
+                </MainContent>
                 <RecommendedPosts next={next} previous={previous} />
                 <Comments url={post.fields.slug} title={post.frontmatter.title} />
-                <S.MarginDiv/>
+                <MarginDiv/>
             </Layout>
         </div>
     )

@@ -4,21 +4,24 @@ import Profile from "../Profile"
 import SocialLinks from "../SocialLinks"
 import MenuLinks from "../MenuLinks"
 
-import * as S from "./styled"
+import {
+  SidebarWrapper,
+  MenuIcon,
+} from "./styled"
 
 const Sidebar = () => {
     const [ nav, showNav ] = useState(false)
     return(
-        <S.SidebarWrapper>
+        <SidebarWrapper>
             <Profile />
             <SocialLinks />
-            <S.MenuIcon nav={nav} onClick={() => showNav(!nav)} aria-label="Menu">
+            <MenuIcon nav={nav} onClick={() => showNav(!nav)} aria-label="Menu">
                 <div/>
                 <div/>
                 <div/>
-            </S.MenuIcon>
+            </MenuIcon>
             <MenuLinks nav={nav} />    
-        </S.SidebarWrapper>
+        </SidebarWrapper>
     )   
 }
 

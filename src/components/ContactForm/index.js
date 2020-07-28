@@ -1,8 +1,24 @@
 import React from "react"
 import { useForm } from "react-hook-form"
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from "react-google-recaptcha"
 
-import * as S from "./styled"
+import {
+  ContactWrapper,
+  ContactTitle,
+  ContactDescription,
+  ContactFormMain,
+  ContactInput,
+  ContactArea,
+  LabelMain,
+  LabelName,
+  Error,
+  Recaptcha,
+  ContactButtonSend,
+  IconSend,
+  ContactButtonRest,
+  IconRest,
+  MarginDiv,
+} from "./styled"
 
 const ContactForm = () => {
   
@@ -19,18 +35,18 @@ const ContactForm = () => {
   }
    
   return(
-    <S.ContactWrapper>
-        <S.ContactTitle>Vamos Conversar?</S.ContactTitle>
-        <S.ContactDescription>
+    <ContactWrapper>
+        <ContactTitle>Vamos Conversar?</ContactTitle>
+        <ContactDescription>
             Deseja falar comigo? Como posso ajudá-lo? Simples! Basta me procurar nas redes sociais ou
             poderá preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
             mais breve possível. Desde já, agradeço pelo seu contato!
-        </S.ContactDescription>
-        <S.ContactForm onSubmit={handleSubmit(onSubmit)} name="contact" method="post" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
-            <S.ContactInput type="hidden" name="bot-field" />
-            <S.ContactInput type="hidden" name="form-name" value="contact" />            
-            <S.LabelMain for="name"><S.LabelName>Nome:</S.LabelName>
-                <S.ContactInput 
+        </ContactDescription>
+        <ContactFormMain onSubmit={handleSubmit(onSubmit)} name="contact" method="post" data-netlify-recaptcha="true" netlify-honeypot="bot-field" data-netlify="true">
+            <ContactInput type="hidden" name="bot-field" />
+            <ContactInput type="hidden" name="form-name" value="contact" />            
+            <LabelMain for="name"><LabelName>Nome:</LabelName>
+                <ContactInput 
                   type="text" 
                   name="name" 
                   id="name" 
@@ -44,10 +60,10 @@ const ContactForm = () => {
                     }
                   })}
                 />
-                {errors.name && <S.Error>{errors.name.message}</S.Error>}
-            </S.LabelMain>               
-            <S.LabelMain for="email"><S.LabelName>Email:</S.LabelName>
-                <S.ContactInput 
+                {errors.name && <Error>{errors.name.message}</Error>}
+            </LabelMain>               
+            <LabelMain for="email"><LabelName>Email:</LabelName>
+                <ContactInput 
                   type="email" 
                   name="email" 
                   id="email"  
@@ -61,10 +77,10 @@ const ContactForm = () => {
                     }
                   })}
                 />
-                {errors.email && <S.Error>{errors.email.message}</S.Error>}
-            </S.LabelMain>            
-            <S.LabelMain for="message"><S.LabelName>Mensagem:</S.LabelName>
-                <S.ContactArea 
+                {errors.email && <Error>{errors.email.message}</Error>}
+            </LabelMain>            
+            <LabelMain for="message"><LabelName>Mensagem:</LabelName>
+                <ContactArea 
                   name="message"
                   id="message"
                   rows="5"
@@ -79,19 +95,19 @@ const ContactForm = () => {
                     }
                   })}
                 />
-                {errors.message && <S.Error>{errors.message.message}</S.Error>}
-            </S.LabelMain>
-            <S.Recaptcha>
+                {errors.message && <Error>{errors.message.message}</Error>}
+            </LabelMain>
+            <Recaptcha>
             <ReCAPTCHA
               sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY}
               onChange={onChange}
             />
-            </S.Recaptcha>
-            <S.ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><S.IconSend/>Enviar</S.ContactButtonSend>
-            <S.ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><S.IconRest/>Apagar</S.ContactButtonRest>                    
-        </S.ContactForm>
-        <S.MarginDiv/>
-    </S.ContactWrapper>
+            </Recaptcha>
+            <ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><IconSend/>Enviar</ContactButtonSend>
+            <ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><IconRest/>Apagar</ContactButtonRest>                    
+        </ContactFormMain>
+        <MarginDiv/>
+    </ContactWrapper>
   )
 }
 export default ContactForm

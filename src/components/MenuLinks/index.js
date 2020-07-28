@@ -2,21 +2,27 @@ import React from "react"
 
 import links from "./content"
 
-import * as S from "./styled"
+import {
+    MenuLinksWrapper,
+    MenuLinksList,
+    MenuLinksItem,
+    MenuLinksLink,
+
+} from "./styled"
 
 const MenuLinks = ({nav}) => (
-    <S.MenuLinksWrapper nav={nav}> 
-        <S.MenuLinksList>
+    <MenuLinksWrapper nav={nav}> 
+        <MenuLinksList>
             {links.map((link, i) => (
-                <S.MenuLinksItem key={i}>
-                    <S.MenuLinksLink cover direction="left" bg="var(--background)" duration={0.6} to={link.url} alt={link.label} activeClassName="active">
+                <MenuLinksItem key={i}>
+                    <MenuLinksLink cover direction="left" bg="var(--background)" duration={0.6} to={link.url} alt={link.label} activeClassName="active">
                         {link.label}
-                    </S.MenuLinksLink>
-                </S.MenuLinksItem>
+                    </MenuLinksLink>
+                </MenuLinksItem>
             ))
             }
-        </S.MenuLinksList>
-    </S.MenuLinksWrapper>
+        </MenuLinksList>
+    </MenuLinksWrapper>
 
 )
 

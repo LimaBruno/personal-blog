@@ -81,7 +81,7 @@ module.exports = {
         background_color: `#282a36`, //Backgrond in the mobile
         theme_color: `#282a36`, // Color browser mobile
         display: `minimal-ui`, //Style display
-        icon: `src/images/bruno_fav.png`, // This path is relative to the root of the site.
+        icon: `src/images/bruno-cesar-lima-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,

@@ -6,7 +6,13 @@ import { UpArrowAlt as Arrow } from "styled-icons/boxicons-regular/UpArrowAlt"
 import { Sun as Light } from "@styled-icons/boxicons-solid/Sun"
 import { Moon } from "@styled-icons/boxicons-solid/Moon"
 
-import * as S from "./styled"
+import {
+  MenuBarWrapper,
+  MenuBarGroup,
+  MenuBarLink,
+  MenuBarItem,
+
+} from "./styled"
 
 const MenuBar = () => {
 
@@ -19,19 +25,19 @@ const MenuBar = () => {
   }, [])
 
   return (
-      <S.MenuBarWrapper>
-        <S.MenuBarGroup>
-          <S.MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} alt="Home" title="Home" activeClassName="active">
-            <S.MenuBarItem>
+      <MenuBarWrapper>
+        <MenuBarGroup>
+          <MenuBarLink to="/" cover direction="right" bg="var(--background)" duration={0.6} alt="Home" title="Home" activeClassName="active">
+            <MenuBarItem>
               <Home />
-            </S.MenuBarItem>
-          </S.MenuBarLink>
-          <S.MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar Posts" title="Pesquisar" activeClassName="active">
-            <S.MenuBarItem>
+            </MenuBarItem>
+          </MenuBarLink>
+          <MenuBarLink to="/search/" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar Posts" title="Pesquisar" activeClassName="active">
+            <MenuBarItem>
               <Search />
-            </S.MenuBarItem>
-          </S.MenuBarLink>        
-          <S.MenuBarItem
+            </MenuBarItem>
+          </MenuBarLink>        
+          <MenuBarItem
             alt="Mudar o tema"
             title="Mudar o tema"
             onClick={() => {
@@ -49,8 +55,8 @@ const MenuBar = () => {
             isDarkMode={isDarkMode}       
           >
             {isDarkMode ? <Light/> : <Moon/> }
-          </S.MenuBarItem>
-          <S.MenuBarItem
+          </MenuBarItem>
+          <MenuBarItem
             alt="Ir para o topo"
             title="Ir para o topo"
             onClick={() => {
@@ -58,9 +64,9 @@ const MenuBar = () => {
             }}
           >
             <Arrow />
-          </S.MenuBarItem>
-        </S.MenuBarGroup>
-      </S.MenuBarWrapper>
+          </MenuBarItem>
+        </MenuBarGroup>
+      </MenuBarWrapper>
   )  
 }
 

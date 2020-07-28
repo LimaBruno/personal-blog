@@ -9,8 +9,7 @@ export const PostItemLink = styled(AniLink)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
-  transition: color 0.5s;
-  
+  transition: color 0.5s;  
   &:hover {
     color: var(--highlight);    
   }
@@ -30,6 +29,7 @@ export const PostItemWrapper = styled.section`
 `
 
 export const PostItemTag = styled.div`
+  color: #c8d6e5;
   align-items: center;
   background: ${props => props.background ? props.background : 'var(--highlight)' };
   border-radius: 10%;
