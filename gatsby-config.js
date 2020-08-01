@@ -8,7 +8,7 @@ module.exports = {
     position: `Analista de Sistemas`,
     description: `Escrevo sobre o incrível mundo da TECNOLOGIA e outras coisas legais!`,
     author: `@brunolima`,
-    siteUrl: `https://brunocesarlima.com`,
+    siteUrl: `https://brunocesarlima.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,

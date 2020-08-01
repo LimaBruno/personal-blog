@@ -25,7 +25,9 @@ const encode = (data) => {
 	return Object.keys(data).map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&')
 }
 const ContactForm = () => {
-	const { register, handleSubmit, errors, setValue } = useForm()
+	const { register, handleSubmit, errors, setValue } = useForm({
+		mode: "onChange"
+	})
 	const [ feedbackMsg, setFeedbackMsg ] = useState(null)
 	const [ captchaMsg, setCaptchaMsg ] = useState(null)
 	let captchaRef = useRef(null)

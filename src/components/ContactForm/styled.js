@@ -72,7 +72,7 @@ export const ContactButtonSend = styled.button`
     padding: 0.5rem;
     padding-right: 2rem;
     margin: 0rem 2rem 0 1.5rem;    
-    border: 1px solid var(--texts);
+    border: 1px solid var(--formBorder);
     border-left: 5px solid var(--btnSendColor);
     border-radius: 4px;
     font-weight: bold;
@@ -86,7 +86,7 @@ export const ContactButtonSend = styled.button`
 export const ContactButtonRest = styled.button`
     padding: 0.5rem;
     padding-right: 2rem;
-    border: 1px solid var(--texts);
+    border: 1px solid var(--formBorder);
     border-left: 5px solid var(--btnResetColor);
     border-radius: 4px;
     font-weight: bold;
