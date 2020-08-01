@@ -58,7 +58,7 @@ export const ContactArea = styled.textarea`
     border: 1px solid var(--formBorder);
     border-left: 5px solid var(--progress-bar);
     border-radius: 4px;    
-    margin: 0.5rem 20rem 1rem 1.5rem;   
+    margin: 0.5rem 20rem 0 1.5rem;   
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -71,7 +71,7 @@ export const ContactArea = styled.textarea`
 export const ContactButtonSend = styled.button`
     padding: 0.5rem;
     padding-right: 2rem;
-    margin: 1.5rem 2rem 0 1.5rem;    
+    margin: 0rem 2rem 0 1.5rem;    
     border: 1px solid var(--texts);
     border-left: 5px solid var(--btnSendColor);
     border-radius: 4px;
@@ -106,7 +106,12 @@ export const IconRest = styled(Cancel)`
     color: #d63031;
 `
 
-export const Recaptcha = styled.p`  
+export const Recaptcha = styled.div`
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  ${media.lessThan("large")`
+    margin-left: 1rem;
+  `}  
 `
 
 export const MarginDiv = styled.div`
