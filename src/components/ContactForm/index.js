@@ -29,7 +29,7 @@ const ContactForm = () => {
 		mode: "onChange"
 	})
 	const [ feedbackMsg, setFeedbackMsg ] = useState(null)
-	const [ captchaMsg, setCaptchaMsg ] = useState(null)
+	//const [ captchaMsg, setCaptchaMsg ] = useState(null)
 	let captchaRef = useRef(null)
 
 	useEffect(
@@ -44,7 +44,8 @@ const ContactForm = () => {
 		
 		if (!captchaValue) {
 			console.log('CAPTCHA Missing!');
-			setCaptchaMsg('Selecione "Não sou um robô"')
+			//setCaptchaMsg('Selecione "Não sou um robô"')
+			setFeedbackMsg('⚠ Selecione "Não sou um robô"')
 			return;
 		}
 		fetch('/', {
@@ -147,8 +148,8 @@ const ContactForm = () => {
 				  }}
 				/>
       		</Recaptcha>
-			{captchaMsg && <Error>{captchaMsg}</Error>}
-      		<br/>
+			{/*{captchaMsg && <Error>{captchaMsg}</Error>}
+      		<br/>*/}
       		{feedbackMsg && <h3>{feedbackMsg}</h3>}
       		<br/>
 			<ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><IconSend/>Enviar</ContactButtonSend>
