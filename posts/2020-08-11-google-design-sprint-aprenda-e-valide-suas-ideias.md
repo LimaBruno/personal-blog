@@ -753,14 +753,18 @@ No ultimo dia, é a hora de testar o protótipo com os usuários, obter feedback
 * Testes a/b
 * Feedbacks com usuários
 
-
-
-
+<br />
+<br />
+--- FIM PROCEDIMENTO ---
+<br />
+<br />
+<br />
+<br />
 
 Nota: **Não “adapte/quebre” seu processo ou execução, pois ocasionara em perdas de qualidade e baixa produtividade**. (Infelizmente, já presenciei o ocorrido 😪).
 
-
-
+<br />
+<br />
 
 
 O que você achou deste post, estou aberto para críticas (construtivas) e aprendizado? Você já conhecia ou utilizou em algum momento? Caso sim, conte como foi sua experiência? Agradeço por sua leitura, até mais!
