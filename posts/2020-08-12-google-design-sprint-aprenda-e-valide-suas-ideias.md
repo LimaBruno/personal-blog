@@ -16,7 +16,7 @@ Quando surge um insight, durante o brainstorming (tempestade de ideias) para des
 De forma resumida e direta, **Design Sprint é um processo já estabelecido/definido** e o **Design Thinking é composto em diversas ferramentas** que você poderá utilizar para obter aprendizado.
 
 
-Para que você tenha uma melhor compreensão a diferença entre ambas, imagine que irá preparar “uma macarronada” (isto mesmo! 🍝), existem vários ingredientes a sua disposição como (macarrão espaguete, macarrão parafuso, presunto, queijo, calabresa, milho, ervilhas, palmito, bata palha .... e etc.), você poderá escolher o que mais gosta e preparar a sua macarronada como queira, este é o papel do Design Thinking.
+Para que você tenha uma melhor compreensão a diferença entre ambas, imagine que irá preparar “uma macarronada” (isto mesmo! 🥣), existem vários ingredientes a sua disposição como (macarrão espaguete, macarrão parafuso, presunto, queijo, calabresa, milho, ervilhas, palmito, bata palha .... e etc.), você poderá escolher o que mais gosta e preparar a sua macarronada como queira. O Design Thinking, oferece esta "liberadade" de escolha como utilizar suas ferramentas.
 
 
 ![Design Thinking – Ingredientes](assets/img/ingredientes-de-macarrao.jpg "Design Thinking – Ingredientes")
@@ -49,7 +49,7 @@ Neste post, estarei abordando apenas sobre a metodologia Design Sprint, que por 
 ## Como funciona o Design Sprint?
 
 
-Como havia informado, Design Sprint é um processo já estabelecido/definido, ou seja, tem apenas um único sprint (“ciclo”) com duração de apenas uma semana, iniciando-se na segunda-feira e com término na sexta-feira, totalizando cinco dias e com a duração máxima de 40 horas (5 dias x 8 horas). A metodologia descreve que no último dia (sexta-feira), já se tenha um produto (tangível ou não) e com diversos feedbacks de usuário final. Em resumo, o intuito não é um produto final já em produção após o fim da sprint, mas sim o seu “aprendizado e valor” (“através deste processo podemos melhorar o produto final, obter novas ideias e outros”). É recomendado em “rodar a sprint” mesmo que o projeto seja um MVP - minimum viable product (produto viável mínimo), pois “encurtará” o seu processo de aprendizado e custo.
+Como havia informado, Design Sprint é um processo já estabelecido/definido, ou seja, tem apenas um único sprint (“ciclo”) com duração de apenas uma semana, iniciando-se (em preferência) na segunda-feira e com término na sexta-feira, totalizando cinco dias e com a duração máxima de 40 horas (5 dias x 8 horas). A metodologia descreve que no último dia (sexta-feira), já se tenha um produto (tangível ou não) e com diversos feedbacks de usuário final. Em resumo, o intuito não é um produto final já em produção após o fim da sprint, mas sim o seu “aprendizado e valor” (“através deste processo podemos melhorar o produto final, obter novas ideias e outros”). É recomendado em “rodar a sprint” mesmo que o projeto seja um MVP - minimum viable product (produto viável mínimo), pois “encurtará” o seu processo de aprendizado e custo.
 
 ![Design Sprint aplicada no MVP](assets/img/mvp-e-design-sprint.jpg "Design Sprint aplicada no MVP")
 
@@ -69,16 +69,17 @@ O primeiro dia é a fase do “mapeamento/conhecimento”, onde iremos mapear in
 
 * Google Analytics
 * Google Trends
-* Estudo de caso
+* Estudo de caso (hipótese, ideias, cases de sucesso e etc.)
 * Entrevistas com especialistas / usuário final
 
 ### Dia 2 – Terça-feira - SKETCH
 
 Após o primeiro dia da sprint, já com diversas informações e dados. Chegou a hora de esboçar (desenhar) as ideias mapeadas. Este é um momento colaborativo, todos devem participar e cada integrante deverá propor sua solução.
 
-**Sugestão de ferramenta:**
+**Sugestões de ferramentas:**
 
 * Rabiscoframes (protótipos de baixa fidelidade)
+* HMW - How Might We (como nós podemos)
 
 ### Dia 3 – Quarta-feira – DECIDE
 
@@ -86,7 +87,7 @@ O terceiro dia da sprint será para decidir qual caminho é mais viável, confro
 
 **Sugestão de ferramenta:**
 
-* Votação, feedbacks
+* Zen Voting
 
 ### Dia 4 – Quinta-feira – PROTO-TYPE
 
@@ -94,8 +95,8 @@ Após a decisão do chegou o momento em desenvolver um protótipo, este deverá 
 
 **Sugestões de ferramentas:**
 
-* Maquetes
-* Wireframes (protótipos de média fidelidade)
+* Protótipo em Maquete
+* Axure RP, Adobe XD, Invision
 
 ### Dia 5 – Sexta-feira – TEST
 
@@ -105,21 +106,18 @@ No ultimo dia, é a hora de testar o protótipo com os usuários, obter feedback
 
 * Testes a/b
 * Feedbacks com usuários
-
-  <br/>
-
-  <br/>
+* Analise Cognitiva
+<br/>
+<br/>
 
 Nota: **Não “adapte/quebre” seu processo ou execução, pois ocasionara em perdas de qualidade e baixa produtividade**. (Infelizmente, já presenciei o ocorrido 😪).
 
 <br/>
-
 <br/>
 
-\--- FIM  ---
+--- FIM  ---
 
 <br/>
-
 <br/>
 
-O que você achou deste post, estou aberto para críticas (construtivas) e aprendizado? Você já conhecia ou utilizou em algum momento? Caso sim, conte como foi sua experiência? Agradeço por sua leitura, até mais!
+O que você achou deste post, estou aberto para críticas (construtivas) e sugestões. Já utilizou em algum momento? Caso sim, como foi sua experiência? Caso não, o que falta para adotar? Agradeço por sua leitura, até mais!
