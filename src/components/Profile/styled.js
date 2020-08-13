@@ -35,12 +35,12 @@ export const ProfileAuthor = styled.h1`
 
 export const ProfilePosition = styled.small`
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-top: 0.2rem;
 
   ${media.lessThan("large")`
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-top: 0.2rem;
   `}
 `

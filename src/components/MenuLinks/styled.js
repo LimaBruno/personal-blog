@@ -3,6 +3,7 @@ import media from "styled-media-query"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const MenuLinksWrapper = styled.nav`
+  padding-top: 2.5rem;
   ${media.lessThan("large")`
     display: flex;
     flex-direction: column;

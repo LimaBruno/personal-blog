@@ -54,7 +54,7 @@ const AboutPage = () => (
         <dt><strong>Desenvolvimento:</strong></dt>
         <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla), BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
-        <dd>Equipamentos CISCO, Linux (Debian, CentOs), Windows Server 03/08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
+        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
         <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
       </dl>
@@ -65,6 +65,7 @@ const AboutPage = () => (
         <li>Líder;</li>
         <li>Trabalho em Equipe;</li>
         <li>Empatíco;</li>
+        <li>Planejador;</li>
         <li>Capacidade Analítica;</li>
         <li>Criativo, Inovador;</li>
         <li>Ético, Integro;</li>

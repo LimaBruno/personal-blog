@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 
 import Profile from "../Profile"
-import SocialLinks from "../SocialLinks"
+//import SocialLinks from "../SocialLinks"
 import MenuLinks from "../MenuLinks"
 
 import {
@@ -14,7 +14,7 @@ const Sidebar = () => {
     return(
         <SidebarWrapper>
             <Profile />
-            <SocialLinks />
+            {/* <SocialLinks /> */}
             <MenuIcon nav={nav} onClick={() => showNav(!nav)} aria-label="Menu">
                 <div/>
                 <div/>

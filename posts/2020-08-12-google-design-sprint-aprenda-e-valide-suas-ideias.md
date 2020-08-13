@@ -16,7 +16,7 @@ Quando surge um insight, durante o brainstorming (tempestade de ideias) para des
 De forma resumida e direta, **Design Sprint é um processo já estabelecido/definido** e o **Design Thinking é composto em diversas ferramentas** que você poderá utilizar para obter aprendizado.
 
 
-Para que você tenha uma melhor compreensão a diferença entre ambas, imagine que irá preparar “uma macarronada” (isto mesmo! 🥣), existem vários ingredientes a sua disposição como (macarrão espaguete, macarrão parafuso, presunto, queijo, calabresa, milho, ervilhas, palmito, bata palha .... e etc.), você poderá escolher o que mais gosta e preparar a sua macarronada como queira. Esta **"liberdade" de escolha é o papel do Design Thinking**.
+Para que você tenha uma melhor compreensão entre ambas, imagine que irá preparar uma  “macarronada” (isto mesmo! 🥣), existem vários ingredientes a sua disposição como (macarrão espaguete, macarrão parafuso, presunto, queijo, calabresa, milho, palmito, bata palha .... e etc.), você poderá escolher o que mais gosta e preparar a sua macarronada como queira. Esta **"liberdade" de escolha e preparo é o papel do Design Thinking**.
 
 
 ![Design Thinking – Ingredientes](assets/img/ingredientes-de-macarrao.jpg "Design Thinking – Ingredientes")
@@ -46,7 +46,7 @@ Neste post, estarei abordando apenas sobre a metodologia Design Sprint, que por 
 ## Como funciona o Design Sprint?
 
 
-Como havia informado, Design Sprint é um processo já estabelecido/definido, ou seja, tem apenas um único sprint (“ciclo”) com duração de apenas uma semana, iniciando-se (em preferência) na segunda-feira e com término na sexta-feira, totalizando cinco dias e com a duração máxima de 40 horas (5 dias x 8 horas). A metodologia descreve que no último dia (sexta-feira), já se tenha um produto (tangível ou não) e com diversos feedbacks de usuário final. Em resumo, o intuito não é um produto final já em produção após o fim da sprint, mas sim o seu “aprendizado e valor” (“através deste processo podemos melhorar o produto final, obter novas ideias e outros”). É recomendado em “rodar a sprint” mesmo que o projeto seja um MVP - minimum viable product (produto viável mínimo), pois “encurtará” o seu processo de aprendizado e custo.
+Como havia informado, Design Sprint é um processo já estabelecido/definido, ou seja, tem apenas um único sprint (“ciclo”) com duração de apenas uma semana, iniciando-se na segunda-feira (em preferência) e com término na sexta-feira, totalizando cinco dias e com a duração máxima de 40 horas (5 dias x 8 horas). A metodologia descreve que no último dia (sexta-feira), já se tenha um produto (tangível ou não) e com diversos feedbacks de usuário final. Em resumo, o intuito não é um produto final já em produção após o fim da sprint, mas sim o seu “aprendizado e valor” (“através deste processo podemos melhorar o produto final, obter novas ideias e outros”). É recomendado em “rodar a sprint” mesmo que o projeto seja um MVP - minimum viable product (produto viável mínimo), pois “encurtará” o seu processo de aprendizado e custo.
 
 ![Design Sprint aplicada no MVP](assets/img/mvp-e-design-sprint.jpg "Design Sprint aplicada no MVP")
 **Legenda:** Design Sprint aplicado no MVP
@@ -105,7 +105,7 @@ No ultimo dia, é a hora de testar o protótipo com os usuários, obter feedback
 <br/>
 <br/>
 
-Nota: **Não “adapte/quebre” seu processo ou execução, pois ocasionara em perdas de qualidade e baixa produtividade**. (Infelizmente, já presenciei o ocorrido 😪).
+Nota: **Não “adapte/quebre” seu processo ou execução, pois ocasionara em perdas de qualidade e baixa produtividade**. (Infelizmente, já presenciei o ocorrido 😕).
 
 <br/>
 <br/>
@@ -115,4 +115,4 @@ Nota: **Não “adapte/quebre” seu processo ou execução, pois ocasionara em 
 <br/>
 <br/>
 
-O que você achou deste post, estou aberto para críticas (construtivas) e sugestões. Já utilizou em algum momento? Caso sim, como foi sua experiência? Caso não, o que falta para adotar? Agradeço por sua leitura, até mais!
+O que você achou deste post, estou aberto para críticas (construtivas) e sugestões. Já utilizou em algum momento? Como foi sua experiência, caso não, o que falta para adotar? Agradeço por sua leitura, até mais!

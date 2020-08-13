@@ -71,8 +71,7 @@ const ContactForm = () => {
     <ContactWrapper>
         <ContactTitle>Vamos Conversar?</ContactTitle>
         <ContactDescription>
-            Deseja falar comigo? Como posso ajudá-lo? Simples! Basta me procurar nas redes sociais ou
-            poderá preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
+            Deseja falar comigo? Como posso ajudá-lo? Simples! Basta preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
             mais breve possível. Desde já, agradeço pelo seu contato!
         </ContactDescription>
 		<ContactFormMain
