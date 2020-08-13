@@ -27,6 +27,7 @@ const AboutPage = () => (
         em <strong>Segurança da Informação</strong> pela universidade federal de Goiás - UFG em 2012. Cursei algumas matérias no mestrado
         <strong> Gestão Organizacional</strong> com ênfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF a trabalho.
       </p>
+      {/*
       <p>
         Já atuei em diversas empresas como {' '} <a href="https://www.mitsubishimotors.com.br/" alt="Mitsubishi Motors" target="_blank" rel="noopener noreferrer">Mitsubishi Motors</a>, 
         {' '}<a href="https://www.truston.com.br/" alt="Datacom Consultoria em Sistemas" target="_blank" rel="noopener noreferrer">Datacom Consultoria em Sistemas (Truston)</a>, 
@@ -34,6 +35,7 @@ const AboutPage = () => (
         Atualmente atuo com consultorias e como freelancer em plataformas digitais como {' '}<a href="https://www.workana.com/" alt="Workana" target="_blank" rel="noopener noreferrer">Workana</a>, 
         {' '} <a href="https://www.99freelas.com.br/" alt="99freelas" target="_blank" rel="noopener noreferrer">99Freelas</a> e outras, atendendo diversos projetos (confira minhas skills abaixo).
       </p>
+      */}
       <p>
         Estou constantemente em busca de conhecimentos, novidades e sou muito grato em compartilhar.
         Sinto-me orgulhoso, quando alguma contribuição minha consiga impactar ou gerar resultados positivos.
@@ -52,7 +54,7 @@ const AboutPage = () => (
         <dt><strong>Gestão:</strong></dt>
         <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, Análise SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python, Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla), BPMN (Bizagi, Heflo).</dd>
+        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla), BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
         <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Https (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>

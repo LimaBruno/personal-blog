@@ -95,7 +95,7 @@ Após a decisão do chegou o momento em desenvolver um protótipo, este deverá 
 
 ### Dia 5 – Sexta-feira – TEST
 
-No ultimo dia, é a hora de testar o protótipo com os usuários, obter feedbacks e “aprender” com os resultados. Após todo o processo executado, e com as informações em mãos, chegou o momento mais importante em decidir sobre a continuidade/aplicação real daquela ideia.
+No último dia, é a hora de testar o protótipo com os usuários, obter feedbacks e “aprender” com os resultados. Após todo o processo executado, e com as informações em mãos, chegou o momento mais importante em decidir sobre a continuidade/aplicação real daquela ideia.
 
 **Sugestões de Ferramentas:**
 
