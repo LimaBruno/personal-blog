@@ -30,7 +30,7 @@ const BlogPost = ({ data, pageContext }) => {
             <ReadingProgress target={target} />
                 <SEO title={post.frontmatter.title} 
                     description={post.frontmatter.description}
-                    image={post.frontmatter.image}
+                    thumbnail={`https://brunocesarlima.com.br${post.frontmatter.thumbnail}`}
                 />
                 <PostHeader>
                     <PostDate>
@@ -59,7 +59,7 @@ export const query = graphql`
         markdownRemark(fields: {slug: {eq: $slug}}) {
         fields {
             slug
-            }
+        }
         frontmatter {
             title
             description

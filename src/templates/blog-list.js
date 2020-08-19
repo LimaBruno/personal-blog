@@ -20,6 +20,7 @@ export const MarginDiv = styled.div`
 
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
+    
     const { currentPage, numPages} = props.pageContext
     const isFirst = currentPage === 1
     const isLast = currentPage === numPages
@@ -28,25 +29,18 @@ const BlogList = props => {
     const nextPage = `/page/${currentPage + 1}`
 
     return (
-        <Layout>
+      <Layout>
         <SEO title="Home" />
-            {postList.map(({
-              node:{
-                frontmatter:{ background, category, date, description, title },
-                timeToRead,
-                fields:{ slug, },
-              }
-            }) =>(
-              <PostItem 
-                slug= {slug}
-                background = {background}
-                category= {category}
-                date= {date}
-                timeToRead= { timeToRead}
-                title= {title}
-                description= {description}
-              />     
-            ))}
+          {postList.map(({ node }, i) => (
+          <PostItem
+            key={i}
+            slug={node.fields.slug}
+            title={node.frontmatter.title}
+            timeToRead={node.timeToRead}
+            date={node.frontmatter.date}
+            description={node.frontmatter.description}
+          />
+          ))}
           <Pagination
             isFirst={isFirst}
             isLast={isLast}
