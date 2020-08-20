@@ -76,7 +76,7 @@ export const PostItemTitle = styled.h1`
 
 export const PostItemDescription = styled.p`
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2;
 `
 

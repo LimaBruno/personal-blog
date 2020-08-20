@@ -84,17 +84,17 @@ const GlobalStyle = createGlobalStyle`
       }
       body.light {
         --borders: #b2bec3;
-        --texts: #222f3e;
+        --texts: #2f3640;
         --postColor: #222f3e;
         --highlight: #1fa1f2;
         --linksGeneral: #222f3e;
-        --mediumBackground: #dfe4ea;
-        --background: #fff;
+        --mediumBackground: #d1d8e0;
+        --background: #f5f6fa;
         --white: #fff;
         --black: #222;
         --progress-bar: #222f3e;
         --menuLinkColor: #1fa1f2;
-        --backgroundMoblie: #dfe4ea;
+        --backgroundMoblie: #d1d8e0;
         --formColor: #d7d7d7;
         --formBorder: #222f3e;
         --btnColor: #1e272e;

@@ -71,7 +71,7 @@ const ContactForm = () => {
     <ContactWrapper>
         <ContactTitle>Vamos Conversar?</ContactTitle>
         <ContactDescription>
-            Deseja falar comigo? Como posso ajudá-lo? Simples! Basta preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
+            Deseja falar comigo? Como posso ajudá-lo? Simples, basta preencher o formulário abaixo com seus dados e mensagem. Estarei respondendo
             mais breve possível. Desde já, agradeço pelo seu contato!
         </ContactDescription>
 		<ContactFormMain
@@ -92,7 +92,7 @@ const ContactForm = () => {
 				  placeholder="Seu nome"
 				  aria-label="name"
 				  ref={register({
-					required: "Campo obrigatório",
+					required: "Campo NOME obrigatório",
 					maxLength: {
 					  value: 30,
 					  message: "No máximo 30 caracteres"
@@ -109,7 +109,7 @@ const ContactForm = () => {
 				  name="email"
 				  aria-label="email"
 				  ref={register({
-					required: "Campo obrigatório",
+					required: "Campo EMAIL obrigatório",
 					pattern: {
 					  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
 					  message: "E-mail inválido"
@@ -128,7 +128,7 @@ const ContactForm = () => {
           		  aria-label="message"
           		  placeholder="Sua mensagem ..."
           		  ref={register({
-            		required: "Campo obrigatório",
+            		required: "Campo MENSAGEM obrigatório",
             		maxLength: {
                 	  value: 180,
                 	  message: "No máximo 180 caracteres"

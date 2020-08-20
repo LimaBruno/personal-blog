@@ -85,6 +85,7 @@ export const MainContent = styled.section`
   }
   p {
     margin: 0 auto 1.6rem;
+    font-weight: 300;
   }
   h1,
   h2,

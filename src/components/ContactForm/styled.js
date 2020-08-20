@@ -46,6 +46,7 @@ export const ContactInput = styled.input`
 
 export const Error = styled.span`
     color: #bf1650;
+    font-weight: 600;
     margin: 0.5rem 1.5rem;
     :before {
         display: inline;

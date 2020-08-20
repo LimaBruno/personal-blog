@@ -36,7 +36,7 @@ export const ProfileAuthor = styled.h1`
 export const ProfilePosition = styled.small`
   display: block;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0.2rem;
 
   ${media.lessThan("large")`
@@ -47,7 +47,7 @@ export const ProfilePosition = styled.small`
 
 export const ProfileDescription = styled.p`
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.4;
 
   ${media.lessThan("large")`
