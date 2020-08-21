@@ -91,6 +91,12 @@ module.exports = {
     
     //PWA Configuration 2 
     `gatsby-plugin-offline`, //Execute "gatsby build" and "gatsby serve"
-    `gatsby-plugin-netlify-cms`
+    `gatsby-plugin-netlify-cms`,    
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://brunocesarlima.com.br`,
+      },
+    },
   ],
 }
