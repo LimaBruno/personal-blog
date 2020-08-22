@@ -87,7 +87,7 @@ No último dia, é a hora de testar o protótipo com os usuários, obter feedbac
 
 * Testes a/b
 * Feedbacks com usuários
-* Analise Cognitiva
+* Análise Cognitiva
   <br/>
   <br/>
 
