@@ -60,7 +60,7 @@ Após o primeiro dia da sprint, já com diversas informações e dados. Chegou a
 **Sugestões de ferramentas:**
 
 * Rabiscoframes (protótipos de baixa fidelidade)
-* HMW - How Might We (como nós podemos)
+* HMW - How Might We (como nós podemos?)
 
 ### Dia 3 – Quarta-feira – DECIDE
 
