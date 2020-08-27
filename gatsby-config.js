@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `Bruno César Lima`,
     position: `Tecnologia da Informação`,
-    description: `Escrevo sobre o incrível mundo da TECNOLOGIA e outras coisas legais!`,
+    description: `Bruno César Lima - Um blog onde escrevo sobre o incrível mundo da tecnologia da informação e boas idéias legais!`,
+    authorDescription: `"Apaixonado por tecnologia 🖥️ e compartilhar boas idéias 💡"`,
     author: `@brunolima`,
     siteUrl: `https://brunocesarlima.com.br`,
   },

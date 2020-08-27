@@ -14,7 +14,7 @@ import {
 const Profile = () => {
     const {
         site: {
-            siteMetadata: {title, position, description},
+            siteMetadata: {title, position, authorDescription},
         },
     } = useStaticQuery(graphql`
             query MyQuery {
@@ -22,7 +22,7 @@ const Profile = () => {
                     siteMetadata {
                         title
                         position
-                        description      
+                        authorDescription
                     }
                 }
             }       
@@ -37,7 +37,7 @@ const Profile = () => {
                     <ProfilePosition>{position}</ProfilePosition>
                 </ProfileAuthor>                
             </ProfileLink>
-            <ProfileDescription>{description}</ProfileDescription>
+            <ProfileDescription>{authorDescription}</ProfileDescription>
         </ProfileWrapper>
     )
 }
