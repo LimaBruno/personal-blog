@@ -7,7 +7,7 @@ module.exports = {
     title: `Bruno César Lima`,
     position: `Tecnologia da Informação`,
     description: `Bruno César Lima - Um blog onde escrevo sobre o incrível mundo da tecnologia da informação e boas idéias legais!`,
-    authorDescription: `"Apaixonado por tecnologia 🖥️ e compartilhar boas idéias 💡"`,
+    authorDescription: `"Apaixonado por tecnologia 🖥️ e compartilhar boas ideias 💡"`,
     author: `@brunolima`,
     siteUrl: `https://brunocesarlima.com.br`,
   },
