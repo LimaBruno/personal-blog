@@ -64,10 +64,9 @@ const AboutPage = () => (
       <h2>Soft Skills</h2>
       <ul>
         <li>Observador;</li>
-        <li>Líder;</li>
+        <li>Líder, Planejador;</li>
         <li>Trabalho em Equipe;</li>
         <li>Empatíco;</li>
-        <li>Planejador;</li>
         <li>Capacidade Analítica;</li>
         <li>Criativo, Inovador;</li>
         <li>Ético, Integro;</li>
