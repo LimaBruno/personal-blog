@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImage = thumbnail || 'https://brunocesarlima.com.br/assets/img/brunocesarlima.png'
+  const ogImage = thumbnail || 'https://brunocesarlima.com.br/assets/img/bruno-cesar-lima.png'
 
   return (
     <Helmet
@@ -67,7 +67,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
           content: `summary_large_image`,
         },
         {
-          property: `twitter:image:src`,
+          name: `twitter:image`,
           content: ogImage,
         },
         {
@@ -77,6 +77,10 @@ function SEO({ description, lang, meta, title, thumbnail }) {
         {
           name: `twitter:title`,
           content: title,
+        },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata.author,
         },
         {
           name: `twitter:description`,
