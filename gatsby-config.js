@@ -89,10 +89,9 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    
-    //PWA Configuration 2 
-    `gatsby-plugin-offline`, //Execute "gatsby build" and "gatsby serve"
-    `gatsby-plugin-netlify-cms`,    
+    `gatsby-plugin-offline`, //PWA Configuration 2 - Execute "gatsby build && serve"
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-extract-schema`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
