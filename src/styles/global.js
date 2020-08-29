@@ -76,6 +76,7 @@ const GlobalStyle = createGlobalStyle`
         --menuLinkColor: #1fa1f2;
         --backgroundMoblie: #282a36;
         --formColor: #b2bec3;
+        --btnColor: #fff;
         --formBorder: #1fa1f2;
         --btnSendColor: #1fa1f2;
         --btnResetColor: #bf1650;
@@ -97,7 +98,7 @@ const GlobalStyle = createGlobalStyle`
         --backgroundMoblie: #d1d8e0;
         --formColor: #d7d7d7;
         --formBorder: #222f3e;
-        --btnColor: #1e272e;
+        --btnColor: #fff;
         --btnSendColor: #1fa1f2;
         --btnResetColor: #bf1650;
         --profileColor: #222f3e;

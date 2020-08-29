@@ -70,14 +70,15 @@ export const ContactArea = styled.textarea`
 `
 
 export const ContactButtonSend = styled.button`
-    padding: 0.5rem;
+    padding: 1rem;
     padding-right: 2rem;
     margin: 0rem 2rem 0 1.5rem;    
     border: 1px solid var(--formBorder);
-    border-left: 5px solid var(--btnSendColor);
     border-radius: 4px;
+    font-size: 1rem;
     font-weight: bold;
     color: var(--btnColor);
+    background-color: #1fa1f2;
     cursor: pointer;
     ${media.lessThan("large")`
         margin-left: 1rem;        
@@ -85,26 +86,27 @@ export const ContactButtonSend = styled.button`
 `
 
 export const ContactButtonRest = styled.button`
-    padding: 0.5rem;
+    padding: 1rem;
     padding-right: 2rem;
     border: 1px solid var(--formBorder);
-    border-left: 5px solid var(--btnResetColor);
     border-radius: 4px;
+    font-size: 1rem;
     font-weight: bold;
+    background-color: #d63031;
     color: var(--btnColor);
     cursor: pointer;
 `
 
 export const IconSend = styled(Mail)`
-    width: 15px;
+    width: 20px;
     margin: -2px 10px 0 0;
-    color: var(--highlight);
+    color: var(--btnColor);
 `
 
 export const IconRest = styled(Cancel)`
-    width: 15px;
+    width: 20px;
     margin: -2px 10px 0 0;
-    color: #d63031;
+    color: var(--btnColor);
 `
 
 export const Recaptcha = styled.div`
