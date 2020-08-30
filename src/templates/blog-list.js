@@ -27,9 +27,16 @@ const BlogList = props => {
     const prevPage = currentPage - 1 === 1 ? '/' : `/page/${currentPage - 1}`
     const nextPage = `/page/${currentPage + 1}`
 
+    const schema = {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Bruno César Lima",
+      "url": "https://brunocesarlima.com.br",
+    }
+
     return (
         <Layout>
-        <SEO title="Home" />
+        <SEO title="Home" schemaMarkup={schema} />
             {postList.map(({
               node:{
                 frontmatter:{ background, category, date, description, title },
