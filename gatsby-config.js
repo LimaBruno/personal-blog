@@ -91,7 +91,6 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`, //PWA Configuration 2 - Execute "gatsby build && serve"
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-extract-schema`,
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
