@@ -47,7 +47,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
         },
         {
           property: `og:url`,
-          content: `https://brunocesarlima.com.br`,
+          content: site.siteMetadata.siteUrl,
         },
         {
           property: `og:title`,
