@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title, thumbnail }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const ogImage = thumbnail || 'https://brunocesarlima.com.br/assets/img/bruno-cesar-lima.png'
+  const ogImage = thumbnail || 'https://brunocesarlima.com.br/assets/img/bruno-cesar-lima-card.png'
 
   return (
     <Helmet
@@ -44,6 +44,10 @@ function SEO({ description, lang, meta, title, thumbnail }) {
         {
           name: `description`,
           content: metaDescription,
+        },
+        {
+          property: `og:url`,
+          content: `https://brunocesarlima.com.br`,
         },
         {
           property: `og:title`,
