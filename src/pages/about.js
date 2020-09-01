@@ -49,7 +49,7 @@ const AboutPage = () => (
       
       <h2>Hard Skills</h2>
       <dl>
-        <dt><strong>Metodologias:</strong></dt>
+        <dt><strong>Metodologias/Práticas:</strong></dt>
         <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT.</dd>
         <dt><strong>Gestão:</strong></dt>
         <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, Análise SLA, Definição de KPIs, Planejamento ROI, Gestão de Fornecedores, Brainstorming, Benchmarking.</dd>
