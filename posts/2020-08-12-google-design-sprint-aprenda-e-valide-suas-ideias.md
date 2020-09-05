@@ -91,7 +91,7 @@ No último dia, é a hora de testar o protótipo com os usuários, obter feedbac
   <br/>
   <br/>
 
-Nota: **Não “adapte/quebre” seu processo ou execução, pois ocasionara em perdas de qualidade e baixa produtividade**. (Infelizmente, já presenciei o ocorrido 😕).
+Nota: **Não “adapte/quebre” seu processo ou execução, pois acarretará em perdas de qualidade e baixa produtividade**. (Infelizmente, já presenciei o ocorrido 😕).
 
 <br/>
 <br/>
