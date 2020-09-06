@@ -7,7 +7,7 @@ thumbnail: assets/img/google_design_sprint.png
 category: agil
 background: "#2C3E50"
 ---
-Quando surge um insight, durante o brainstorming (tempestade de ideias) para desenvolver um sistema, implementar uma nova funcionalidade/solução ou mesmo desenvolver um projeto, umas das fases iniciais após o briefing (coleta de dados) “normalmente” são os requisitos (funcionais e não-funcionais), seguindo pelas próximas etapas de desenvolvimento até sua conclusão. Mas antes de percorrer por este ciclo em desenvolvimento é de suma importância em aprender e validar sobre sua proposta de valor. Para auxiliar, neste “aprendizado” surgiu o Google Design Sprint, que é uma metodologia desenvolvida pela *Google Ventures*. O Design Sprint é muito utilizado por profissionais de UX/UI, vale ressaltar que existem outras soluções que possa também ajudar sua empresa/cliente no aprendizado como Design Thinking, Lean (Inception, UX, Startup) e etc.
+Quando surge um insight, durante o brainstorming (tempestade de ideias) para desenvolver um sistema, implementar uma nova funcionalidade/solução ou mesmo desenvolver um projeto, uma das fases iniciais após o briefing (coleta de dados) “normalmente” são os requisitos (funcionais e não-funcionais), seguindo pelas próximas etapas de desenvolvimento até sua conclusão. Mas antes de percorrer por este ciclo em desenvolvimento é de suma importância em aprender e validar sobre sua proposta de valor. Para auxiliar, neste “aprendizado” surgiu o Google Design Sprint, que é uma metodologia desenvolvida pela *Google Ventures*. O Design Sprint é muito utilizado por profissionais de UX/UI, vale ressaltar que existem outras soluções que possa também ajudar sua empresa/cliente no aprendizado como Design Thinking, Lean (Inception, UX, Startup) e etc.
 
 ## Qual a diferença entre Design Sprint e Design Thinking?
 
@@ -72,7 +72,7 @@ O terceiro dia da sprint será para decidir qual caminho é mais viável, confro
 
 ### Dia 4 – Quinta-feira – PROTO-TYPE
 
-Após a decisão do chegou o momento em desenvolver um protótipo, este deverá ser funcional (tangível ou não) para que na próxima fase da sprint seja utilizado.
+Após a decisão do chegou o momento em desenvolver um protótipo, este deverá ser funcional  para que na próxima fase da sprint seja utilizado.
 
 **Sugestões de ferramentas:**
 
