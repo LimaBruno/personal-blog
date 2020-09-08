@@ -3,7 +3,7 @@ layout: post
 title: Gamification – Engajamento, Produtividade e foco nos Resultados Positivos
 description: Tenha uma equipe de T.I mais eficiente, saudável e motivada!
 date: 2020-09-06 10:14:42
-thumbnail: assets/img/gamification_engajamento_produtividade_equipe.jpg
+thumbnail: /assets/img/gamification_engajamento_produtividade_equipe.jpg
 category: gest
 background: "#006266"
 ---

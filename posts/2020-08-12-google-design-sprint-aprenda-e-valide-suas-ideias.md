@@ -3,7 +3,7 @@ layout: post
 title: Google Design Sprint, aprenda e valide suas ideias!
 description: Aprenda e valide suas ideias antes de começar a desenvolver um sistema/projeto
 date: 2020-08-10 09:59:44
-thumbnail: assets/img/google_design_sprint.png
+thumbnail: /assets/img/google_design_sprint.png
 category: agil
 background: "#2C3E50"
 ---
