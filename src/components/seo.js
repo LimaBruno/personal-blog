@@ -46,10 +46,6 @@ function SEO({ description, lang, meta, title, thumbnail, schemaMarkup }) {
           content: metaDescription,
         },
         {
-          property: `og:url`,
-          content: site.siteMetadata.siteUrl,
-        },
-        {
           property: `og:title`,
           content: title,
         },
