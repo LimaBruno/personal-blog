@@ -3,7 +3,7 @@ layout: post
 title: Gamification – Engajamento, Produtividade e foco nos Resultados Positivos
 description: Tenha uma equipe de T.I mais eficiente, saudável e motivada!
 date: 2020-09-06 10:14:42
-thumbnail: /assets/img/gamification_engajamento_produtividade_equipe.jpg
+thumbnail: /assets/img/gamification_engajamento_produtividade_equipe.png
 category: gest
 background: "#006266"
 ---
@@ -23,7 +23,7 @@ Uma das formas estratégicas que cada vez mais ganha força no mercado é a impl
 
 Essa metodologia de jogos, não deverá ser vista como apenas uma “competição”, mas como uma forma divertida/prazerosa em executar atividades, certas pessoas se sentem desconfortáveis quando trata-se de competições e sua participação deverá ser voluntária em participar ou não.
 
-![Gamification - Equipe Motivada e Feliz](assets/img/gamification_resultados.jpg "Gamification - Equipe Motivada e Feliz")
+![Gamification - Equipe Motivada e Feliz](/assets/img/gamification_resultados.jpg "Gamification - Equipe Motivada e Feliz")
 
 A Gamificação é utilizada principalmente com o usuário/consumidor final (fidelização e novos clientes), neste post estarei abordando em nível empresarial, especificamente no departamento de tecnologia da informação.
 
@@ -35,7 +35,7 @@ A Gamificação é utilizada principalmente com o usuário/consumidor final (fid
 
 No departamento de tecnologia, não é diferente! A gamificação vem ganhando seu espaço e auxilia na estratégia complementar, gerando resultados positivos. Abaixo um print da gamificação implantada pela empresa de ERP SAP, para seus colaboradores.
 
-![Gamification - SAP](assets/img/gamification_sap.jpg "Gamification - SAP")
+![Gamification - SAP](/assets/img/gamification_sap.jpg "Gamification - SAP")
 
 
 
@@ -55,7 +55,7 @@ Gerenciamento de Help Desk e Service Desk é uma missão diária, tempo de atend
 
 
 
-![Gamification - My Help Desk](assets/img/gamification_ti_service_desk_e_help_desk.jpg "Gamification - My Help Desk")
+![Gamification - My Help Desk](/assets/img/gamification_ti_service_desk_e_help_desk.jpg "Gamification - My Help Desk")
 **Legenda:** SAP – My Help Desk
 
 ### Equipes Ágeis
