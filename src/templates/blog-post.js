@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
 import ReadingProgress from "../components/ReadingProgress"
+import Share from "../components/Share"
 
 import {
     PostHeader,
@@ -45,6 +46,7 @@ const BlogPost = ({ data, pageContext }) => {
                 </PostHeader>
                 <MainContent>
                     <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
+                    <Share slug={post.fields.slug} title={post.frontmatter.title} /> 
                 </MainContent>
                 <RecommendedPosts next={next} previous={previous} />
                 <Comments url={post.fields.slug} title={post.frontmatter.title} />
