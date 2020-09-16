@@ -8,6 +8,7 @@ const noscriptStyle = `
   font-weight: 600;
   text-align: center;
   height: 100vh;
+  width: 100vw;
   position: fixed;  
   left: 0;
   right: 0;
@@ -42,22 +43,9 @@ export default function HTML(props) {
         <link rel="dns-prefetch" href="https://www.google-analytics.com"/>
         <link rel="dns-prefetch" href="https://www.googletagmanager.com"/>
         <link rel="preconnect" href="https://www.google-analytics.com"/>
-        <link rel="preconnect" href="https://www.googletagmanager.com"/>
-        <script dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var
-          f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-NHKD5DX');</script>`,
-        }}
-        />
+        <link rel="preconnect" href="https://www.googletagmanager.com"/>        
       </head>
-      <body {...props.bodyAttributes} className="dark">
-      <noscript dangerouslySetInnerHTML={{
-          __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHKD5DX" height="0" width="0"
-          style="display:none;visibility:hidden"></iframe>
-          `,
-        }}
-      />
+      <body {...props.bodyAttributes} className="dark">      
       <script
           dangerouslySetInnerHTML={{
             __html: `
