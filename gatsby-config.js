@@ -157,5 +157,14 @@ module.exports = {
         includeInDevelopment: false,
       },
     },
+    {
+      resolve: 'gatsby-plugin-preconnect',
+      options: {
+        domains: [
+          'https://www.google-analytics.com',
+          'https://www.googletagmanager.com',
+        ],
+      },
+    },
   ],
 }
