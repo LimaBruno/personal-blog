@@ -23,7 +23,7 @@ Com o código do Analytics em mãos vamos <a href="https://tagmanager.google.com
 
 Em seguida **escolha o Idioma e marque a caixa** informando que está de acordo com os termos e pronto!
 
-A próxima tela, será já com o seu **GTM-ID** pronto para configurar na sua aplicação GATSBY, conforme o print abaixo:
+A próxima tela, será gerado sua tag **GTM-ID** pronto para ser configurada em sua aplicação GATSBY, conforme o print abaixo:
 
 ![Google Tag Manager - Tag GTM criada](/assets/img/google-tag-manger-id.png "Google Tag Manager - Tag GTM criada")
 
