@@ -63,11 +63,11 @@ Para configurar manualmente, você deverá ter primeiramente o arquivo **html.js
 cp .cache/default-html.js src/html.js
 ```
 
-Caso tenha alguma dúvida, você poderá conferir na documentação <a href="https://www.gatsbyjs.com/docs/custom-html/" alt="Gatsby - Customizing html.js" title="Gatsby - Customizing html.js" target="_balnk" rel="noreferrer noopener">https://www.gatsbyjs.com/docs/custom-html/</a>
+Caso tenha alguma dúvida, você poderá conferir na <a href="https://www.gatsbyjs.com/docs/custom-html/" alt="Gatsby - Customizing html.js" title="Gatsby - Customizing html.js" target="_balnk" rel="noreferrer noopener">documentação oficial</a>.
 
 ### 1.2 – Incluir Script
 
-No arquivo html.js, basta incluir o código abaixo **antes de fechar a tag head**
+No arquivo html.js, basta incluir o código abaixo **antes de fechar a tag head.**
 
 ```
 <script dangerouslySetInnerHTML={{
@@ -79,7 +79,7 @@ f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'
 />
 ```
 
-Também deverá inserir o script baixo **antes de fechar a tag body**
+Também deverá inserir o script baixo **antes de fechar a tag body.**
 
 ```
 <noscript dangerouslySetInnerHTML={{
