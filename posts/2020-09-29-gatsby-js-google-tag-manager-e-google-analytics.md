@@ -2,7 +2,7 @@
 layout: post
 title: Gatsby JS, Google Tag Manager e Google Analytics
 description: Utilize o Tag Manager para gerenciar o Analytics e outras tags.
-date: 2020-09-29 05:46:00
+date: 2020-09-29 06:06:58
 thumbnail: /assets/img/gatsby-google-tag-manager-analytics.png
 category: dev
 background: "#EA2027"
@@ -27,15 +27,15 @@ A próxima tela, será gerado sua tag **GTM-ID** pronto para ser configurada em 
 
 ![Google Tag Manager - Tag GTM criada](/assets/img/google-tag-manger-id.png "Google Tag Manager - Tag GTM criada")
 
-No próximo passo é adicionar a Tag do Analytics no Tag Manager. Para isto, dentro de “**Visão Geral**” escolha “**Adicionar uma nova Tag**”
+No próximo passo, vamos adicionar a Tag do Analytics no Tag Manager. Para isto, escolha à opção “**Adicionar uma nova Tag**”.
 
 ![Google Tag Manager - Escolher Tipo de Tag](/assets/img/google-tag-manager-adicionar-nova-tag.png "Google Tag Manager - Escolher Tipo de Tag")
 
-Ao adiciona a Tag, escolha a opção “**Google Analytics: Universal Analytics**” e adicione uma “**Nova Variável**” conforme o Print
+Ao adiciona a Tag, escolha a opção “**Google Analytics: Universal Analytics**” e adicione uma “**Nova Variável**” conforme o print.
 
 ![Google Tag Manager - Adicionando Google Analytics](/assets/img/google-tag-manager-google-analytics-gatsby.png "Google Tag Manager - Adicionando Google Analytics")
 
-Ao clicar em “**Nova Variável**”, surgirá a opção para adiciona a Tag do Google Analytics. Informe um nome na variável e o seu código e clique em “**Salvar**” **e também na tela anterior**.
+Ao clicar em “**Nova Variável**”, você deverá preencher com o seu código do Google Analytics. Informe um nome na variável e clique em “**Salvar**” **e também sua tela anterior**.
 
 ![Google Tag Manager - Adicionando Tag Google Analytics](/assets/img/google-tag-manager-tag-google-analytics.png "Google Tag Manager - Adicionando Tag Google Analytics")
 
@@ -49,9 +49,9 @@ Agora falta apenas “**Enviar**” todas nossas configurações clicando no bot
 
 ## Existem duas maneiras de utilizar o Tag Manager no Gatsby
 
-Abaixo é apresentado duas maneiras de utilizar o Google Tag Manager. Você poderá optar em configurar **manualmente ou através de plugins** da comunidade Gatsbsy.
+Abaixo é apresentado duas maneiras de como utilizar o Google Tag Manager em sua aplicação. Você poderá optar em configurar **manualmente ou através de plugins** da comunidade Gatsbsy.
 
-Eu estava utilizando esta primeira maneira no meu blog “manualmente”, mas logo acabei optando pela segunda opção. Esta configuração manual eu não recomendo, pois quando você está em modo de desenvolvimento local “**gatsby develop**” é contabilizado nas métricas do Google Analytics. **E outro detalhe, você deverá incluir códigos de scripts “na mão”** 😕. Enfim, caso queira utilizar basta seguir a leitura abaixo ou poderá pular diretamente para a opção “**2ª – Instalação de Plugin**”.
+Eu estava utilizando a primeira opção no meu blog “manualmente”, mas logo acabei optando pela segunda opção. A configuração manual eu não recomendo, pois quando você está em modo de desenvolvimento local “**gatsby develop**” é contabilizado nas métricas do Google Analytics. **E outro detalhe, você deverá incluir códigos de scripts “na mão”** 😕. Enfim, caso queira utilizar basta seguir a leitura abaixo ou poderá pular diretamente para a opção “**2ª – Instalação de Plugin**”.
 
 ### 1ª – Incluir Script Manualmente
 
