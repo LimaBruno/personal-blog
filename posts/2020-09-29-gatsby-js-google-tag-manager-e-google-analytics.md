@@ -15,9 +15,9 @@ Lembrando que, **você poderá utilizar o Google Tag Manager em “diversas ling
 
 Neste post não irei entrar em detalhe de como criar uma conta e configurar do Google Analytics, para não ficar muito grande. Abaixo disponibilizo um link que poderá auxiliar na criação da Tag. O modelo da tag do Google Analytics tem o formato (**UA-XXXXXXXXX-X**).
 
-<a href="https://support.google.com/analytics/answer/1009694?hl=pt-BR" alt="Criar Contas no Google Analytics" title="Criar Contas no Google Analytics" target="_balnk" rel="noreferrer noopener">https://support.google.com/analytics/answer/1009694?hl=pt-BR</a>
+<a href="https://support.google.com/analytics/answer/1009694?hl=pt-BR" alt="Criar Conta no Google Analytics" title="Criar Conta no Google Analytics" target="_balnk" rel="noreferrer noopener">https://support.google.com/analytics/answer/1009694?hl=pt-BR</a>
 
-Com o código do Analytics em mãos vamos <a href="https://tagmanager.google.com/#/home" alt="Criar Contas no Google Tag Manager" title="Criar Contas no Google Tag Manager" target="_balnk" rel="noreferrer noopener">criar uma conta no Tag Manager</a> com as informações do seu site, abaixo um exemplo.
+Com o código do Analytics em mãos vamos <a href="https://tagmanager.google.com/#/home" alt="Criar Conta no Google Tag Manager" title="Criar Conta no Google Tag Manager" target="_balnk" rel="noreferrer noopener">criar uma conta no Tag Manager</a> com as informações do seu site, abaixo um exemplo.
 
 ![Google Tag Manager - Criar Conta](/assets/img/google-tag-manager-criar.png "Google Tag Manager - Criar Conta")
 
@@ -69,23 +69,32 @@ Caso tenha alguma dúvida, você poderá conferir na <a href="https://www.gatsby
 
 No arquivo html.js, basta incluir o código abaixo **antes de fechar a tag head.**
 
-```
+```jsx
 <script dangerouslySetInnerHTML={{
-__html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var
-f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-SEU_ID');</script>`,
+  __html: 
+  `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
+    'gtm.start': new Date().getTime(),event:'gtm.js'
+    });
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),
+    dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })
+  (window,document,'script','dataLayer','GTM-SEU_ID');
+  </script>`,
 }}
 />
 ```
 
 Também deverá inserir o script baixo **antes de fechar a tag body.**
 
-```
+```jsx
 <noscript dangerouslySetInnerHTML={{
-__html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-SEU_ID" height="0" width="0"
-style="display:none;visibility:hidden"></iframe>
-`,
+  __html: 
+  `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-SEU_ID" height="0" width="0"
+  style="display:none;visibility:hidden"></iframe>
+  `,
 }}
 />
 ```
@@ -104,7 +113,7 @@ Como havia informado, está para mim é a melhor opção, pois é mais fácil e 
 
 Basta instalar o plugin “<a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/" alt="package gatsby-plugin-google-tagmanager" title="package gatsby-plugin-google-tagmanager" target="_balnk" rel="noreferrer noopener">gatsby-plugin-google-tagmanager</a>” que está disponível no repositório da comunidade em seu projeto (node).
 
-```
+```jsx
 npm install --save gatsby-plugin-google-tagmanager
 ```
 
@@ -112,7 +121,7 @@ npm install --save gatsby-plugin-google-tagmanager
 
 Inclua a configuração abaixo no arquivo “**gatsby-config.js**”, dentro do objeto plugins. E apenas para seu conhecimento, a opção abaixo “**includeInDevelopment: false**”, não permite incluir o script do Google Tag Manager em modo de desenvolvimento.
 
-```
+```jsx
 plugins: [
   {
     resolve: "gatsby-plugin-google-tagmanager",
@@ -124,7 +133,7 @@ plugins: [
 ]
 ```
 
-**Dica:** Utilizo variável de ambiente, ou seja, arquivos “.env”. Você poderá criar na variável de ambiente e chamar dentro do gatsby-config.
+**Dica:** Utilizo variável de ambiente, ou seja, arquivo “.env”. Você poderá criar na variável de ambiente e chamar dentro do gatsby-config. Isto com intuito de deixar o código mais "clean".😎
 
 ### Exemplo no arquivo “.env”
 
@@ -134,7 +143,7 @@ GATSBY_GOOGLE_TAG_MANAGER=GTM-SEU_ID
 
 ### E no gatsby-config.js terá a seguinte configuração:
 
-```
+```jsx
 plugins: [
   {
     resolve: "gatsby-plugin-google-tagmanager",
@@ -152,11 +161,11 @@ plugins: [
 
 Para você fazer um simples teste, basta compilar seu projeto com os comandos no terminal:
 
-```
+```jsx
 gatsby build && gatsby serve
 ```
 
-No Google Analytics, “Em tempo real”, clique em “Visão Geral”.  Pronto!! O Google Analytics está funcionando corretamente! Caso não esteja apresentando, basta atualizar a página (refresh) que você terá sua métrica. Percebeu que não inserimos nenhuma linha de código (apenas configuração padrão) e ficou tudo mais simples. 😏
+No Google Analytics, “Em tempo real”, clique em “Visão Geral”.  Pronto!! O Google Analytics está funcionando corretamente! Caso não esteja apresentando, basta atualizar a página (refresh) que você terá sua métrica. Percebeu que não inserimos nenhuma linha de código (apenas configuração padrão) e ficou tudo mais simples. 😛
 
 ## Bônus:
 
@@ -164,7 +173,7 @@ Utilizo o plugin preconnect, para apenas “informar a prioridade de uso do serv
 
 Exemplo:
 
-```
+```jsx
 <link rel="preconnect" href="https://googletagmanager.com" crossorigin>
 ```
 
@@ -172,7 +181,7 @@ Você poderá conferir mais na <a href="https://web.dev/preconnect-and-dns-prefe
 
 ### 3.1 – Instalação (Node)
 
-```
+```jsx
 npm install --save gatsby-plugin-preconnect
 ```
 
@@ -182,7 +191,7 @@ Confira a <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-preconnect/?=g
 
 Configuração no arquivo gatsby-config.js:
 
-```
+```jsx
 plugins: [
   { 
     resolve: "gatsby-plugin-preconnect",
