@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
+import transitions from '../../styles/transitions'
+
 export const ReadingProgressBar = styled.div`
   position: fixed;
   height: 5px;
@@ -13,6 +15,7 @@ export const ReadingProgressBar = styled.div`
   display: block;
   width: ${props => props.width};
   z-index: 9999;
+  transition: ${transitions.ALL};
   ${media.lessThan("large")`
     top: 72px;
     bottom: 0;

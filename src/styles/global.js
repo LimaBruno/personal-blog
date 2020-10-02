@@ -64,6 +64,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body.dark {
         --borders: #1fa1f2;
+        --borders-menu: #1fa1f2;
         --texts: #c8d6e5;
         --postColor: #fff;
         --highlight: #1fa1f2;
@@ -77,6 +78,7 @@ const GlobalStyle = createGlobalStyle`
         --backgroundMoblie: #282a36;
         --formColor: #b2bec3;
         --btnColor: #fff;
+        --btnBorder: #d63031;
         --formBorder: #1fa1f2;
         --btnSendColor: #1fa1f2;
         --btnResetColor: #bf1650;
@@ -85,6 +87,7 @@ const GlobalStyle = createGlobalStyle`
       }
       body.light {
         --borders: #b2bec3;
+        --borders-menu: #2f3640; 
         --texts: #2f3640;
         --postColor: #222f3e;
         --highlight: #1fa1f2;
@@ -99,6 +102,7 @@ const GlobalStyle = createGlobalStyle`
         --formColor: #d7d7d7;
         --formBorder: #222f3e;
         --btnColor: #fff;
+        --btnBorder: #222f3e;
         --btnSendColor: #1fa1f2;
         --btnResetColor: #bf1650;
         --profileColor: #222f3e;

@@ -7,7 +7,7 @@ import transitions from '../../styles/transitions'
 export const MenuBarWrapper = styled.aside`
 align-items: center;
 background: var(--mediumBackground);
-border-top: 2px solid var(--borders);
+border-top: 2px solid var(--borders-menu);
 display: flex;
 flex-direction: row;
 width: 100vw;
@@ -21,7 +21,7 @@ bottom: 0;
   ${media.lessThan("large")`
     justify-content: center;
     align-items:center;
-    border-top: 2px solid var(--borders);
+    border-top: 2px solid var(--borders-menu);
     bottom: 0;
     left:0;
     flex-direction: row;

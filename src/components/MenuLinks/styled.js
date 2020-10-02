@@ -13,7 +13,7 @@ export const MenuLinksWrapper = styled.nav`
     height: 100vh;
     width: 100%;
     background: var(--backgroundMoblie);
-    border-top: 2px solid var(--borders);
+    border-top: 2px solid var(--borders-menu);
     position: absolute;
     top: 4.5rem;
     right: 0;
