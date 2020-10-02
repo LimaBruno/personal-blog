@@ -7,7 +7,7 @@ thumbnail: /assets/img/gatsby-google-tag-manager-analytics.png
 category: dev
 background: "#EA2027"
 ---
-Depois que desenvolvi meu blog em **React/Gatsby**, optei em utilizar o **Google Tag Manager** para gerenciar o **Google Analytics** e outras tags, como por exemplo o **Google Optimize** e **Hotjar** com intuito de obter métricas e consequentemente melhorias no código, conteúdo e estratégia. Em meu ponto de vista, é a maneira mais eficiente de se trabalhar com diferentes aplicações de terceiros “Third Party”, pois você adiciona apenas uma única vez o script em seu código e gerência em uma aplicação separada.
+Depois que desenvolvi meu blog em **React/Gatsby**, optei em utilizar o **Google Tag Manager** para gerenciar o **Google Analytics** e outras tags, como por exemplo o **Google Optimize** e **Hotjar** com intuito de obter métricas e consequentemente melhorias no código, conteúdo e estratégia. Em meu ponto de vista, é a maneira mais eficiente de se trabalhar com diferentes aplicações de terceiros “Third-party”, pois você adiciona apenas uma única vez o script em seu código e gerência em uma aplicação separada.
 
 Lembrando que, **você poderá utilizar o Google Tag Manager em “diversas linguagens web”**. O intuito deste post é a instalação e configuração (básica) no Gatsby.
 
