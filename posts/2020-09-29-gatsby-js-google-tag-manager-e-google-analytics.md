@@ -13,7 +13,7 @@ Lembrando que, **você poderá utilizar o Google Tag Manager em “diversas ling
 
 ## Contas do Google Tag Manager e Google Analytics
 
-Neste post não irei entrar em detalhe de como criar uma conta e configurar do Google Analytics, para não ficar muito grande. Abaixo disponibilizo um link que poderá auxiliar na criação da Tag. O modelo da tag do Google Analytics tem o formato (**UA-XXXXXXXXX-X**).
+Neste post não irei entrar em detalhe de como criar uma conta e configurar do Google Analytics, para não ficar muito grande. Abaixo disponibilizo um link que poderá auxiliar na criação da Tag. O modelo do ID tem o formato (**UA-XXXXXXXXX-X**).
 
 <a href="https://support.google.com/analytics/answer/1009694?hl=pt-BR" alt="Criar Conta no Google Analytics" title="Criar Conta no Google Analytics" target="_balnk" rel="noreferrer noopener">https://support.google.com/analytics/answer/1009694?hl=pt-BR</a>
 
@@ -57,17 +57,17 @@ Eu estava utilizando a primeira opção no meu blog “manualmente”, mas logo 
 
 ### 1.1	– HTML.JS
 
-Para configurar manualmente, você deverá ter primeiramente o arquivo **html.js** em sua aplicação. Caso não tenha basta executar o comando no terminal de sua preferência.
+Para configurar manualmente, você deverá ter primeiramente o arquivo **html.js** em sua aplicação. Caso não tenha, basta executar o comando no terminal de sua preferência.
 
 ```
 cp .cache/default-html.js src/html.js
 ```
 
-Caso tenha alguma dúvida, você poderá conferir na <a href="https://www.gatsbyjs.com/docs/custom-html/" alt="Gatsby - Customizing html.js" title="Gatsby - Customizing html.js" target="_balnk" rel="noreferrer noopener">documentação oficial</a>.
+Caso tenha alguma dúvida, você poderá conferir na <a href="https://www.gatsbyjs.com/docs/custom-html/" alt="Gatsby - Customizing html.js" title="Gatsby - Customizing html.js" target="_balnk" rel="noreferrer noopener">documentação oficial html.js</a>.
 
 ### 1.2 – Incluir Script
 
-No arquivo html.js, basta incluir o código abaixo **antes de fechar a tag head.**
+No arquivo html.js, basta incluir o código abaixo **antes de fechar a tag ```</head>```.**
 
 ```jsx
 <script dangerouslySetInnerHTML={{
@@ -87,7 +87,7 @@ No arquivo html.js, basta incluir o código abaixo **antes de fechar a tag head.
 />
 ```
 
-Também deverá inserir o script baixo **antes de fechar a tag body.**
+Também deverá inserir o script baixo **antes de fechar a tag ```</body>```.**
 
 ```jsx
 <noscript dangerouslySetInnerHTML={{
@@ -99,7 +99,7 @@ Também deverá inserir o script baixo **antes de fechar a tag body.**
 />
 ```
 
-**Observação:** Deverá incluir sua própria tag ID onde está escrito **GTM-SEU_ID**, localizado em ambos códigos citados.
+**Observação:** Deverá incluir seu próprio ID onde está especificado **GTM-SEU_ID**, localizado em ambos códigos citados.
 
 ### 1.3	– Executar Teste
 
@@ -107,7 +107,7 @@ Execute o seu projeto localmente “gatsby develop” ou envie para produção. 
 
 ### 2ª – Instalação de Plugin
 
-Como havia informado, está para mim é a melhor opção, pois é mais fácil e simplificada de configurar. 😉
+Como havia informado, para mim esta é a melhor opção, pois é mais fácil e simplificada de configurar. 😉
 
 ### 2.1 – Plugin
 
@@ -185,7 +185,7 @@ Você poderá conferir mais na <a href="https://web.dev/preconnect-and-dns-prefe
 npm install --save gatsby-plugin-preconnect
 ```
 
-Confira a <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-preconnect/?=gatsby-plugin-preconnect" alt="gatsby-plugin-preconnect" title="gatsby-plugin-preconnect" target="_balnk" rel="noreferrer noopener">documentação oficial</a> do preconnect.
+Confira a <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-preconnect/?=gatsby-plugin-preconnect" alt="gatsby-plugin-preconnect" title="gatsby-plugin-preconnect" target="_balnk" rel="noreferrer noopener">documentação do plugin preconnect</a>.
 
 ### 3.2 – Configuração
 
