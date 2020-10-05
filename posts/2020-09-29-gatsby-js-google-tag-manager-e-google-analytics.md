@@ -15,9 +15,9 @@ Lembrando que, **você poderá utilizar o Google Tag Manager em “diversas ling
 
 Neste post não irei entrar em detalhe de como criar uma conta e configurar do Google Analytics, para não ficar muito grande. Abaixo disponibilizo um link que poderá auxiliar na criação da Tag. O modelo do ID tem o formato (**UA-XXXXXXXXX-X**).
 
-<a href="https://support.google.com/analytics/answer/1009694?hl=pt-BR" alt="Criar Conta no Google Analytics" title="Criar Conta no Google Analytics" target="_balnk" rel="noreferrer noopener">https://support.google.com/analytics/answer/1009694?hl=pt-BR</a>
+<a href="https://support.google.com/analytics/answer/1009694?hl=pt-BR" alt="Criar Conta no Google Analytics" title="Criar Conta no Google Analytics" target="_blank" rel="noreferrer noopener">https://support.google.com/analytics/answer/1009694?hl=pt-BR</a>
 
-Com o código do Analytics em mãos vamos <a href="https://tagmanager.google.com/#/home" alt="Criar Conta no Google Tag Manager" title="Criar Conta no Google Tag Manager" target="_balnk" rel="noreferrer noopener">criar uma conta no Tag Manager</a> com as informações do seu site, abaixo um exemplo.
+Com o código do Analytics em mãos vamos <a href="https://tagmanager.google.com/#/home" alt="Criar Conta no Google Tag Manager" title="Criar Conta no Google Tag Manager" target="_blank" rel="noreferrer noopener">criar uma conta no Tag Manager</a> com as informações do seu site, abaixo um exemplo.
 
 ![Google Tag Manager - Criar Conta](/assets/img/google-tag-manager-criar.png "Google Tag Manager - Criar Conta")
 
@@ -63,7 +63,7 @@ Para configurar manualmente, você deverá ter primeiramente o arquivo **html.js
 cp .cache/default-html.js src/html.js
 ```
 
-Caso tenha alguma dúvida, você poderá conferir na <a href="https://www.gatsbyjs.com/docs/custom-html/" alt="Gatsby - Customizing html.js" title="Gatsby - Customizing html.js" target="_balnk" rel="noreferrer noopener">documentação oficial html.js</a>.
+Caso tenha alguma dúvida, você poderá conferir na <a href="https://www.gatsbyjs.com/docs/custom-html/" alt="Gatsby - Customizing html.js" title="Gatsby - Customizing html.js" target="_blank" rel="noreferrer noopener">documentação oficial html.js</a>.
 
 ### 1.2 – Incluir Script
 
@@ -111,7 +111,7 @@ Como havia informado, para mim esta é a melhor opção, pois é mais fácil e s
 
 ### 2.1 – Plugin
 
-Basta instalar o plugin “<a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/" alt="package gatsby-plugin-google-tagmanager" title="package gatsby-plugin-google-tagmanager" target="_balnk" rel="noreferrer noopener">gatsby-plugin-google-tagmanager</a>” que está disponível no repositório da comunidade em seu projeto (node).
+Basta instalar o plugin “<a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/" alt="package gatsby-plugin-google-tagmanager" title="package gatsby-plugin-google-tagmanager" target="_blank" rel="noreferrer noopener">gatsby-plugin-google-tagmanager</a>” que está disponível no repositório da comunidade em seu projeto (node).
 
 ```jsx
 npm install --save gatsby-plugin-google-tagmanager
@@ -177,7 +177,7 @@ Exemplo:
 <link rel="preconnect" href="https://googletagmanager.com" crossorigin>
 ```
 
-Você poderá conferir mais na <a href="https://web.dev/preconnect-and-dns-prefetch/" alt="Document about Preconnect" title="Document about Preconnect" target="_balnk" rel="noreferrer noopener">documentação sobre o preconnect</a>.
+Você poderá conferir mais na <a href="https://web.dev/preconnect-and-dns-prefetch/" alt="Document about Preconnect" title="Document about Preconnect" target="_blank" rel="noreferrer noopener">documentação sobre o preconnect</a>.
 
 ### 3.1 – Instalação (Node)
 
@@ -185,7 +185,7 @@ Você poderá conferir mais na <a href="https://web.dev/preconnect-and-dns-prefe
 npm install --save gatsby-plugin-preconnect
 ```
 
-Confira a <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-preconnect/?=gatsby-plugin-preconnect" alt="gatsby-plugin-preconnect" title="gatsby-plugin-preconnect" target="_balnk" rel="noreferrer noopener">documentação do plugin preconnect</a>.
+Confira a <a href="https://www.gatsbyjs.com/plugins/gatsby-plugin-preconnect/?=gatsby-plugin-preconnect" alt="gatsby-plugin-preconnect" title="gatsby-plugin-preconnect" target="_blank" rel="noreferrer noopener">documentação do plugin preconnect</a>.
 
 ### 3.2 – Configuração
 
@@ -205,7 +205,9 @@ plugins: [
 ]
 ```
 
-**Observação:** A configuração do plugin preconnect "**não altera o tempo de cache no navegador**". Por padrão, o Google Tag Manager possui apenas 15 minutos.
+**Observação:** A configuração do plugin preconnect "**não altera o tempo de cache no navegador**". Por padrão, Google Tag Manager possui apenas 15 minutos e o Google Analytics 2 horas.
+
+![Cache Tag Manager e Analytics](/assets/img/cache-google-tag-manager-e-google-analytics.png "Cache Tag Manager e Analytics")
 
 <br>
 
