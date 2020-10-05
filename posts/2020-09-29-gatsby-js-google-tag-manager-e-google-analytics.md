@@ -51,7 +51,7 @@ Agora falta apenas “**Enviar**” todas nossas configurações clicando no bot
 
 Abaixo é apresentado duas maneiras de como utilizar o Google Tag Manager em sua aplicação. Você poderá optar em configurar **manualmente ou através de plugins** da comunidade Gatsbsy.
 
-Eu estava utilizando a primeira opção no meu blog “manualmente”, mas logo acabei optando pela segunda opção. A configuração manual eu não recomendo, pois quando você está em modo de desenvolvimento local “**gatsby develop**” é contabilizado nas métricas do Google Analytics. **E outro detalhe, você deverá incluir códigos de scripts “na mão”** 😕. Enfim, caso queira utilizar basta seguir a leitura abaixo ou poderá pular diretamente para a opção “**2ª – Instalação de Plugin**”.
+Eu estava utilizando a primeira opção no meu blog “manualmente”, mas logo acabei optando pela segunda opção. A configuração manual não recomendo, pois quando você está em modo de desenvolvimento local “**gatsby develop**” é contabilizado nas métricas do Google Analytics **e outro detalhe, você deverá incluir códigos de scripts “na mão”** 😕. Enfim, caso queira utilizar basta seguir a leitura abaixo ou poderá pular diretamente para a opção “**2ª – Instalação de Plugin**”.
 
 ### 1ª – Incluir Script Manualmente
 
