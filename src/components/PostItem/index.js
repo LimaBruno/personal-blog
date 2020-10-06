@@ -15,7 +15,7 @@ import {
 } from "./styled"
 
 const PostItem = ({slug, background, category, date, timeToRead, title, description}) => (
-    <PostItemLink cover direction="right" bg="var(--background)" duration={0.6} to={ slug }>
+    <PostItemLink cover direction="right" bg="var(--background)" duration={0.6} to={slug} alt={title}>
         <PostItemWrapper>
             <PostItemTag background={ background }>
                 {category}
