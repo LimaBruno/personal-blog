@@ -32,26 +32,27 @@ const BlogList = props => {
       "@type": "WebSite",
       "name": "Bruno César Lima",
       "url": "https://brunocesarlima.com.br",
+      "mainEntityOfPage": "https://brunocesarlima.com.br",
+      "inLanguage": "pt-br",
+      "description:": "Bruno César Lima - Um blog onde escrevo sobre o incrível mundo da tecnologia da informação e boas ideias legais!",
+      author: {
+        "@id": "Bruno César Lima",
+      },
     }
 
     return (
         <Layout>
         <SEO title="Home" schemaMarkup={schema} />
-            {postList.map(({
-              node:{
-                frontmatter:{ background, category, date, description, title },
-                timeToRead,
-                fields:{ slug, },
-              }
-            }) =>(
-              <PostItem 
-                slug= {slug}
-                background = {background}
-                category= {category}
-                date= {date}
-                timeToRead= { timeToRead}
-                title= {title}
-                description= {description}
+            {postList.map(({ node }, i) =>(
+              <PostItem
+                key={i}
+                slug= {node.fields.slug}
+                background = {node.frontmatter.background}
+                category= {node.frontmatter.category}
+                date= {node.frontmatter.date}
+                timeToRead= {node.timeToRead}
+                title= {node.frontmatter.title}
+                description= {node.frontmatter.description}
               />     
             ))}
           <Pagination
