@@ -9,6 +9,9 @@ X-Content-Type-Options: nosniff
 Strict-Transport-Security: max-age=604800; includeSubDomains; preload
 Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
 
+/*.js
+Cache-Control: public, max-age=2592000, immutable
+
 /sw.js
   Cache-Control: "max-age=0, no-cache, no-store, must-revalidate"
 /*
