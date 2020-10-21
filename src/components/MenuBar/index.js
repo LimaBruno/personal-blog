@@ -32,14 +32,14 @@ const MenuBar = () => {
               <Home />
             </MenuBarItem>
           </MenuBarLink>
-          <MenuBarLink to="/search" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar Posts" title="Pesquisar" activeClassName="active">
+          <MenuBarLink to="/search" cover direction="right" bg="var(--background)" duration={0.6} alt="Pesquisar posts" title="Pesquisar posts" activeClassName="active">
             <MenuBarItem>
               <Search />
             </MenuBarItem>
           </MenuBarLink>        
           <MenuBarItem
-            alt="Mudar o tema"
-            title="Mudar o tema"
+            alt={`Mudar o tema para ${isDarkMode ? "LIGHT" : "DARK"}`}
+            title={`Mudar o tema para ${isDarkMode ? "LIGHT" : "DARK"}`}
             onClick={() => {
               window.__setPreferredTheme(isDarkMode ? "light" : "dark")
 
