@@ -9,69 +9,95 @@ import ReadingProgress from "../components/ReadingProgress"
 import Share from "../components/Share"
 
 import {
-    PostHeader,
-    PostDate,
-    CalendarIcon,
-    TimeIcon,
-    PostTitle,
-    PostDescription,
-    MainContent,
-    MarginDiv
+  PostHeader,
+  PostDate,
+  CalendarIcon,
+  TimeIcon,
+  PostTitle,
+  PostDescription,
+  MainContent,
+  MarginDiv
 } from "../styles/base"
 
 const BlogPost = ({ data, pageContext }) => {
-    const post = data.markdownRemark
-    const next = pageContext.nextPost
-    const previous = pageContext.previousPost
-    const target = createRef()
+  const post = data.markdownRemark
+  const next = pageContext.nextPost
+  const previous = pageContext.previousPost
+  const target = createRef()
 
-    return (
-        <div ref={target}>
-            <Layout>
-            <ReadingProgress target={target} />
-                <SEO title={post.frontmatter.title} 
-                    description={post.frontmatter.description}
-                    thumbnail={`https://brunocesarlima.com.br${post.frontmatter.thumbnail}`}
-                />
-                <PostHeader>
-                    <PostDate>
-                        <CalendarIcon/> {post.frontmatter.date} - <TimeIcon/> {post.timeToRead} min de leitura
-                    </PostDate>
-                    <PostTitle>
-                        {post.frontmatter.title}
-                    </PostTitle>
-                    <PostDescription>
-                        {post.frontmatter.description}
-                    </PostDescription>
-                </PostHeader>
-                <MainContent>
-                    <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
-                    <Share slug={post.fields.slug} title={post.frontmatter.title} /> 
-                </MainContent>
-                <RecommendedPosts next={next} previous={previous} />
-                <Comments url={post.fields.slug} title={post.frontmatter.title} />
-                <MarginDiv/>
-            </Layout>
-        </div>
-    )
+  const schema = {
+    "@context": "https://schema.org/",
+    "@type": "WebPage",
+    "inLanguage": "pt-br",
+    "url": data.site.siteMetadata.siteUrl+post.fields.slug,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": data.site.siteMetadata.siteUrl+post.fields.slug
+    },
+    "headline": post.frontmatter.title,
+    "description": post.frontmatter.description,
+    image: {
+      "@type": "ImageObject",
+      "url": data.site.siteMetadata.siteUrl+post.frontmatter.thumbnail,
+    },        
+    author: {
+      "@type": "Person",
+      "name": data.site.siteMetadata.title,
+    },
+  }
+
+  return (
+    <div ref={target}>
+      <Layout>
+        <ReadingProgress target={target} />
+        <SEO title={post.frontmatter.title} description={post.frontmatter.description}
+        thumbnail={data.site.siteMetadata.siteUrl+post.frontmatter.thumbnail}
+        schemaMarkup={schema}
+      />
+      <PostHeader>
+        <PostDate>
+          <CalendarIcon/> {post.frontmatter.date} - <TimeIcon/> {post.timeToRead} min de leitura
+        </PostDate>
+        <PostTitle>
+          {post.frontmatter.title}
+        </PostTitle>
+        <PostDescription>
+          {post.frontmatter.description}
+        </PostDescription>
+      </PostHeader>
+      <MainContent>
+        <div dangerouslySetInnerHTML={{ __html: post.html}}></div>
+        <Share slug={post.fields.slug} title={post.frontmatter.title} /> 
+      </MainContent>
+      <RecommendedPosts next={next} previous={previous} />
+      <Comments url={post.fields.slug} title={post.frontmatter.title} />
+      <MarginDiv/>
+      </Layout>
+    </div>
+  )
 }
 
 export const query = graphql`
-    query Post($slug: String!) {
-        markdownRemark(fields: {slug: {eq: $slug}}) {
-        fields {
-            slug
-        }
-        frontmatter {
-            title
-            description
-            date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-            layout
-            thumbnail       
-        }
-        html
-        timeToRead
-        }
+  query Post($slug: String!) {
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    fields {
+      slug
     }
-`
+  frontmatter {
+    title
+    description
+    date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+    layout
+    thumbnail       
+  }
+  html
+  timeToRead
+  }
+  site {
+    siteMetadata {
+      siteUrl
+      title
+    }
+ }
+}`
 export default BlogPost

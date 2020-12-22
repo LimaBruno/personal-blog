@@ -29,15 +29,23 @@ const BlogList = props => {
 
     const schema = {
       "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "Bruno César Lima",
-      "url": "https://brunocesarlima.com.br",
-      "mainEntityOfPage": "https://brunocesarlima.com.br",
+      "@type": "WebPage",
       "inLanguage": "pt-br",
-      "description:": "Bruno César Lima - Um blog onde escrevo sobre o incrível mundo da tecnologia da informação e boas ideias legais!",
-      author: {
-        "@id": "Bruno César Lima",
+      "url": props.data.site.siteMetadata.siteUrl,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": props.data.site.siteMetadata.siteUrl
       },
+      "headline": props.data.site.siteMetadata.title,
+      "description": props.data.site.siteMetadata.description,
+      image: {
+        "@type": "ImageObject",
+        "url": "https://brunocesarlima.com.br/assets/img/bruno-cesar-lima-card.png",
+      },        
+      author: {
+        "@type": "Person",
+        "name": props.data.site.siteMetadata.title,
+      },      
     }
 
     return (
@@ -90,6 +98,13 @@ export const query = graphql`
                   }
               }
             }
+        }
+        site {
+          siteMetadata {
+            title
+            description
+            siteUrl
+          }
         }
     }
 `
