@@ -14,13 +14,13 @@ const AboutPage = () => (
     <SEO
       title="Sobre mim"
       description="Quem é o Bruno César Lima?"
-    />
-    <ReadingProgress target={target} />
-    <MainContent>    
+    />    
+    <MainContent>
+      <ReadingProgress target={target} />
       <h1>Sobre mim</h1>
       <p>
         Prazer, eu sou o <strong>Bruno César Lima</strong> natural de Catalão-GO. Sou apaixonado pela tecnologia e acredito que
-        uma das composições do meu oxigênio seja feito por dígitos binários! {/* <span role="img" aria-label="rosto com coração">😍</span> */}
+        uma das composições do meu oxigênio seja feito por dígitos binários! <span role="img" aria-label="ecomotion coração">❤️</span>
       </p>
       <p>
         Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
@@ -52,7 +52,7 @@ const AboutPage = () => (
         <dt><strong>Metodologias/Práticas:</strong></dt>
         <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT, Benchmarking, BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Gestão:</strong></dt>
-        <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, Análise SLA, Definição de KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores, Brainstorming.</dd>
+        <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores, Brainstorming.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
         <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
