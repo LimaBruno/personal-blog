@@ -31,7 +31,7 @@ const Search = () => (
             <Hits hitComponent={Hit}/>      
         </InstantSearch>
         <SearchTitle>
-            Powered by Algolia
+            Search by Algolia
             <AlgoliaIcon />
         </SearchTitle>
         <MarginDiv/>
