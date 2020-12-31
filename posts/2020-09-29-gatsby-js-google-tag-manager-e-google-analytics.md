@@ -31,7 +31,7 @@ No próximo passo, vamos adicionar a Tag do Analytics no Tag Manager. Para isto,
 
 ![Google Tag Manager - Escolher Tipo de Tag](/assets/img/google-tag-manager-adicionar-nova-tag.png "Google Tag Manager - Escolher Tipo de Tag")
 
-Ao adiciona a Tag, escolha a opção “**Google Analytics: Universal Analytics**” e adicione uma “**Nova Variável**” conforme o print.
+Ao adicionar a Tag, escolha a opção “**Google Analytics: Universal Analytics**” e clique em “**Nova Variável**” conforme o print.
 
 ![Google Tag Manager - Adicionando Google Analytics](/assets/img/google-tag-manager-google-analytics-gatsby.png "Google Tag Manager - Adicionando Google Analytics")
 
@@ -155,7 +155,7 @@ plugins: [
 ]
 ```
 
-**Observação:** Não esqueça de criar a variável de ambiente em produção contendo sua tag “**GTM-SEU_ID**”.
+**Observação:** Não esqueça de criar a variável de ambiente em produção contendo seu ID “**GTM-SEU_ID**”.
 
 ### 2.3 – Executar Teste
 
