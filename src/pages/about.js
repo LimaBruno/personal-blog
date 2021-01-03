@@ -52,9 +52,9 @@ const AboutPage = () => (
         <dt><strong>Metodologias/Práticas:</strong></dt>
         <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT, Benchmarking, BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Gestão:</strong></dt>
-        <dd>Governança T.I (ITSM Management), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores, Brainstorming.</dd>
+        <dd>Governança T.I (ITSM), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores, Brainstorming.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events, CMS (Wordpress, Joomla).</dd>
+        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
         <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS.</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
@@ -63,11 +63,12 @@ const AboutPage = () => (
 
       <h2>Soft Skills</h2>
       <ul>
-        <li>Observador;</li>
+        <li>Observador, Ownership;</li>
         <li>Líder, Planejador;</li>
         <li>Trabalho em Equipe;</li>
-        <li>Empatíco;</li>
-        <li>Capacidade Analítica;</li>
+        <li>Aprendizagem Contínua;</li>
+        <li>Empatíco, Colaborativo;</li>
+        <li>Analítico;</li>
         <li>Criativo, Inovador;</li>
         <li>Ético, Integro;</li>
       </ul>
