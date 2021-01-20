@@ -38,6 +38,10 @@ function SEO({ description, lang, meta, title, thumbnail, schemaMarkup }) {
       titleTemplate={`%s - ${site.siteMetadata.title}`}
       meta={[
         {
+          name: `author`,
+          content: 'Bruno César Lima',
+        },
+        {
           name: `aplication-name`,
           content: 'Bruno César Lima',
         },
