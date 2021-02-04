@@ -20,7 +20,7 @@ const AboutPage = () => (
       <h1>Sobre mim</h1>
       <p>
         Prazer, eu sou o <strong>Bruno César Lima</strong> natural de Catalão-GO. Sou apaixonado pela tecnologia e acredito que
-        uma das composições do meu oxigênio seja feito por dígitos binários! <span role="img" aria-label="ecomotion coração">❤️</span>
+        uma das composições do meu oxigênio seja feito por dígitos binários! <span role="img" aria-label="emoticon coração">❤️</span>
       </p>
       <p>
         Me graduei em <strong>Desenvolvimento Web</strong> pela faculdade de tecnologia de Catalão - FATECA em 2010. Em seguida especializando
@@ -38,7 +38,7 @@ const AboutPage = () => (
       */}
       <p>
         Estou constantemente em busca de conhecimentos, novidades e sou muito grato em compartilhar.
-        Sinto-me orgulhoso, quando alguma contribuição minha consiga impactar ou gerar resultados positivos.
+        Sinto-me orgulhoso, quando alguma contribuição minha consiga impactar e gerar resultados positivos.
         E por isso nasceu esse blog, espero que você possa usufruir de alguma maneira e sua volta será sempre bem-vinda!
       </p>
       <p>
