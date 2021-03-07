@@ -112,7 +112,11 @@ const ContactForm = () => {
 					required: "Campo EMAIL obrigatório",
 					pattern: {
 					  value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
-					  message: "E-mail inválido"
+					  message: "E-mail inválido",
+					},
+					maxLength: {
+					  value: 30,
+					  message: "No máximo 30 caracteres"
 					}
 				  })}
 				/>
