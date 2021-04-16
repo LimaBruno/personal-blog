@@ -67,7 +67,7 @@ const AboutPage = () => (
         <li>Liderança, Planejador;</li>
         <li>Trabalho em Equipe;</li>
         <li>Aprendizagem Contínua;</li>
-        <li>Empatíco, Colaborativo;</li>
+        <li>Empático, Colaborativo;</li>
         <li>Analítico, Visão Sistêmica;</li>
         <li>Criativo, Inovador;</li>
         <li>Ético, Íntegro;</li>
