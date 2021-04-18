@@ -102,13 +102,13 @@ export const IconSend = styled(Mail)`
     margin: -2px 10px 0 0;
     color: var(--btnColor);
 `
-
+/*
 export const IconRest = styled(Cancel)`
     width: 20px;
     margin: -2px 10px 0 0;
     color: var(--btnColor);
 `
-
+*/
 export const Recaptcha = styled.div`
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;

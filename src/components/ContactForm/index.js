@@ -156,7 +156,7 @@ const ContactForm = () => {
       		{feedbackMsg && <h3>{feedbackMsg}</h3>}
       		<br/>
 			<ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><IconSend/>Enviar</ContactButtonSend>
-      		<ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><IconRest/>Apagar</ContactButtonRest>
+      		{/*<ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><IconRest/>Apagar</ContactButtonRest> */}
 		</ContactFormMain>
     	<MarginDiv/>
     </ContactWrapper>
