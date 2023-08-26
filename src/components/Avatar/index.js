@@ -5,21 +5,17 @@ import { useStaticQuery, graphql } from "gatsby"
 import * as S from "./styled"
 
 const Avatar = () => {
-   const { avatarImage } = useStaticQuery(graphql`
-        query {
-            avatarImage: file(relativePath: { eq: "bruno-cesar-lima.png" }){
-                childImageSharp {
-                    fluid(maxWidth: 100, quality: 100) {
-                        ...GatsbyImageSharpFluid_tracedSVG
+ const { avatarImage } = useStaticQuery(graphql`
+  query {
+   avatarImage: file(relativePath: { eq: "bruno-cesar-lima-profile.png" }){
+    childImageSharp {
+     gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+    }
+   }
+  }
+ `)
 
-                    }
-                }
-
-            }
-        }
-   `)
-   
-   return <S.AvatarWrapper fluid={avatarImage.childImageSharp.fluid} alt="Foto do Bruno Lima"/>
+ return <S.AvatarWrapper image={avatarImage.childImageSharp.gatsbyImageData} alt="Foto do Bruno Lima" />
 
 }
 
