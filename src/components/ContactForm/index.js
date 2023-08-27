@@ -15,8 +15,6 @@ import {
   Recaptcha,
   ContactButtonSend,
   IconSend,
-  ContactButtonRest,
-  IconRest,
   MarginDiv,
 } from "./styled"
 

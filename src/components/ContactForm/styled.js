@@ -2,14 +2,11 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 import { MailSend as Mail } from "@styled-icons/remix-line/MailSend"
-import { CancelCircle as Cancel } from "@styled-icons/icomoon/CancelCircle"
 
 export const ContactWrapper = styled.section`
 `
-
 export const ContactTitle = styled.h1`
 `
-
 export const ContactDescription = styled.p` 
 `
 
@@ -102,13 +99,7 @@ export const IconSend = styled(Mail)`
     margin: -2px 10px 0 0;
     color: var(--btnColor);
 `
-/*
-export const IconRest = styled(Cancel)`
-    width: 20px;
-    margin: -2px 10px 0 0;
-    color: var(--btnColor);
-`
-*/
+
 export const Recaptcha = styled.div`
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
