@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@babel/preset-typescript": "^7.22.11",
     "algoliasearch": "^4.8.5",
     "babel-plugin-styled-components": "^2.1.4",
     "core-js": "^3.9.0",
