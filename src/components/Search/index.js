@@ -11,15 +11,9 @@ import {
   MarginDiv
 } from "./styled"
 
-const algolia = {
-    appId: process.env.GATSBY_ALGOLIA_APP_ID,
-    searchOnlyApiKey: process.env.GATSBY_ALGOLIA_SEARCH_KEY,
-    indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME
-}
-
-const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey);
-
-const Search = () => (
+const Search = ({ algolia }) => {
+ const searchClient = algoliasearch(algolia.appId, algolia.searchOnlyApiKey);
+  return(
     <SearchWrapper>
         <InstantSearch searchClient={searchClient} indexName={algolia.indexName}>
             <SearchBox autoFocus translations={{ placeholder: 'Pesquisar...'}}/>
@@ -36,6 +30,6 @@ const Search = () => (
         </SearchTitle>
         <MarginDiv/>
     </SearchWrapper>
-)
-
+  )
+}
 export default Search
