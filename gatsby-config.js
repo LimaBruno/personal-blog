@@ -128,7 +128,7 @@ module.exports = {
             },
             query: `
               {
-                allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+                allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
                   edges {
                     node {
                       fields {
@@ -143,8 +143,7 @@ module.exports = {
                     }
                   }
                 }
-              }
-            `,
+              }`,
             output: '/feed.xml',
             title: 'Bruno César Lima - RSS Feed'
           }
