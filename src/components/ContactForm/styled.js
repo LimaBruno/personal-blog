@@ -107,11 +107,3 @@ export const Recaptcha = styled.div`
     margin-left: 1rem;
   `}  
 `
-
-export const MarginDiv = styled.div`
-  margin-bottom: 4rem;
-  
-  ${media.lessThan("large")`
-    margin-bottom: 0;
-  `}  
-`

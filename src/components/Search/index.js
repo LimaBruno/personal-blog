@@ -7,8 +7,7 @@ import Hit from "./Hit"
 import {
   SearchWrapper,
   SearchTitle,
-  AlgoliaIcon,
-  MarginDiv
+  AlgoliaIcon  
 } from "./styled"
 
 const Search = ({ algolia }) => {
@@ -27,8 +26,7 @@ const Search = ({ algolia }) => {
         <SearchTitle>
             Search by Algolia
             <AlgoliaIcon />
-        </SearchTitle>
-        <MarginDiv/>
+        </SearchTitle>        
     </SearchWrapper>
   )
 }

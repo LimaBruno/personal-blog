@@ -53,7 +53,7 @@ export const PostDate = styled.p`
 export const MainContent = styled.section`
   margin: auto;
   max-width: 70rem;
-  padding: 2rem 5rem;
+  padding: 2rem 1rem;
 
   ${media.lessThan("large")`
     padding: 2rem 0;
@@ -214,13 +214,6 @@ export const MainContent = styled.section`
     }
   }
 `
-export const MarginDiv = styled.div`
-    margin-bottom: 3rem;
-    ${media.lessThan("large")`
-      margin-bottom: 0rem;
-    `}
-`
-
 export const CalendarIcon = styled(Calendar)`
   width: 15px;
   margin: -5px 0 0 0;  

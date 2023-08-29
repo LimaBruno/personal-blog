@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import ReadingProgress from "../components/ReadingProgress"
 
-import { MainContent, MarginDiv } from '../styles/base'
+import { MainContent } from '../styles/base'
 
 const target = createRef()
 
@@ -27,15 +27,6 @@ const AboutPage = () => (
         em <strong>Segurança da Informação</strong> pela universidade federal de Goiás - UFG em 2012. Cursei algumas matérias no mestrado
         <strong> Gestão Organizacional</strong> com ênfase em sistemas (stricto sensu) na UFG, mas não conclui por motivos de mudança para Brasília-DF a trabalho.
       </p>
-      {/*
-      <p>
-        Já atuei em diversas empresas como {' '} <a href="https://www.mitsubishimotors.com.br/" alt="Mitsubishi Motors" target="_blank" rel="noopener noreferrer">Mitsubishi Motors</a>, 
-        {' '}<a href="https://www.truston.com.br/" alt="Datacom Consultoria em Sistemas" target="_blank" rel="noopener noreferrer">Datacom Consultoria em Sistemas (Truston)</a>, 
-        {' '}<a href="http://www.itego.com.br/" alt="Instituto Tecnológico de Goiás" target="_blank" rel="noopener noreferrer">Instituto Tecnológico de Goiás</a>, ... entre outras.
-        Atualmente atuo com consultorias e como freelancer em plataformas digitais como {' '}<a href="https://www.workana.com/" alt="Workana" target="_blank" rel="noopener noreferrer">Workana</a>, 
-        {' '} <a href="https://www.99freelas.com.br/" alt="99freelas" target="_blank" rel="noopener noreferrer">99Freelas</a> e outras, atendendo diversos projetos (confira minhas skills abaixo).
-      </p>
-      */}
       <p>
         Estou constantemente em busca de conhecimentos, novidades e sou muito grato em compartilhar.
         Sinto-me orgulhoso, quando alguma contribuição minha consiga impactar e gerar resultados positivos.
@@ -50,13 +41,13 @@ const AboutPage = () => (
       <h2>Hard Skills</h2>
       <dl>
         <dt><strong>Metodologias/Práticas:</strong></dt>
-        <dd>Scrum, Kanban (Trello), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT, Benchmarking, BPMN (Bizagi, Heflo).</dd>
+        <dd>Scrum, Kanban (Trello/Jira), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT, Benchmarking, Brainstorming, BPMN (Bizagi, Heflo), RUP (básico).</dd>
         <dt><strong>Gestão:</strong></dt>
-        <dd>Governança T.I (ITSM), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores, Brainstorming.</dd>
+        <dd>Governança T.I (ITSM), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos, User e Job Stories, MVP, SEO, Prototipagem AxureRP, Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla).</dd>
+        <dd>PHP 5 e 7, Git Lab, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python Django/Flask (básico/intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos (User Stories, Job Stories e User Case), MVP, SEO, Prototipagem Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla), Smoke Testing (Quality Assurance).</dd>
         <dt><strong>Infraestrutura:</strong></dt>
-        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client).</dd>
+        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client), SonarQube (básico).</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
         <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
       </dl>
@@ -72,8 +63,7 @@ const AboutPage = () => (
         <li>Criativo, Inovador;</li>
         <li>Ético, Íntegro;</li>
       </ul>
-      </MainContent>
-      <MarginDiv />
+      </MainContent>      
   </Layout>
   </div> 
 )

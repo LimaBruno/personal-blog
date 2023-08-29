@@ -55,13 +55,6 @@ export const SearchWrapper = styled.section`
     display: none;
   }
 `
-export const MarginDiv = styled.div`
-  margin-bottom: 2rem;
-  ${media.lessThan('large')`
-    margin-bottom: 1rem;
-  `}
-`
-
 export const SearchTitle = styled.h1`
   color: var(--texts);
   font-size: 1rem;

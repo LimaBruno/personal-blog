@@ -14,8 +14,7 @@ import {
   Error,
   Recaptcha,
   ContactButtonSend,
-  IconSend,
-  MarginDiv,
+  IconSend
 } from "./styled"
 
 const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
@@ -155,8 +154,7 @@ const ContactForm = () => {
       		<br/>
 			<ContactButtonSend type="submit" aria-label="Enviar Formulário Email"><IconSend/>Enviar</ContactButtonSend>
       		{/*<ContactButtonRest type="reset" aria-label="Apagar Formulário Email"><IconRest/>Apagar</ContactButtonRest> */}
-		</ContactFormMain>
-    	<MarginDiv/>
+		</ContactFormMain>    	
     </ContactWrapper>
 	)
 }

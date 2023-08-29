@@ -15,8 +15,7 @@ import {
   TimeIcon,
   PostTitle,
   PostDescription,
-  MainContent,
-  MarginDiv
+  MainContent
 } from "../styles/base"
 
 const BlogPost = ({ data, pageContext }) => {
@@ -71,7 +70,6 @@ const BlogPost = ({ data, pageContext }) => {
       </MainContent>
       <RecommendedPosts next={next} previous={previous} />
       <Comments url={post.fields.slug} title={post.frontmatter.title} />
-      <MarginDiv/>
       </Layout>
     </div>
   )

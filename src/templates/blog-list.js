@@ -6,18 +6,6 @@ import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
 import Pagination from "../components/Pagination"
 
-import styled from "styled-components"
-import media from "styled-media-query"
-
-export const MarginDiv = styled.div`
-  margin-bottom: 3.4rem;
-  
-  ${media.lessThan("large")`
-    margin-bottom: 0;
-  `}
-  
-`
-
 const BlogList = props => {
     const postList = props.data.allMarkdownRemark.edges
     const { currentPage, numPages} = props.pageContext
@@ -70,8 +58,7 @@ const BlogList = props => {
             numPages={numPages}
             prevPage={prevPage}
             nextPage={nextPage}
-          />
-          <MarginDiv/>          
+          />                    
       </Layout>
     )
 }
