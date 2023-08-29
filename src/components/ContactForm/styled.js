@@ -29,9 +29,9 @@ export const ContactFormMain = styled.form`
 export const ContactInput = styled.input`
     padding: 1rem;
     border: 1px solid var(--formBorder);
-    border-left: 5px solid var(--progress-bar);
+    border-left: 10px solid var(--progress-bar);
     border-radius: 4px;    
-    margin: 0.5rem 20rem 0 1.5rem;    
+    margin: 0 20rem 0 1.5rem;    
     :focus{
         background: var(--formColor);
         transition: 0.5s;
@@ -54,7 +54,7 @@ export const Error = styled.span`
 export const ContactArea = styled.textarea`
     padding: 1rem;
     border: 1px solid var(--formBorder);
-    border-left: 5px solid var(--progress-bar);
+    border-left: 10px solid var(--progress-bar);
     border-radius: 4px;    
     margin: 0.5rem 20rem 0 1.5rem;   
     :focus{
@@ -67,43 +67,31 @@ export const ContactArea = styled.textarea`
 `
 
 export const ContactButtonSend = styled.button`
-    padding: 1rem;
-    padding-right: 2rem;
-    margin: 0rem 2rem 0 1.5rem;    
-    border: 1px solid var(--formBorder);
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--btnColor);
-    background-color: #1fa1f2;
-    cursor: pointer;
-    ${media.lessThan("large")`
-        margin-left: 1rem;        
-    `}
-`
-
-export const ContactButtonRest = styled.button`
-    padding: 1rem;
-    padding-right: 2rem;
-    border: 1px solid var(--btnBorder);
-    border-radius: 4px;
-    font-size: 1rem;
-    font-weight: bold;
-    background-color: #d63031;
-    color: var(--btnColor);
-    cursor: pointer;
+padding: 1rem;
+padding-right: 2rem;
+margin: 0rem 2rem 3rem 1.5rem;    
+border: 1px solid var(--formBorder);
+border-radius: 4px;
+font-size: 1rem;
+font-weight: bold;
+color: var(--btnColor);
+background-color: #1fa1f2;
+cursor: pointer;
+${media.lessThan("large")`
+    margin-left: 1rem;        
+`}
 `
 
 export const IconSend = styled(Mail)`
-    width: 20px;
-    margin: -2px 10px 0 0;
-    color: var(--btnColor);
+width: 20px;
+margin: -2px 10px 0 0;
+color: var(--btnColor);
 `
 
 export const Recaptcha = styled.div`
   margin-left: 1.5rem;
   margin-bottom: 0.5rem;
   ${media.lessThan("large")`
-    margin-left: 1rem;
+    margin-left: 1rem;     
   `}  
 `
