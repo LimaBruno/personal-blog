@@ -15,6 +15,7 @@ const Search = ({ algolia }) => {
   return(
     <SearchWrapper>
         <InstantSearch searchClient={searchClient} indexName={algolia.indexName}>
+            {/* eslint-disable-next-line jsx-a11y/no-autofocus */}
             <SearchBox autoFocus translations={{ placeholder: 'Pesquisar...'}}/>
             <Stats translations={{stats(nbHits, timeSpentMS){
                 return nbHits === 1
