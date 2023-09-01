@@ -18,7 +18,6 @@
     "gatsby-plugin-image": "^3.12.0",
     "gatsby-plugin-manifest": "^5.12.0",
     "gatsby-plugin-netlify": "^5.1.0",
-    "gatsby-plugin-netlify-cms": "^5.8.0",
     "gatsby-plugin-offline": "^6.12.0",
     "gatsby-plugin-preconnect": "^1.1.54",
     "gatsby-plugin-react-helmet": "^6.12.0",
