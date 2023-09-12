@@ -47,9 +47,9 @@ const AboutPage = () => (
         <dt><strong>Desenvolvimento:</strong></dt>
         <dd>PHP 5 e 7, Git Lab, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python Django/Flask (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos (User Stories, Job Stories e User Case), MVP, SEO, Prototipagem Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla), Smoke Testing (Quality Assurance), SonarQube.</dd>
         <dt><strong>Infraestrutura:</strong></dt>
-        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client)</dd>
+        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client).</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
-        <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
+        <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux), Security Headers.</dd>
       </dl>
 
       <h2>Soft Skills</h2>
