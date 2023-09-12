@@ -5,9 +5,13 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "algoliasearch": "^4.20.0",
+    "algoliasearch": "^4.8.5",
     "babel-plugin-styled-components": "^2.1.4",
+<<<<<<< HEAD
     "core-js": "^3.32.2",
+=======
+    "core-js": "^3.32.1",
+>>>>>>> parent of fed57d0 (Upated node package and text)
     "dotenv": "^16.3.1",
     "gatsby": "^5.12.4",
     "gatsby-cli": "^5.12.1",
