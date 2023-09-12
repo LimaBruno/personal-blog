@@ -45,7 +45,7 @@ const AboutPage = () => (
         <dt><strong>Gestão:</strong></dt>
         <dd>Governança T.I (ITSM), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git Lab, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python Django/Flask (básico/intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos (User Stories, Job Stories e User Case), MVP, SEO, Prototipagem Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla), Smoke Testing (Quality Assurance), SonarQube.</dd>
+        <dd>PHP 5 e 7, Git Lab, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python Django/Flask (intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos (User Stories, Job Stories e User Case), MVP, SEO, Prototipagem Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla), Smoke Testing (Quality Assurance), SonarQube.</dd>
         <dt><strong>Infraestrutura:</strong></dt>
         <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client)</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
