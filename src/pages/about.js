@@ -41,13 +41,13 @@ const AboutPage = () => (
       <h2>Hard Skills</h2>
       <dl>
         <dt><strong>Metodologias/Práticas:</strong></dt>
-        <dd>Scrum, Kanban (Trello/Jira), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT, Benchmarking, Brainstorming, BPMN (Bizagi, Heflo), RUP (básico).</dd>
+        <dd>Scrum, Kanban (Trello/Jira), Design Thinking, Google Design Sprint, Lean (UX, Startup), UML 2.5, PMBOK, ITIL, COBIT, Benchmarking, Brainstorming, BPMN (Bizagi, Heflo).</dd>
         <dt><strong>Gestão:</strong></dt>
         <dd>Governança T.I (ITSM), Gestão de Equipe Multidisciplinar, Análise SLA, Indicadores KPIs, Ciclo PDCA, Matriz SWOT, Planejamento ROI, Gestão de Fornecedores.</dd>
         <dt><strong>Desenvolvimento:</strong></dt>
-        <dd>PHP 5 e 7, Git Lab, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python Django/Flask (básico/intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos (User Stories, Job Stories e User Case), MVP, SEO, Prototipagem Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla), Smoke Testing (Quality Assurance).</dd>
+        <dd>PHP 5 e 7, Git Lab, HTML5, CSS, Mobile First, Materialize, Material Design, Acessibilidade, Python Django/Flask (básico/intermediário), Javascript, ReactJS (intermediário), SQL, UX/UI (Strategy, Analytics, Writing), Requisitos (User Stories, Job Stories e User Case), MVP, SEO, Prototipagem Figma, Photoshop/Gimp (intermediário), Google Analytics/Events/Search, CMS (Wordpress, Joomla), Smoke Testing (Quality Assurance), SonarQube.</dd>
         <dt><strong>Infraestrutura:</strong></dt>
-        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client), SonarQube (básico).</dd>
+        <dd>Equipamentos CISCO, Linux (Debian, Red Hat), Windows Server 03/08, Webserver Http (Apache, IIS), Docker, Zabbix, Amazon AWS, RM Sistemas, SAP, Sankhya (client)</dd>
         <dt><strong>Segurança da Informação:</strong></dt>
         <dd>Gestão da Segurança, Auditorias Aplicações WEB e ISO 27000, LGPD, Pentests (Kali Linux).</dd>
       </dl>
