@@ -3,14 +3,15 @@ import { GatsbyImage as Img } from "gatsby-plugin-image"
 import media from "styled-media-query"
 
 export const AvatarWrapper = styled(Img)`
-    border: 2px solid var(--profileColor);
-    border-radius: 10%;
-    height: 5.5rem;    
-    width: 5.5rem;
-    margin: auto;
+  border: 4px solid var(--profileColor);
+  border-radius: 10%;
+  height: 5.5rem;
+  width: 5.5rem;
+  margin: auto;
 
-    ${media.lessThan("large")`
-        height: 2.5rem;
-        width: 2.5rem;
-    `}
+  ${media.lessThan("large")`
+    border: 2px solid var(--profileColor);
+    height: 2.5rem;
+    width: 2.5rem;
+  `}
 `
