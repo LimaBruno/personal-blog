@@ -37,6 +37,9 @@ const AboutPage = () => (
         consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. Desenvolvido através de cursos e contribuições das
         comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria mais difícil, meus sinceros agradecimentos! {/* <span role="img" aria-label="aplausos">👏🏽👏🏽</span> */}
       </p>
+      <p>
+        Caso queira fazer um fork deste projeto, ou mesmo request com alguma melhoria basta acessar o meu <a href="https://github.com/LimaBruno/personal-blog" target="_blank" alt="Repositório Github" title="Repositório Github" rel="noreferrer noopener">repositório Github</a>.
+      </p>
       
       <h2>Hard Skills</h2>
       <dl>
