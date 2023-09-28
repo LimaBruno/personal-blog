@@ -35,10 +35,10 @@ const AboutPage = () => (
       <p>
         O blog foi desenvolvido com tecnologias em alta no mercado front-end como React, Gatsby, GraphQL, Styled Components/Icons, e 
         consumindo back-end Github, Netlify, Algolia, Disqus e Netlify CMS. Desenvolvido através de cursos e contribuições das
-        comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria mais difícil, meus sinceros agradecimentos! {/* <span role="img" aria-label="aplausos">👏🏽👏🏽</span> */}
+        comunidades Front-end, StackOverflow e Youtube, sem eles a missão seria mais difícil, meus sinceros agradecimentos!
       </p>
       <p>
-        Caso queira fazer um fork deste projeto ou mesmo request com alguma melhoria, basta acessar o meu <a href="https://github.com/LimaBruno/personal-blog" target="_blank" alt="Repositório Github" title="Repositório Github" rel="noreferrer noopener">repositório Github</a>.
+        Caso queira fazer um fork deste projeto ou mesmo request com alguma melhoria, basta acessar o meu <a href="https://bit.ly/46alf87" target="_blank" alt="Repositório Github" title="Repositório Github" rel="noreferrer noopener">repositório Github</a>.
       </p>
       
       <h2>Hard Skills</h2>
