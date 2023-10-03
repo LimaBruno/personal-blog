@@ -2,8 +2,8 @@
   Bruno's Blog
 </h1>
 
-##How`s it going?
-Nice to meet you, my name`s Bruno Lima 😄. I'm a System Analyst and welcome my blog. That's about technology wold 🖥️. I'm passionate about technology and I believe that one of the compositions of my oxygen is made up of binary digits! ❤️
+##How's it going?
+Nice to meet you, my name's Bruno Lima 😄. I'm a System Analyst and welcome my blog. That's about technology wold 🖥️. I'm passionate about technology and I believe that one of the compositions of my oxygen is made up of binary digits! ❤️
 
 ##Languages and Tools:
 <p align="left">
