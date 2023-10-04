@@ -3,7 +3,7 @@
 </h1>
 
 ## How's it going?
-Nice to meet you, my name's Bruno Lima 😄. I'm a System Analyst and welcome my blog. That's about technology wold 🖥️. I'm passionate about technology and I believe that one of the compositions of my oxygen is made up of binary digits! ❤️
+Nice to meet you, my name's Bruno Lima 😄. I'm a System Analyst and welcome to my blog. That's about technology wold 🖥️. I'm passionate about technology and I believe that one of the compositions of my oxygen is made up of binary digits! ❤️
 
 ## Languages and Tools:
 <p align="left">
@@ -19,11 +19,11 @@ Nice to meet you, my name's Bruno Lima 😄. I'm a System Analyst and welcome my
 </p>
 
 ## Writer
-- [@LimaBruno](https://github.com/LimaBruno/personal-blog/tree/master/postso)
+- [@LimaBruno](https://github.com/LimaBruno/personal-blog/tree/master/posts)
 
 ## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://bit.ly/46alf87)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://bit.ly/LimaBrunoGitHub)
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://bit.ly/brunocesarlima)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://bit.ly/LinkedInBCL)
 
 
 ## Feedback
