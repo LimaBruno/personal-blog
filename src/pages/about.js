@@ -66,7 +66,17 @@ const AboutPage = () => (
         <li>Criativo, Inovador;</li>
         <li>Ético, Íntegro;</li>
       </ul>
-      </MainContent>      
+
+      <h2>Mad Skills</h2>
+      <ul>
+        <li>Drones;</li>
+        <li>Fotografias;</li>
+        <li>Futebol;</li>
+        <li>Jardinagem;</li>
+        <li>Inglês;</li>
+        <li>Andar sem rumo;</li>        
+      </ul>
+    </MainContent>      
   </Layout>
   </div> 
 )
