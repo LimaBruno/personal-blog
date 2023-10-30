@@ -60,6 +60,7 @@ const AboutPage = () => (
         <li>Observador, Senso de dono (Ownership);</li>
         <li>Liderança, Planejador;</li>
         <li>Trabalho em Equipe;</li>
+        <li>Mão na Massa (Hands on);</li>
         <li>Aprendizagem Contínua;</li>
         <li>Empático, Colaborativo;</li>
         <li>Analítico, Visão Sistêmica;</li>
