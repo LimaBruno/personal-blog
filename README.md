@@ -34,3 +34,7 @@ If you have some feedback, please tell me networkbruno@gmail.com
 
 ## Enjoy
 I hope you enjoyed it ❤️
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
